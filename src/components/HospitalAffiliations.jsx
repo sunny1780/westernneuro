@@ -1,17 +1,17 @@
 import React from 'react';
 
-const AffiliateInsurance = ({ images = [] }) => {
+const HospitalAffiliations = ({ images = [] }) => {
   // Placeholder: pass image URLs as props, or use defaults for demo
   const boxes = images.length >= 4 
     ? images.slice(0, 4) 
     : [...Array(4)].map((_, i) => images[i] || null);
 
   return (
-    <section className="bg-white py-12 md:py-16 px-4 sm:px-6">
+    <section className="bg-white py-16 px-6">
       <div className="max-w-6xl mx-auto text-center">
         {/* Main heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Affiliate Insurance
+        Hospital Affiliations
         </h2>
 
         {/* Subheading */}
@@ -43,4 +43,4 @@ const AffiliateInsurance = ({ images = [] }) => {
   );
 };
 
-export default AffiliateInsurance;
+export default HospitalAffiliations;

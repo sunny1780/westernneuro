@@ -1,87 +1,79 @@
-import React from "react";
-
 const Footer = () => {
   return (
-    <footer className="bg-[#D9ECFF] mt-16 rounded-t-3xl">
-      {/* Top rounded container */}
-      <div className="max-w-8xl mx-auto px-4 md:px-6 pt-10 pb-6 rounded-rounded-t-sm">
-        <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
-          {/* Logo + description + subscribe */}
-          <div className="flex-1 max-w-sm">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-blue-500 text-xl font-semibold shadow-sm">
-                {/* Simple circular logo mark */}
-                <span>~</span>
+    <footer className="bg-blue-50 text-gray-600 rounded-t-[3rem]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
+          {/* Brand + Subscribe */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">
+                M
               </div>
               <span className="text-lg font-semibold text-gray-900">
-                Logo
+                MediCura
               </span>
             </div>
-            <p className="text-sm text-gray-700 mb-5">
+
+            <p className="text-sm mb-6 max-w-xs">
               We deliver comprehensive medical solutions to support better &
-              faster recovery.
+              faster recovery
             </p>
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex items-stretch rounded-full bg-white overflow-hidden max-w-xs shadow-sm"
-            >
+
+            <div className="flex items-center bg-white rounded-full p-1 shadow-sm w-full max-w-md">
               <input
                 type="email"
                 placeholder="Email Address..."
-                className="flex-1 px-4 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:outline-none"
+                className="flex-[2] min-w-0 px-4 py-2 text-sm focus:outline-none rounded-full"
               />
-              <button
-                type="submit"
-                className="px-5 md:px-6 py-2.5 text-sm font-medium text-white bg-[#1D8CFF] hover:bg-[#1675d4] transition-colors"
-              >
+              <button className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 text-sm font-medium rounded-full transition">
                 Subscribe
               </button>
-            </form>
+            </div>
           </div>
 
-          {/* Navigation columns */}
-          <div className="flex-[1.2] grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm">
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Product</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li>Features</li>
-                <li>Integrations</li>
-                <li>Pricing</li>
-                <li>Changelog</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Company</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li>About Us</li>
-                <li>Blog</li>
-                <li>Careers</li>
-                <li>Customers</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Resources</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li>Community</li>
-                <li>Contact</li>
-                <li>System Status</li>
-                <li>Terms of Service</li>
-              </ul>
-            </div>
+          {/* Product */}
+          <div>
+            <h4 className="text-gray-900 font-semibold mb-4">Product</h4>
+            <ul className="space-y-3 text-sm">
+              <li><a href="#" className="hover:text-blue-500">Features</a></li>
+              <li><a href="#" className="hover:text-blue-500">Integrations</a></li>
+              <li><a href="#" className="hover:text-blue-500">Pricing</a></li>
+              <li><a href="#" className="hover:text-blue-500">Changelog</a></li>
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h4 className="text-gray-900 font-semibold mb-4">Company</h4>
+            <ul className="space-y-3 text-sm">
+              <li><a href="#" className="hover:text-blue-500">About Us</a></li>
+              <li><a href="#" className="hover:text-blue-500">Blog</a></li>
+              <li><a href="#" className="hover:text-blue-500">Careers</a></li>
+              <li><a href="#" className="hover:text-blue-500">Customers</a></li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h4 className="text-gray-900 font-semibold mb-4">Resources</h4>
+            <ul className="space-y-3 text-sm">
+              <li><a href="#" className="hover:text-blue-500">Community</a></li>
+              <li><a href="#" className="hover:text-blue-500">Contact</a></li>
+              <li><a href="#" className="hover:text-blue-500">System Status</a></li>
+              <li><a href="#" className="hover:text-blue-500">Terms of Service</a></li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-[#c4ddf6]">
-        <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs md:text-sm text-gray-600">
+        {/* Bottom Bar */}
+        <div className="border-t border-blue-100 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between text-sm gap-4">
           <p>© 2025 MACreative All rights reserved.</p>
-          <div className="flex flex-wrap items-center gap-4 md:gap-6">
-            <button className="hover:text-gray-900">Terms of Service</button>
-            <button className="hover:text-gray-900">API</button>
-            <button className="hover:text-gray-900">
+          <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6">
+            <a href="#" className="hover:text-blue-500">Terms of Service</a>
+            <a href="#" className="hover:text-blue-500">API</a>
+            <a href="#" className="hover:text-blue-500">
               Data Processing Agreement
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -90,4 +82,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

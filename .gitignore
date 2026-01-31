@@ -12,6 +12,9 @@ node_modules
 # production
 /build
 
+# local only: run npm from repo root (frontend/ has redirect package.json)
+/frontend
+
 # misc
 .DS_Store
 .env.local

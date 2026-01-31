@@ -109,7 +109,7 @@
          style={{
            '--speed': speed,
            '--numItems': numItems,
-           '--item-width': itemWidth,
+           '--item-width': 'min(350px, 85vw)',
            '--item-gap': itemGap,
            '--direction': direction,
            maskImage: 'linear-gradient(to right, transparent, black 2rem, black calc(100% - 2rem), transparent)'
@@ -127,7 +127,7 @@
                key={index}
                className="flex-shrink-0 bg-white rounded-2xl p-6 shadow-lg border border-gray-200"
                style={{
-                 width: 'var(--item-width)',
+                 width: 'min(350px, 85vw)',
                  marginRight: 'var(--item-gap)',
                  animation: `marquee-move var(--speed) linear infinite ${direction}`
                }}
@@ -168,17 +168,17 @@
    };
  
    return (
-     <div className="py-16 bg-gray-50">
-       <div className="container mx-auto px-4">
+     <div className="py-12 md:py-16 bg-gray-50">
+       <div className="container mx-auto px-4 sm:px-6">
          {/* Header */}
-         <div className="text-center mb-12">
+         <div className="text-center mb-8 md:mb-12">
            <p className="text-teal-500 text-sm font-medium mb-2">
              What Clients Say
            </p>
-           <h2 className="text-4xl font-bold text-gray-900 mb-4">
+           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
              Our Testimonials
            </h2>
-           <p className="text-gray-600 max-w-2xl mx-auto">
+           <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base px-2">
              Hear from our clients on how Transformative Health Network has delivered measurable impact and strategic value.
            </p>
          </div>

@@ -35,11 +35,11 @@ const features = [
 
 const WhatSets = () => {
   return (
-    <section className="bg-gradient-to-b from-[#FFFFFF] to-[#69B0E9] py-16 md:py-20 px-4">
+    <section className="bg-gradient-to-b from-[#FFFFFF] to-[#69B0E9] py-12 md:py-16 lg:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             What Sets Us Apart
           </h2>
           <p className="text-base md:text-lg text-gray-700">
