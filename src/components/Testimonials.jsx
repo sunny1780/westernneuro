@@ -100,7 +100,6 @@
    const Marquee = ({ testimonials, direction = 'forwards' }) => {
      const numItems = testimonials.length;
      const speed = '40s'; // Testimonials ke liye thoda slow
-     const itemWidth = '350px';
      const itemGap = '20px';
  
      return (

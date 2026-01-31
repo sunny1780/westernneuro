@@ -35,10 +35,10 @@ const Footer = () => {
           <div>
             <h4 className="text-gray-900 font-semibold mb-4">Product</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-blue-500">Features</a></li>
-              <li><a href="#" className="hover:text-blue-500">Integrations</a></li>
-              <li><a href="#" className="hover:text-blue-500">Pricing</a></li>
-              <li><a href="#" className="hover:text-blue-500">Changelog</a></li>
+              <li><a href="/" className="hover:text-blue-500">Features</a></li>
+              <li><a href="/" className="hover:text-blue-500">Integrations</a></li>
+              <li><a href="/" className="hover:text-blue-500">Pricing</a></li>
+              <li><a href="/" className="hover:text-blue-500">Changelog</a></li>
             </ul>
           </div>
 
@@ -46,10 +46,10 @@ const Footer = () => {
           <div>
             <h4 className="text-gray-900 font-semibold mb-4">Company</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-blue-500">About Us</a></li>
-              <li><a href="#" className="hover:text-blue-500">Blog</a></li>
-              <li><a href="#" className="hover:text-blue-500">Careers</a></li>
-              <li><a href="#" className="hover:text-blue-500">Customers</a></li>
+              <li><a href="/" className="hover:text-blue-500">About Us</a></li>
+              <li><a href="/blogs" className="hover:text-blue-500">Blog</a></li>
+              <li><a href="/" className="hover:text-blue-500">Careers</a></li>
+              <li><a href="/" className="hover:text-blue-500">Customers</a></li>
             </ul>
           </div>
 
@@ -57,10 +57,10 @@ const Footer = () => {
           <div>
             <h4 className="text-gray-900 font-semibold mb-4">Resources</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-blue-500">Community</a></li>
-              <li><a href="#" className="hover:text-blue-500">Contact</a></li>
-              <li><a href="#" className="hover:text-blue-500">System Status</a></li>
-              <li><a href="#" className="hover:text-blue-500">Terms of Service</a></li>
+              <li><a href="/" className="hover:text-blue-500">Community</a></li>
+              <li><a href="/" className="hover:text-blue-500">Contact</a></li>
+              <li><a href="/" className="hover:text-blue-500">System Status</a></li>
+              <li><a href="/" className="hover:text-blue-500">Terms of Service</a></li>
             </ul>
           </div>
         </div>
@@ -69,9 +69,9 @@ const Footer = () => {
         <div className="border-t border-blue-100 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between text-sm gap-4">
           <p>© 2025 MACreative All rights reserved.</p>
           <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6">
-            <a href="#" className="hover:text-blue-500">Terms of Service</a>
-            <a href="#" className="hover:text-blue-500">API</a>
-            <a href="#" className="hover:text-blue-500">
+            <a href="/" className="hover:text-blue-500">Terms of Service</a>
+            <a href="/" className="hover:text-blue-500">API</a>
+            <a href="/" className="hover:text-blue-500">
               Data Processing Agreement
             </a>
           </div>
