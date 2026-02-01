@@ -2,34 +2,34 @@ import React from "react";
 
 const features = [
   {
-    title: "Comprehensive Service Offering",
+    title: " Triple Board Certification",
     description:
-      "To assist with compliance, product development, and operations, we link our clients with reputable medical consultants and healthcare IT specialists. Perfect for clinics, startups, or anyone looking for strategic advice on healthcare.",
+      "Our Medical Director, Dr. Fawaz Faisal, holds triple board certification in Neurology, Clinical Neurophysiology, and Sleep Medicine, ensuring the highest level of specialized expertise for comprehensive patient care.",
   },
   {
-    title: "Strategic Healthcare Partnerships",
+    title: "Advanced Diagnostic Technology",
     description:
-      "We build bridges between healthcare professionals, startups, and global education partners so that innovation reaches the people and places where it’s needed most.",
+      "We utilize state-of-the-art diagnostic equipment, including EEG, EMG, and nerve conduction studies, to provide accurate assessments and develop effective treatment strategies for complex neurological conditions.",
   },
   {
-    title: "Expert Compliance Guidance",
+    title: "Comprehensive Sleep Medicine",
     description:
-      "Navigate complex healthcare regulations with confidence. Our network of consultants helps ensure your products and operations stay aligned with the latest standards.",
+      "As certified sleep specialists, we offer complete sleep disorder evaluation and treatment, including in-office sleep studies for narcolepsy, sleep apnea, and restless leg syndrome with expert analysis.",
   },
   {
-    title: "Flexible Engagement Model",
+    title: "Patient-Centered Approach",
     description:
-      "Whether you’re an early‑stage startup or an established organization, our flexible engagement options adapt to your pace, resources, and goals.",
+      "We prioritize thorough patient education and individualized attention, ensuring every patient fully understands their condition and treatment options, fostering trust and better health outcomes with each visit.",
   },
   {
-    title: "Technology & IT Specialists",
+    title: " 12+ Years Serving Burbank",
     description:
-      "Tap into experienced healthcare IT specialists for product architecture, integrations, data flows, and secure infrastructure tailored to your use case.",
+      "With over a decade of dedicated service to the Burbank community, we've established ourselves as one of the leading neurology practices in the valley with a proven track record of excellence.",
   },
   {
-    title: "Global Perspective, Local Impact",
+    title: "Prestigious Academic Affiliations",
     description:
-      "We blend global best practices with local healthcare context so your solutions are practical, scalable, and patient‑centric.",
+      "Our physicians serve as Assistant Clinical Professors at UCLA and maintain hospital privileges at Providence Saint Joseph, UCLA Medical Center, and Cedars-Sinai Medical Cente, bringing academic excellence to patient care.",
   },
 ];
 

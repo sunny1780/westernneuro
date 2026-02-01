@@ -17,19 +17,16 @@ const Westtwo = () => {
           {/* Right - Text Content */}
           <div className="text-left">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-              Our Western Neurological Associates
+            About Western Neurological Associates
             </h2>
             <p className="text-gray-600 mb-4">
-              Located in the heart of Burbank, Western Neurological Associates has
-              been serving the community for over 12 years.
+            Established in the heart of Burbank over 12 years ago, Western Neurological Associates has become the valley's premier destination for comprehensive neurological and sleep disorder treatment. Under the expert leadership of Dr. Fawaz Faisal, our practice combines cutting-edge diagnostic technology with a deeply personal approach to patient care.
             </p>
             <p className="text-gray-600 mb-4">
-              Our Medical Director, Dr. Fawaz Faisal is triple board certified in
-              Neurology, Clinical Neurophysiology, and Sleep medicine. He has
-              established Western Neurological Associates as one of the leading
-              neurology practices in the valley.
+            We believe that exceptional neurological care extends beyond accurate diagnosis—it requires understanding each patient's unique circumstances, concerns, and goals. Our team is dedicated to providing thorough education about your condition and treatment options, ensuring you feel empowered and confident in every step of your healthcare journey.
+
             </p>
-            <p className="text-gray-600 mb-4">
+            {/* <p className="text-gray-600 mb-4">
               We are committed to providing quality care with compassion and
               individualized attention to each of our patients.
             </p>
@@ -43,7 +40,7 @@ const Westtwo = () => {
               If you have any questions or concerns, please do not hesitate to
               contact us by phone, fax, or email. We are also working on adding
               Facebook and Twitter to keep our community informed.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

@@ -8,16 +8,14 @@ const Westernhero = () => {
           {/* Left - Text Content */}
           <div className="text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#053759] leading-tight mb-6">
-              Western
+            Leading Burbank's 
               <br />
-              Neurological
+              Neurological Excellence
               <br />
-              Associates
+              Since 2010 
             </h1>
             <p className="text-gray-500 text-base md:text-lg max-w-lg leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis
+            Where Advanced Medicine Meets Compassionate Care
             </p>
           </div>
 

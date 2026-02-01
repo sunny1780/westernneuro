@@ -132,7 +132,7 @@ const Navbar = () => {
           </div>
           <Link
             to="/book-appointment"
-            className="rounded-md bg-[#1893FF] text-white text-sm font-semibold px-5 py-2.5 shadow-sm hover:bg-[#0f80dd] transition inline-block"
+            className="rounded-md bg-[#1893FF] text-white text-xs font-semibold px-3 py-2 md:text-sm md:px-5 md:py-2.5 shadow-sm hover:bg-[#0f80dd] transition inline-block"
           >
             Book Appointment
           </Link>
