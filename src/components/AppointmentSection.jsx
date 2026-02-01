@@ -151,7 +151,7 @@ export default function AppointmentSection() {
               {/* Button */}
               <button
                 type="submit"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
+                className="bg-[#1299ED] hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
               >
                 Request Consultation
               </button>

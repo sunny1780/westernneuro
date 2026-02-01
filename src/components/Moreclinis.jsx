@@ -54,7 +54,7 @@ const Moreclinis = () => {
             {/* Button */}
             <a
               href="/"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition"
+              className="inline-block bg-[#1299ED] hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition"
             >
               Learn More
             </a>

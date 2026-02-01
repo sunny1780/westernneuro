@@ -34,7 +34,7 @@ const Herotwo = () => {
             </div>
             <a
               href="/"
-              className="inline-flex items-center justify-center bg-[#1893FF] hover:bg-[#0f80dd] text-white font-medium px-6 py-3 rounded-lg transition whitespace-nowrap shrink-0"
+              className="inline-flex items-center justify-center bg-[#1299ED] hover:bg-[#0f80dd] text-white font-medium px-6 py-3 rounded-lg transition whitespace-nowrap shrink-0"
             >
               View All Interviews
             </a>

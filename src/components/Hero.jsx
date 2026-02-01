@@ -31,7 +31,7 @@ const Hero = () => {
         </p>
         <a
           href="/services"
-          className="inline-block bg-[#1E90FF] hover:bg-[#1a7fe6] text-white font-medium px-8 py-4 rounded-lg transition"
+          className="inline-block bg-[#1299ED] hover:bg-[#1a7fe6] text-white font-medium px-8 py-4 rounded-lg transition"
         >
           Explore Services
         </a>

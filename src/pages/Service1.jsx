@@ -5,15 +5,27 @@ import ServiceSection from '../components/ServiceSection';
 import InfoSection from '../components/InfoSection';
 import AnimatedPage from '../components/AnimatedPage';
 import AnimatedSection from '../components/AnimatedSection';
+import { epilepsyContent } from '../data/servicesPageContent';
 
 function Service1() {
+  const { serviceSection, infoSection } = epilepsyContent;
   return (
     <AnimatedPage>
-      <AnimatedSection><ServiceSection
-        title="Epilepsy"
-        description="Expert care for epilepsy management with advanced diagnostics, personalized treatment plans, and ongoing support to help you achieve optimal seizure control and quality of life."
-      /></AnimatedSection>
-      <AnimatedSection delay={80}><InfoSection /></AnimatedSection>
+      <AnimatedSection>
+        <ServiceSection
+          title={serviceSection.title}
+          description={serviceSection.description}
+          image={serviceSection.image}
+        />
+      </AnimatedSection>
+      <AnimatedSection delay={80}>
+        <InfoSection
+          image1={infoSection.image1}
+          image2={infoSection.image2}
+          block1={infoSection.block1}
+          block2={infoSection.block2}
+        />
+      </AnimatedSection>
       <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
       <AnimatedSection><Footer /></AnimatedSection>
     </AnimatedPage>

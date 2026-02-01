@@ -1,6 +1,7 @@
 const ServiceSection = ({
     title = "Our Services",
-    description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+    description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+    image
   }) => {
     return (
       <section className="py-24 text-left">
@@ -9,7 +10,15 @@ const ServiceSection = ({
             
             {/* Image Card */}
             <div className="flex justify-center lg:justify-start">
-              <div className="w-[320px] sm:w-[380px] md:w-[420px] h-[480px] sm:h-[520px] bg-gray-200 rounded-2xl" />
+              <div className="w-[320px] sm:w-[380px] md:w-[420px] h-[480px] sm:h-[520px] bg-gray-200 rounded-2xl overflow-hidden">
+                {image ? (
+                  <img
+                    src={image}
+                    alt={title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : null}
+              </div>
             </div>
   
             {/* Content */}
