@@ -6,7 +6,7 @@ import AnimatedPage from '../components/AnimatedPage';
 import AnimatedSection from '../components/AnimatedSection';
 import AppointmentSection from '../components/AppointmentSection';
 
-function FacilityTour() {   
+function FacilityTour() {
   return (
     <AnimatedPage>
       <AnimatedSection><FacilityTourHero /></AnimatedSection>
