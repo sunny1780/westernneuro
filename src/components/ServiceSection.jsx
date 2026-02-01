@@ -1,4 +1,7 @@
-const ServiceSection = ({ title = "Our Services" }) => {
+const ServiceSection = ({
+    title = "Our Services",
+    description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+  }) => {
     return (
       <section className="py-24 text-left">
         <div className="max-w-7xl mx-auto px-6">
@@ -15,9 +18,7 @@ const ServiceSection = ({ title = "Our Services" }) => {
                 {title}
               </h2>
               <p className="text-gray-400 max-w-xl leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis
+                {description}
               </p>
             </div>
   

@@ -7,11 +7,11 @@ const EducationTraining = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">
           Education & Training
         </h2>
-        <p className="text-gray-600 mb-10 md:mb-12 leading-relaxed max-w-3xl">
+        {/* <p className="text-gray-600 mb-10 md:mb-12 leading-relaxed max-w-3xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation.
-        </p>
+        </p> */}
 
         <div className="space-y-8 md:space-y-10">
           {/* Education */}

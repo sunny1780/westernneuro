@@ -9,7 +9,7 @@ import AnimatedSection from '../components/AnimatedSection';
 function Service2() {
   return (
     <AnimatedPage>
-      <AnimatedSection><ServiceSection title="Service 2" /></AnimatedSection>
+      <AnimatedSection><ServiceSection title="Headaches" /></AnimatedSection>
       <AnimatedSection delay={80}><InfoSection /></AnimatedSection>
       <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
       <AnimatedSection><Footer /></AnimatedSection>

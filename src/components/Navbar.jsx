@@ -33,83 +33,92 @@ const Navbar = () => {
 
           {/* Nav links - desktop */}
           <ul className="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium text-gray-800">
-            <li
-              className="relative flex items-center gap-1 hover:text-gray-900 cursor-pointer"
-              onMouseEnter={() => setAboutDropdownOpen(true)}
-              onMouseLeave={() => setAboutDropdownOpen(false)}
-            >
-              About
-              {chevronDown}
-              {aboutDropdownOpen && (
-                <div
-                  className="absolute top-full left-0 mt-1 py-1 rounded-lg shadow-lg min-w-[240px] z-50 text-left"
-                  style={{ background: "linear-gradient(to right, #96C7F2, white)" }}
-                >
-                  <Link
-                    to="/about/doctor-faisal"
-                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
-                  >
-                    About Dr. Fawaz Faisal
-                  </Link>
-                  <Link
-                    to="/about"
-                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
-                  >
-                    About Western Neurological Associates
-                  </Link>
-                  <Link
-                    to="/facility-tour"
-                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
-                  >
-                    Facility Tour
-                  </Link>
-                </div>
-              )}
+            <li className="relative">
+              <div
+                className="flex items-center gap-1 hover:text-gray-900 cursor-pointer"
+                onMouseEnter={() => setAboutDropdownOpen(true)}
+                onMouseLeave={() => setAboutDropdownOpen(false)}
+              >
+                About
+                {chevronDown}
+                {/* pt-1 bridge so dropdown doesn't disappear when moving mouse down */}
+                {aboutDropdownOpen && (
+                  <div className="absolute left-0 top-full pt-1">
+                    <div
+                      className="py-1 rounded-lg shadow-lg min-w-[240px] z-50 text-left"
+                      style={{ background: "linear-gradient(to right, #96C7F2, white)" }}
+                    >
+                      <Link
+                        to="/about/doctor-faisal"
+                        className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                      >
+                        About Dr. Fawaz Faisal
+                      </Link>
+                      <Link
+                        to="/about"
+                        className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                      >
+                        About Western Neurological Associates
+                      </Link>
+                      <Link
+                        to="/facility-tour"
+                        className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                      >
+                        Facility Tour
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
             </li>
-            <li
-              className="relative flex items-center gap-1 hover:text-gray-900 cursor-pointer"
-              onMouseEnter={() => setServicesDropdownOpen(true)}
-              onMouseLeave={() => setServicesDropdownOpen(false)}
-            >
-              Services
-              {chevronDown}
-              {servicesDropdownOpen && (
-                <div
-                  className="absolute top-full left-0 mt-1 py-1 rounded-lg shadow-lg min-w-[200px] z-50 text-left"
-                  style={{ background: "linear-gradient(to right, #96C7F2, white)" }}
-                >
+            <li className="relative">
+              <div
+                className="flex items-center gap-1 hover:text-gray-900 cursor-pointer"
+                onMouseEnter={() => setServicesDropdownOpen(true)}
+                onMouseLeave={() => setServicesDropdownOpen(false)}
+              >
+                Services
+                {chevronDown}
+                {servicesDropdownOpen && (
+                  <div className="absolute left-0 top-full pt-1">
+                    <div
+                      className="py-1 rounded-lg shadow-lg min-w-[200px] z-50 text-left"
+                      style={{ background: "linear-gradient(to right, #96C7F2, white)" }}
+                    >
                   <Link
-                    to="/services/1"
+                    to="/services/epilepsy"
                     className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
                   >
-                    Service 1
+                    Epilepsy
                   </Link>
                   <Link
-                    to="/services/2"
+                    to="/services/headaches"
                     className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
                   >
-                    Service 2
+                    Headaches
                   </Link>
                   <Link
-                    to="/services/3"
+                    to="/services/neuromuscular-disorders"
                     className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
                   >
-                    Service 3
+                    Neuromuscular Disorders
                   </Link>
                   <Link
-                    to="/services/4"
+                    to="/services/nerve-conduction-studies"
                     className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
                   >
-                    Service 4
+                    Nerve Conduction Studies
                   </Link>
                   <Link
-                    to="/services/5"
+                    to="/services/sleep-disorders"
                     className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
                   >
-                    Service 5
+                    Sleep Disorders
                   </Link>
-                </div>
-              )}
+                    </div>
+                  </div>
+                )}
+              </div>
             </li>
             <li>
               <Link to="/patient-information" className="hover:text-gray-900">
@@ -170,11 +179,11 @@ const Navbar = () => {
             </li>
             <li className="border-b border-gray-200 pb-2">
               <span className="block py-2 text-gray-500 text-xs font-semibold uppercase">Services</span>
-              <Link to="/services/1" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Service 1</Link>
-              <Link to="/services/2" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Service 2</Link>
-              <Link to="/services/3" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Service 3</Link>
-              <Link to="/services/4" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Service 4</Link>
-              <Link to="/services/5" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Service 5</Link>
+              <Link to="/services/epilepsy" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Epilepsy</Link>
+              <Link to="/services/headaches" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Headaches</Link>
+              <Link to="/services/neuromuscular-disorders" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Neuromuscular Disorders</Link>
+              <Link to="/services/nerve-conduction-studies" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Nerve Conduction Studies</Link>
+              <Link to="/services/sleep-disorders" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Sleep Disorders</Link>
             </li>
             <li><Link to="/patient-information" onClick={() => setMobileMenuOpen(false)} className="block py-2">Patient Information</Link></li>
             <li><Link to="/blogs" onClick={() => setMobileMenuOpen(false)} className="block py-2">Blogs</Link></li>

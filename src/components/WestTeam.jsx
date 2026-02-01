@@ -20,7 +20,7 @@ const WestTeam = () => {
           Our Team
         </h2>
         <p className="text-base md:text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Our physicians are affiliated with these local hospitals
+        Our highly trained staff combines medical expertise with genuine compassion, working collaboratively to provide seamless, comprehensive care for every patient.
         </p>
 
         {/* Team Cards */}

@@ -10,9 +10,7 @@ const PatientInfo = () => {
 
         </h1>
         <p className="text-gray-500 text-base md:text-lg max-w-lg leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris.
+        Everything You Need for Your Visit
         </p>
       </div>
 

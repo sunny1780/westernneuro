@@ -2,7 +2,7 @@ import { Download } from "lucide-react";
 
 const documents = [
   {
-    title: "Welcome letter",
+    title: "Required Documents",
   },
 //   {
 //     title: "New patient registration form",
@@ -22,11 +22,12 @@ export default function SleepStudyInformation() {
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2">
       Sleep Study Information
       </h1>
-      <h2 className="text-lg  mb-4 font-semibold">Lorem ipsum</h2>
+      <h2 className="text-lg  mb-4 font-semibold">Preparing for Your Sleep Study</h2>
 
-      <p className="text-gray-400 max-w-3xl mb-12">
-        Please arrive early so that we can complete your paperwork. To save time
-        during your initial visit, please print out and complete these forms:
+      <p className="max-w-3xl mb-12">
+      Preparing for Your Sleep Study
+If you've been scheduled for a sleep study at our facility, proper preparation is essential for accurate results. Please review the instructions below and download the complete patient guide to ensure you're fully prepared for your appointment.
+
       </p>
 
       {/* Cards */}
@@ -39,7 +40,7 @@ export default function SleepStudyInformation() {
             <h3 className="text-lg font-semibold mb-6">{doc.title}</h3>
 
             <button className="flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-lg w-fit">
-              Download
+            Patient Instructions for Sleep Study
               <Download size={16} />
             </button>
           </div>
@@ -47,17 +48,18 @@ export default function SleepStudyInformation() {
       </div>
 
       {/* Bottom Section */}
-      <h3 className="text-xl font-semibold mb-2">Lorem ipsum</h3>
-      <p className="text-gray-400 mb-4">Also, please bring the following:</p>
+      <h3 className="text-xl font-semibold mb-2">What to Bring to Your Sleep Study</h3>
+      <p className=" mb-4">Also, please bring the following:</p>
 
       <ul className="list-disc list-inside text-gray-400 space-y-2 max-w-2xl">
-        <li>Patient’s insurance card</li>
+        <li>Patient's insurance card and identification</li>
         <li>
-          List of current prescriptions and/or over-the-counter medication,
-          including dose and frequency
+        Comfortable sleepwear (two-piece pajamas recommended)
         </li>
-        <li>Information about patient’s medical and surgical history</li>
-        <li>Recent test results, x-rays, or relevant records</li>
+        <li>Personal toiletries and any nighttime medications</li>
+        <li>A book or relaxing activity for before bedtime</li>
+        <li>List of current medications you're taking</li>
+        <li>Clean, product-free hair (no gels, sprays, or oils)</li>
       </ul>
     </div>
   );

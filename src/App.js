@@ -28,11 +28,11 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/book-appointment" element={<BookAppointment />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/services/1" element={<Service1 />} />
-          <Route path="/services/2" element={<Service2 />} />
-          <Route path="/services/3" element={<Service3 />} />
-          <Route path="/services/4" element={<Service4 />} />
-          <Route path="/services/5" element={<Service5 />} />
+          <Route path="/services/epilepsy" element={<Service1 />} />
+          <Route path="/services/headaches" element={<Service2 />} />
+          <Route path="/services/neuromuscular-disorders" element={<Service3 />} />
+          <Route path="/services/nerve-conduction-studies" element={<Service4 />} />
+          <Route path="/services/sleep-disorders" element={<Service5 />} />
           <Route path="/about" element={<AboutWesternNeurologicalAssociates />} />
           <Route path="/about/doctor-faisal" element={<AboutDoctorFaisal />} />
           <Route path="/facility-tour" element={<FacilityTour />} />

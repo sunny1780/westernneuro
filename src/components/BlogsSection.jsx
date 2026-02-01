@@ -18,12 +18,10 @@ const BlogsSection = () => {
             {/* Content */}
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold text-[#053759] mb-4 md:mb-6">
-                Blogs
+              Neurological Health Insights & Education 
               </h2>
-              <p className="text-gray-400 max-w-xl leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis
+              <p className=" max-w-xl leading-relaxed">
+              Expert Articles on Brain Health, Sleep, and Neurological Wellness
               </p>
             </div>
   

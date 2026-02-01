@@ -9,7 +9,10 @@ import AnimatedSection from '../components/AnimatedSection';
 function Service1() {
   return (
     <AnimatedPage>
-      <AnimatedSection><ServiceSection title="Service 1" /></AnimatedSection>
+      <AnimatedSection><ServiceSection
+        title="Epilepsy"
+        description="Expert care for epilepsy management with advanced diagnostics, personalized treatment plans, and ongoing support to help you achieve optimal seizure control and quality of life."
+      /></AnimatedSection>
       <AnimatedSection delay={80}><InfoSection /></AnimatedSection>
       <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
       <AnimatedSection><Footer /></AnimatedSection>

@@ -47,9 +47,9 @@ export default function FirstAppointment() {
 
       {/* Bottom Section */}
       <h3 className="text-xl font-semibold mb-2">What to Bring</h3>
-      <p className="text-gray-400 mb-4">Please bring the following items to your first visit:</p>
+      <p className=" mb-4">Please bring the following items to your first visit:</p>
 
-      <ul className="list-disc list-inside text-gray-400 space-y-2 max-w-2xl">
+      <ul className="list-disc list-inside space-y-2 max-w-2xl">
         <li>Patient's insurance card and photo identification</li>
         <li>
         List of current medications, including dose and frequency.
