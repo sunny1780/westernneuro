@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   const phoneIcon = (
     <svg className="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -20,7 +21,7 @@ const Navbar = () => {
   return (
     <header
       className="w-full sticky top-0 z-50 font-sans"
-      style={{ background: "linear-gradient(to right, #96C7F2, white)" }}
+      style={{ background: "#0000000D" }}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 py-3 md:py-4">
         {/* Left: Logo + nav links */}
@@ -45,7 +46,7 @@ const Navbar = () => {
                   style={{ background: "linear-gradient(to right, #96C7F2, white)" }}
                 >
                   <Link
-                    to="/#burbank"
+                    to="/about/doctor-faisal"
                     className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
                   >
                     About Dr. Fawaz Faisal
@@ -57,7 +58,7 @@ const Navbar = () => {
                     About Western Neurological Associates
                   </Link>
                   <Link
-                    to="/"
+                    to="/facility-tour"
                     className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
                   >
                     Facility Tour
@@ -65,11 +66,50 @@ const Navbar = () => {
                 </div>
               )}
             </li>
-            <li>
-              <Link to="/services" className="flex items-center gap-1 hover:text-gray-900">
-                <span>Services</span>
-                {chevronDown}
-              </Link>
+            <li
+              className="relative flex items-center gap-1 hover:text-gray-900 cursor-pointer"
+              onMouseEnter={() => setServicesDropdownOpen(true)}
+              onMouseLeave={() => setServicesDropdownOpen(false)}
+            >
+              Services
+              {chevronDown}
+              {servicesDropdownOpen && (
+                <div
+                  className="absolute top-full left-0 mt-1 py-1 rounded-lg shadow-lg min-w-[200px] z-50 text-left"
+                  style={{ background: "linear-gradient(to right, #96C7F2, white)" }}
+                >
+                  <Link
+                    to="/services/1"
+                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                  >
+                    Service 1
+                  </Link>
+                  <Link
+                    to="/services/2"
+                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                  >
+                    Service 2
+                  </Link>
+                  <Link
+                    to="/services/3"
+                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                  >
+                    Service 3
+                  </Link>
+                  <Link
+                    to="/services/4"
+                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                  >
+                    Service 4
+                  </Link>
+                  <Link
+                    to="/services/5"
+                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                  >
+                    Service 5
+                  </Link>
+                </div>
+              )}
             </li>
             <li>
               <Link to="/patient-information" className="hover:text-gray-900">
@@ -124,11 +164,18 @@ const Navbar = () => {
           <ul className="flex flex-col gap-4 text-sm font-medium text-gray-800">
             <li className="border-b border-gray-200 pb-2">
               <span className="block py-2 text-gray-500 text-xs font-semibold uppercase">About</span>
-              <Link to="/#burbank" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">About Dr. Fawaz Faisal</Link>
+              <Link to="/about/doctor-faisal" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">About Dr. Fawaz Faisal</Link>
               <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">About Western Neurological Associates</Link>
-              <Link to="/" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Facility Tour</Link>
+              <Link to="/facility-tour" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Facility Tour</Link>
             </li>
-            <li><Link to="/services" onClick={() => setMobileMenuOpen(false)} className="block py-2">Services</Link></li>
+            <li className="border-b border-gray-200 pb-2">
+              <span className="block py-2 text-gray-500 text-xs font-semibold uppercase">Services</span>
+              <Link to="/services/1" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Service 1</Link>
+              <Link to="/services/2" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Service 2</Link>
+              <Link to="/services/3" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Service 3</Link>
+              <Link to="/services/4" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Service 4</Link>
+              <Link to="/services/5" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Service 5</Link>
+            </li>
             <li><Link to="/patient-information" onClick={() => setMobileMenuOpen(false)} className="block py-2">Patient Information</Link></li>
             <li><Link to="/blogs" onClick={() => setMobileMenuOpen(false)} className="block py-2">Blogs</Link></li>
             <li className="pt-2 border-t border-gray-200 flex items-center gap-2">

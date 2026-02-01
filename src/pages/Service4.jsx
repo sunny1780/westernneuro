@@ -6,10 +6,10 @@ import InfoSection from '../components/InfoSection';
 import AnimatedPage from '../components/AnimatedPage';
 import AnimatedSection from '../components/AnimatedSection';
 
-function Services() {
+function Service4() {
   return (
     <AnimatedPage>
-      <AnimatedSection><ServiceSection /></AnimatedSection>
+      <AnimatedSection><ServiceSection title="Service 4" /></AnimatedSection>
       <AnimatedSection delay={80}><InfoSection /></AnimatedSection>
       <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
       <AnimatedSection><Footer /></AnimatedSection>
@@ -17,4 +17,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Service4;

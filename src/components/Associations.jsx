@@ -1,48 +1,86 @@
-import React from 'react';
+import React, { useState } from "react";
 
-const Associations = () => {
-  const logos = [
-    { src: '/images/one.png', alt: 'American Board of Psychiatry and Neurology' },
-    { src: '/images/two.png', alt: 'American Board of Sleep Medicine' },
-    { src: '/images/three.png', alt: 'American Board of Clinical Neurophysiology' },
-  ];
+const defaultAssociations = [
+  {
+    title: "American Board of Psychiatry and Neurology",
+    abbr: "ABPN",
+    year: "1934",
+    className: "bg-[#1e3a5f] text-white",
+    image: "/images/one.png",
+  },
+  {
+    title: "American Board of Sleep Medicine",
+    abbr: "ABSM",
+    className: "text-[#0d9488]",
+    image: "/images/two.png",
+  },
+  {
+    title: "American Board of Clinical Neurophysiology",
+    abbr: "ABCN",
+    className: "text-[#7c3aed]",
+    image: "/images/three.png",
+  },
+];
+
+const Associations = ({ associations = defaultAssociations }) => {
+  const [imageErrors, setImageErrors] = useState({});
+
+  const handleImageError = (index) => {
+    setImageErrors((prev) => ({ ...prev, [index]: true }));
+  };
 
   return (
-    <section className="bg-white py-12 md:py-16 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto">
-        {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
+    <section className=" py-16 md:py-24 px-4 sm:px-6 md:px-12 lg:px-16">
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Associations
         </h2>
-
-        {/* Subtitle */}
-        <p className="text-base md:text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Our physicians are affiliated with these local hospitals
+        <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto mb-12 md:mb-16">
+          Our physicians are affiliated with these prestigious local hospitals
+          and board certifications.
         </p>
 
-        {/* Logo cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
-          {logos.map((logo, index) => (
+        {/* Certification cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+          {associations.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md p-6 flex items-center justify-center min-h-[140px]"
+              className="bg-white rounded-2xl shadow-md p-6 md:p-8 flex flex-col items-center justify-center min-h-[200px]"
             >
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="max-h-24 w-full object-contain"
-              />
+              {item.image && !imageErrors[index] ? (
+                <div className="w-full flex items-center justify-center min-h-[120px] md:min-h-[140px] px-2">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="max-h-[100px] md:max-h-[120px] w-auto max-w-full object-contain"
+                    onError={() => handleImageError(index)}
+                  />
+                </div>
+              ) : index === 0 ? (
+                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-[#1e3a5f] flex flex-col items-center justify-center text-white border-2 border-white shadow-inner">
+                  <span className="text-lg md:text-xl font-bold leading-tight">
+                    {item.abbr}
+                  </span>
+                  {item.year && (
+                    <span className="text-xs font-medium">{item.year}</span>
+                  )}
+                </div>
+              ) : (
+                <div
+                  className={`text-2xl md:text-3xl font-bold ${item.className}`}
+                >
+                  {item.abbr}
+                </div>
+              )}
             </div>
           ))}
         </div>
 
-        {/* Lorem ipsum text */}
-        <p className="text-gray-600 text-left max-w-4xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur.
+        {/* Bottom description */}
+        <p className="text-gray-700 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+          Dr. Fawaz Faisal maintains active privileges at Providence Saint Joseph
+          Hospital and UCLA Medical Center, holding triple board certification
+          in Neurology, Sleep Medicine, and Clinical Neurophysiology.
         </p>
       </div>
     </section>

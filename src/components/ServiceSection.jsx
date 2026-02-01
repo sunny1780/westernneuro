@@ -1,4 +1,4 @@
-const ServiceSection = () => {
+const ServiceSection = ({ title = "Our Services" }) => {
     return (
       <section className="py-24 text-left">
         <div className="max-w-7xl mx-auto px-6">
@@ -12,7 +12,7 @@ const ServiceSection = () => {
             {/* Content */}
             <div>
               <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold text-[#053759] mb-4 md:mb-6">
-                Our Services
+                {title}
               </h2>
               <p className="text-gray-400 max-w-xl leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

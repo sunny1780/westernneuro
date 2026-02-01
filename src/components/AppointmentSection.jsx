@@ -42,105 +42,105 @@ export default function AppointmentSection() {
           </div>
   
           {/* Right Form Card */}
-          <div className="bg-white rounded-2xl p-5 sm:p-6 md:p-8 border border-gray-200 shadow-[0_4px_24px_rgba(0,0,0,0.06)]">
-            <h2 className="text-xl font-semibold text-gray-900 mb-6">
+          <div className="bg-white rounded-2xl p-5 sm:p-6 md:p-8 border border-gray-200 shadow-[0_4px_24px_rgba(0,0,0,0.06)] text-left">
+            <h2 className="text-xl font-semibold text-gray-900 mb-6 text-left">
               Appointment Details
             </h2>
-  
-            <form className="space-y-5">
+
+            <form className="space-y-5 text-left">
               {/* First + Last Name */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium mb-1">
+                <div className="text-left">
+                  <label className="block text-sm font-medium mb-1 text-left">
                     First Name
                   </label>
                   <input
                     type="text"
                     placeholder="Input"
-                    className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
                   />
                 </div>
-  
-                <div>
-                  <label className="block text-sm font-medium mb-1">
+
+                <div className="text-left">
+                  <label className="block text-sm font-medium mb-1 text-left">
                     Last Name
                   </label>
                   <input
                     type="text"
                     placeholder="Input"
-                    className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
                   />
                 </div>
               </div>
   
               {/* Phone */}
-              <div>
-                <label className="block text-sm font-medium mb-1">
+              <div className="text-left">
+                <label className="block text-sm font-medium mb-1 text-left">
                   Phone Number
                 </label>
                 <input
                   type="tel"
                   placeholder="Input"
-                  className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
                 />
               </div>
-  
+
               {/* Email */}
-              <div>
-                <label className="block text-sm font-medium mb-1">
+              <div className="text-left">
+                <label className="block text-sm font-medium mb-1 text-left">
                   Email
                 </label>
                 <input
                   type="email"
                   placeholder="Input"
-                  className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
                 />
               </div>
-  
+
               {/* Procedure */}
-              <div>
-                <label className="block text-sm font-medium mb-1">
+              <div className="text-left">
+                <label className="block text-sm font-medium mb-1 text-left">
                   Procedure of Interest
                 </label>
-                <select className="w-full border rounded-lg px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select className="w-full border rounded-lg px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
                   <option>Picnic</option>
                   <option>Consultation</option>
                   <option>Treatment</option>
                 </select>
               </div>
-  
+
               {/* Date & Time */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium mb-1">
+                <div className="text-left">
+                  <label className="block text-sm font-medium mb-1 text-left">
                     Date <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="date"
-                    className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
                   />
                 </div>
-  
-                <div>
-                  <label className="block text-sm font-medium mb-1">
+
+                <div className="text-left">
+                  <label className="block text-sm font-medium mb-1 text-left">
                     Time <span className="text-red-500">*</span>
                   </label>
-                  <select className="w-full border rounded-lg px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <select className="w-full border rounded-lg px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
                     <option>9 AM</option>
                     <option>10 AM</option>
                     <option>11 AM</option>
                   </select>
                 </div>
               </div>
-  
+
               {/* Note */}
-              <div>
-                <label className="block text-sm font-medium mb-1">
+              <div className="text-left">
+                <label className="block text-sm font-medium mb-1 text-left">
                   Note
                 </label>
                 <textarea
                   rows="4"
-                  className="w-full border rounded-lg px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border rounded-lg px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
                   placeholder="Write your note here..."
                 ></textarea>
                 <p className="text-right text-xs text-gray-400 mt-1">
