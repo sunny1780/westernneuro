@@ -57,7 +57,7 @@ const Navbar = () => {
                     About Western Neurological Associates
                   </Link>
                   <Link
-                    to="/"
+                    to="/facility-tour"
                     className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
                   >
                     Facility Tour
@@ -126,7 +126,7 @@ const Navbar = () => {
               <span className="block py-2 text-gray-500 text-xs font-semibold uppercase">About</span>
               <Link to="/#burbank" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">About Dr. Fawaz Faisal</Link>
               <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">About Western Neurological Associates</Link>
-              <Link to="/" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Facility Tour</Link>
+              <Link to="/facility-tour" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Facility Tour</Link>
             </li>
             <li><Link to="/services" onClick={() => setMobileMenuOpen(false)} className="block py-2">Services</Link></li>
             <li><Link to="/patient-information" onClick={() => setMobileMenuOpen(false)} className="block py-2">Patient Information</Link></li>

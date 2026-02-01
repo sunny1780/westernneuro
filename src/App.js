@@ -9,6 +9,7 @@ import Blogs from './pages/Blogs';
 import BookAppointment from './pages/BookAppointment';
 import Services from './pages/Services';
 import AboutWesternNeurologicalAssociates from './pages/AboutWesternNeurologicalAssociates';
+import FacilityTour from './pages/FacilityTour';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/book-appointment" element={<BookAppointment />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<AboutWesternNeurologicalAssociates />} />
+          <Route path="/facility-tour" element={<FacilityTour />} />
         </Routes>
       </BrowserRouter>
     </div>
