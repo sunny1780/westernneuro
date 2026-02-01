@@ -1,11 +1,21 @@
 import React from 'react';
 
-const AffiliateInsurance = ({ images = [] }) => {
-  // Placeholder: pass image URLs as props, or use defaults for demo
-  const boxes = images.length >= 4 
-    ? images.slice(0, 4) 
-    : [...Array(4)].map((_, i) => images[i] || null);
+const logos = [
+  '/images/affone.png',
+  '/images/afftwo.png',
+  '/images/affthree.png',
+  '/images/afffour.png',
+  '/images/afffive.png',
+  '/images/affsix.png',
+  '/images/affseven.png',
+  '/images/affeight.png',
+  '/images/affnine.png',
+  '/images/afften.png',
+  '/images/affeleven.png',
+  '/images/afftwelve.png',
+];
 
+const AffiliateInsurance = () => {
   return (
     <section className="bg-white py-12 md:py-16 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto text-center">
@@ -19,22 +29,18 @@ const AffiliateInsurance = ({ images = [] }) => {
           Our physicians are affiliated with these local hospitals
         </p>
 
-        {/* Four image boxes in a row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-          {boxes.map((src, index) => (
+        {/* 12 logos in 3 rows (4 per row) */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+          {logos.map((src, index) => (
             <div
               key={index}
-              className="aspect-[2/1] rounded-lg bg-gray-200 overflow-hidden flex items-center justify-center"
+              className="rounded-xl bg-white border border-gray-200 shadow-sm overflow-hidden flex items-center justify-center aspect-[2/1] min-h-[80px] p-4"
             >
-              {src ? (
-                <img
-                  src={src}
-                  alt={`Affiliate hospital ${index + 1}`}
-                  className="w-full h-full object-contain p-2"
-                />
-              ) : (
-                <span className="text-gray-400 text-sm">Logo</span>
-              )}
+              <img
+                src={src}
+                alt={`Affiliate ${index + 1}`}
+                className="w-full h-full object-contain"
+              />
             </div>
           ))}
         </div>

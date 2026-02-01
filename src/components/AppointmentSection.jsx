@@ -1,17 +1,44 @@
+import { Phone, Printer, Clock, MapPin } from 'lucide-react';
+
 export default function AppointmentSection() {
     return (
       <div className="min-h-screen bg-white px-4 sm:px-6 md:px-16 py-12 md:py-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
           
           {/* Left Content */}
-          <div>
+          <div className="text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-4 md:mb-6 leading-tight">
               We’re here to help you <br /> achieve health
             </h1>
-            <p className="text-gray-500 max-w-md">
+            <p className="text-gray-500 max-w-md mb-6 md:mb-8">
               Join our expert network to contribute your knowledge, mentor
               startups, or speak at events.
             </p>
+
+            {/* Contact Info */}
+            <div className="space-y-4 text-blue-600">
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 flex-shrink-0" />
+                <span className="text-gray-800 font-medium">818.845.2255</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Printer className="w-5 h-5 flex-shrink-0" />
+                <span className="text-gray-800 font-medium">818.845.2255</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <Clock className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                <div className="text-gray-800 font-medium">
+                  <p>Mon - Fri: 9:00am - 4:00pm</p>
+                  <p>Sat & Sun: Closed</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-800 font-medium">
+                  1218 W Olive Ave. Burbank, CA 91506
+                </span>
+              </div>
+            </div>
           </div>
   
           {/* Right Form Card */}
