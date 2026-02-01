@@ -8,6 +8,7 @@ import PatientInformation from './pages/PatientInformation';
 import Blogs from './pages/Blogs';
 import BookAppointment from './pages/BookAppointment';
 import Services from './pages/Services';
+import AboutWesternNeurologicalAssociates from './pages/AboutWesternNeurologicalAssociates';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/book-appointment" element={<BookAppointment />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<AboutWesternNeurologicalAssociates />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Moreclinis = () => {
   return (
-    <section className="bg-white py-12 md:py-20 px-4 sm:px-6 md:px-16">
+    <section id="moreclinis" className="bg-white py-12 md:py-20 px-4 sm:px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-center">
           {/* Left - Large Image */}

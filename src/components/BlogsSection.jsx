@@ -4,9 +4,15 @@ const BlogsSection = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 md:gap-20">
             
-            {/* Image Card */}
+            {/* Image - Left */}
             <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-              <div className="w-full max-w-[320px] sm:max-w-[380px] md:w-[420px] h-[280px] sm:h-[400px] md:h-[520px] bg-gray-200 rounded-2xl" />
+              <div className="w-full max-w-[320px] sm:max-w-[380px] md:w-[420px] rounded-2xl overflow-hidden">
+                <img
+                  src="/images/blghero.png"
+                  alt="Blogs"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
   
             {/* Content */}

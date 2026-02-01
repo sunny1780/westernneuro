@@ -17,7 +17,7 @@
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
      position: "Position, Company name",
-     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=1"
+     avatar: "/images/testone.png"
    },
    {
      id: 2,
@@ -25,7 +25,7 @@
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
      position: "Position, Company name",
-     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=2"
+     avatar: "/images/testtwo.png"
    },
    {
      id: 3,
@@ -33,7 +33,7 @@
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
      position: "Position, Company name",
-     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=3"
+     avatar: "/images/testthree.png"
    },
    {
      id: 4,
@@ -41,7 +41,7 @@
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
      position: "Position, Company name",
-     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=4"
+     avatar: "/images/testfour.png"
    }
  ];
  
@@ -52,7 +52,7 @@
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
      position: "Position, Company name",
-     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=5"
+     avatar: "/images/testfive.png"
    },
    {
      id: 6,
@@ -60,7 +60,7 @@
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
      position: "Position, Company name",
-     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=6"
+     avatar: "/images/testone.png"
    },
    {
      id: 7,
@@ -68,7 +68,7 @@
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
      position: "Position, Company name",
-     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=7"
+     avatar: "/images/testtwo.png"
    },
    {
      id: 8,
@@ -76,7 +76,7 @@
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
      position: "Position, Company name",
-     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=8"
+     avatar: "/images/testthree.png"
    }
  ];
  
@@ -148,7 +148,7 @@
                  <img
                    src={testimonial.avatar}
                    alt={testimonial.name}
-                   className="w-12 h-12 rounded-full"
+                   className="w-12 h-12 rounded-full object-cover"
                  />
                  <div>
                    <h4 className="font-semibold text-gray-900 text-sm">
