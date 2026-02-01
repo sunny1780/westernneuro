@@ -22,11 +22,10 @@ export default function FirstAppointment() {
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2">
         Your First Appointment
       </h1>
-      <h2 className="text-lg  mb-4 font-semibold">Lorem ipsum</h2>
+      <h2 className="text-lg  mb-4 font-semibold">Preparing for Your Visit</h2>
 
-      <p className="text-gray-400 max-w-3xl mb-12">
-        Please arrive early so that we can complete your paperwork. To save time
-        during your initial visit, please print out and complete these forms:
+      <p className="max-w-3xl mb-12">
+      Please arrive 15 minutes early to complete the necessary paperwork. To save time, download and complete these forms in advance and bring them to your appointment.
       </p>
 
       {/* Cards */}
@@ -47,17 +46,16 @@ export default function FirstAppointment() {
       </div>
 
       {/* Bottom Section */}
-      <h3 className="text-xl font-semibold mb-2">Lorem ipsum</h3>
-      <p className="text-gray-400 mb-4">Also, please bring the following:</p>
+      <h3 className="text-xl font-semibold mb-2">What to Bring</h3>
+      <p className="text-gray-400 mb-4">Please bring the following items to your first visit:</p>
 
       <ul className="list-disc list-inside text-gray-400 space-y-2 max-w-2xl">
-        <li>Patient’s insurance card</li>
+        <li>Patient's insurance card and photo identification</li>
         <li>
-          List of current prescriptions and/or over-the-counter medication,
-          including dose and frequency
+        List of current medications, including dose and frequency.
         </li>
-        <li>Information about patient’s medical and surgical history</li>
-        <li>Recent test results, x-rays, or relevant records</li>
+        <li>Recent test results, x-rays, or relevant medical records</li>
+        <li>Referral documentation (if required by insurance)</li>
       </ul>
     </div>
   );
