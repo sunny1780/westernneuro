@@ -17,9 +17,15 @@ const PatientInfo = () => {
         </p>
       </div>
 
-      {/* Right: Large light gray form container */}
-      <div className="flex-1 flex items-center p-4 sm:p-6 md:p-8 lg:p-10">
-        <div className="w-full rounded-2xl md:rounded-3xl bg-gray-100 min-h-[280px] sm:min-h-[350px] md:min-h-[400px] lg:min-h-[500px]" />
+      {/* Right: Image */}
+      <div className="flex-1 flex items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10">
+        <div className="w-full max-w-md rounded-2xl md:rounded-3xl overflow-hidden">
+          <img
+            src="/images/ptinfo.png"
+            alt="Patient Information"
+            className="w-full h-auto object-cover"
+          />
+        </div>
       </div>
     </section>
   );

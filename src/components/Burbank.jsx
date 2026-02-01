@@ -2,7 +2,7 @@ import React from 'react';
 
 const Burbank = () => {
   return (
-    <section className="bg-white py-12 md:py-20 px-4 sm:px-6 md:px-16">
+    <section className="bg-white pt-12 md:pt-20 pb-6 md:pb-8 px-4 sm:px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left - Text Content */}
@@ -38,6 +38,31 @@ const Burbank = () => {
                 className="w-full h-auto object-cover"
               />
             </div>
+          </div>
+        </div>
+
+        {/* Bottom - 3 Certification Logos */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6 md:mt-8">
+          <div className="bg-white rounded-xl shadow-md p-4 flex items-center justify-center min-h-[120px]">
+            <img
+              src="/images/one.png"
+              alt="American Board of Psychiatry and Neurology"
+              className="max-h-20 w-auto object-contain"
+            />
+          </div>
+          <div className="bg-white rounded-xl shadow-md p-4 flex items-center justify-center min-h-[120px]">
+            <img
+              src="/images/two.png"
+              alt="American Board of Sleep Medicine"
+              className="max-h-20 w-auto object-contain"
+            />
+          </div>
+          <div className="bg-white rounded-xl shadow-md p-4 flex items-center justify-center min-h-[120px]">
+            <img
+              src="/images/three.png"
+              alt="American Board of Clinical Neurophysiology"
+              className="max-h-20 w-auto object-contain"
+            />
           </div>
         </div>
       </div>
