@@ -24,6 +24,7 @@ function Service3() {
           image2={infoSection.image2}
           block1={infoSection.block1}
           block2={infoSection.block2}
+          extra={infoSection.extra}
         />
       </AnimatedSection>
       <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>

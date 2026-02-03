@@ -86,12 +86,6 @@ const Navbar = () => {
                       className="py-1 rounded-lg shadow-lg min-w-[200px] z-50 text-left bg-white"
                     >
                   <Link
-                    to="/services"
-                    className="block px-4 py-2.5 text-sm text-gray-800 transition text-left hover:bg-[#ECEEF0] font-semibold border-b border-gray-100"
-                  >
-                    View All Services
-                  </Link>
-                  <Link
                     to="/services/epilepsy"
                     className="block px-4 py-2.5 text-sm text-gray-800 transition text-left hover:bg-[#ECEEF0]"
                   >
@@ -190,7 +184,6 @@ const Navbar = () => {
             </li>
             <li className="border-b border-gray-200 pb-2">
               <span className="block py-2 text-gray-500 text-xs font-semibold uppercase">Services</span>
-              <Link to="/services" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2 font-semibold">View All Services</Link>
               <Link to="/services/epilepsy" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Epilepsy</Link>
               <Link to="/services/headaches" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Headaches</Link>
               <Link to="/services/neuromuscular-disorders" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Neuromuscular Disorders</Link>

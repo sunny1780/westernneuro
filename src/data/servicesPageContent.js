@@ -13,40 +13,58 @@ export const epilepsyContent = {
     image1: "/images/services/2.jpg",
     image2: "/images/services/3.jpg",
     block1: {
-      title1: "Epilepsy Care & Seizure Management",
-      desc1: "We provide comprehensive evaluation and treatment for epilepsy and seizure disorders. Our approach includes detailed history, EEG when needed, and individualized treatment plans to help you achieve better seizure control and quality of life.",
-      title2: "Personalized Treatment Plans",
-      desc2: "From medication management to advanced options, we work with you to find the right balance. We also offer guidance on lifestyle, safety, and when to consider further testing or referral.",
+      title1: "Understanding Epilepsy",
+      desc1: "Epilepsy is a chronic neurological condition characterized by recurrent seizures that are caused by abnormal cerebral nerve cell activity. There is a distinction between a patient who has one seizure and a patient who has epilepsy.",
+      title2: "Types of Epilepsy",
+      desc2: "Epilepsy can be classified as either idiopathic or symptomatic. Idiopathic epilepsy has no known cause, and the person has no other signs of neurological disease or mental deficiency. Symptomatic epilepsy results from a known condition such as stroke, head injury, poisoning, Lennox-Gastaut syndrome, or cerebral palsy.",
     },
     block2: {
-      title1: "Advanced Diagnostics",
-      desc1: "When needed, we use EEG and other testing to clarify the type of seizures and tailor treatment. Our goal is accurate diagnosis and effective, evidence-based care.",
-      title2: "Ongoing Support",
-      desc2: "Regular follow-ups help us monitor your response, adjust treatment, and support you and your family. We are committed to your long-term neurological health.",
+      title1: "Incidence and Prevalence of Epilepsy",
+      desc1: "More than 2 million people in the United States and over 50 million worldwide suffer from epilepsy. In the United States, more than 300,000 people with epilepsy are under the age of 14, and more than 500,000 are over the age of 65.",
+      title2: "Our Treatment Approach",
+      desc2: "Dr. Faisal utilizes advanced EEG technology and comprehensive neurological evaluation to accurately diagnose epilepsy type and develop individualized treatment strategies tailored to your specific needs.",
     },
+    extra: {
+      sections: [
+        {
+          title: "Diagnostic Services",
+          desc: "We offer comprehensive neurological examination, electroencephalogram (EEG) testing, medication management, seizure trigger identification, and thorough patient education to help you manage your condition effectively.",
+        },
+      ],
+      list: null,
+    },
+    animate: true,
   },
 };
 
 export const headachesContent = {
   serviceSection: {
-    title: "Headaches",
-    description: "Specialized evaluation and treatment for migraine, tension-type headaches, cluster headaches, and other headache disorders. We use a comprehensive approach including lifestyle guidance, preventive therapies, and acute treatments to reduce frequency and improve your quality of life.",
+    title: "Headaches & Migraines",
+    titleLines: ["Headaches &", "Migraines"],
+    description: "Specialized treatment for headaches and migraines using evidence-based approaches to reduce frequency, severity, and impact on your daily life.",
     image: "/images/services/head1.jpg",
+    imageStyle: { width: "510.24px", maxWidth: "100%", height: "599.97px", borderRadius: "17.59px" },
+    textFirst: true,
+    descriptionColor: "text-[#687076]",
   },
   infoSection: {
     image1: "/images/services/head2.jpg",
     image2: "/images/services/head3.png",
+    block1ImageLeft: true,
+    imageDimensions: "short",
+    animate: true,
     block1: {
+      title1: "Types of Headaches",
+      desc1: "We diagnose and treat various headache types including tension headaches, migraines, cluster headaches, and secondary headaches caused by underlying conditions. Each type requires specific treatment approaches.",
+      title2: "Our Treatment Approach",
+      desc2: "Dr. Faisal conducts thorough neurological examinations to identify headache patterns and triggers, developing personalized treatment plans to provide effective relief and prevent future episodes.",
+    },
+    extra: { sections: [], list: null },
+    block2: {
       title1: "Headache & Migraine Care",
       desc1: "We evaluate and treat all types of headaches—migraine, tension-type, cluster, and others. Our approach combines accurate diagnosis with preventive and acute treatments tailored to your pattern and goals.",
       title2: "Prevention & Acute Relief",
       desc2: "We help you reduce headache frequency with preventive therapies and improve acute relief with the right medications and lifestyle adjustments. Your comfort and daily function are our focus.",
-    },
-    block2: {
-      title1: "Comprehensive Evaluation",
-      desc1: "A thorough history and exam help us distinguish headache types and rule out concerning causes. When needed, we use imaging or other tests to ensure a clear diagnosis.",
-      title2: "Why See a Neurologist",
-      desc2: "Neurologists specialize in headache and migraine care. We stay current with the latest treatments and can offer options that general practitioners may not use routinely.",
     },
   },
 };
