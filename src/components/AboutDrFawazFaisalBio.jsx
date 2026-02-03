@@ -9,6 +9,7 @@ const fadeInLeft = {
   initial: { opacity: 0, x: -50 },
   animate: { opacity: 1, x: 0, transition: springBounce },
 };
+// data
 const fadeInRight = {
   initial: { opacity: 0, x: 50 },
   animate: { opacity: 1, x: 0, transition: springBounce },
