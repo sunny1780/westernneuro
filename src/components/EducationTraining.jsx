@@ -1,31 +1,54 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const springBounce = { type: "spring", stiffness: 260, damping: 20 };
+const staggerContainer = {
+  animate: { transition: { staggerChildren: 0.08, delayChildren: 0.1 } },
+};
+const fadeInUp = {
+  initial: { opacity: 0, y: 28 },
+  animate: { opacity: 1, y: 0, transition: springBounce },
+};
+const slideInLeft = {
+  initial: { opacity: 0, x: -40 },
+  animate: { opacity: 1, x: 0, transition: springBounce },
+};
 
 const EducationTraining = () => {
   return (
-    <section className="bg-white py-16 md:py-24 px-4 sm:px-6 md:px-12 lg:px-16 text-left">
-      <div className="max-w-4xl mr-auto ml-0 text-left">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">
+    <section className="bg-white py-16 md:py-24 px-4 sm:px-6 md:px-12 lg:px-16 text-left overflow-hidden">
+      <motion.div
+        className="max-w-4xl mr-auto ml-0 text-left"
+        variants={staggerContainer}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, amount: 0.15 }}
+      >
+        <motion.h2
+          variants={slideInLeft}
+          className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6"
+        >
           Education & Training
-        </h2>
+        </motion.h2>
         {/* <p className="text-gray-600 mb-10 md:mb-12 leading-relaxed max-w-3xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation.
         </p> */}
 
-        <div className="space-y-8 md:space-y-10">
+        <motion.div className="space-y-8 md:space-y-10" variants={staggerContainer}>
           {/* Education */}
-          <div>
+          <motion.div variants={fadeInUp}>
             <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
               Education
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-1.5">
               <li>University of Damascus, Damascus, Syria, 1986</li>
             </ul>
-          </div>
+          </motion.div>
 
           {/* Training */}
-          <div>
+          <motion.div variants={fadeInUp}>
             <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
               Training
             </h3>
@@ -35,10 +58,10 @@ const EducationTraining = () => {
               <li>UCLA School Of Medicine, Clinical Neurophysiology</li>
               <li>UCLA School of Medicine, special training in neuromuscular disorders, EMG/NCS</li>
             </ul>
-          </div>
+          </motion.div>
 
           {/* Board Certification */}
-          <div>
+          <motion.div variants={fadeInUp}>
             <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
               Board Certification
             </h3>
@@ -47,10 +70,10 @@ const EducationTraining = () => {
               <li>Board of Sleep Medicine</li>
               <li>Board of Clinical Neurophysiology</li>
             </ul>
-          </div>
+          </motion.div>
 
           {/* Academic & Administrative Appointment */}
-          <div>
+          <motion.div variants={fadeInUp}>
             <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
               Academic & Administrative Appointment
             </h3>
@@ -58,10 +81,10 @@ const EducationTraining = () => {
               <li>Assistant Clinical Professor, UCLA</li>
               <li>Providence Saint Joseph Hospital, Burbank, California</li>
             </ul>
-          </div>
+          </motion.div>
 
           {/* Hospital Appointments */}
-          <div>
+          <motion.div variants={fadeInUp}>
             <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
               Hospital Appointments
             </h3>
@@ -70,11 +93,15 @@ const EducationTraining = () => {
               <li>UCLA Medical Center</li>
               <li>Cedars-Sinai Medical Center</li>
             </ul>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Action Buttons */}
-        <div className="flex flex-wrap gap-4 mt-12 md:mt-16">
+        <motion.div
+          className="flex flex-wrap gap-4 mt-12 md:mt-16"
+          variants={staggerContainer}
+        >
+          <motion.div variants={fadeInUp} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
           <button
             type="button"
             className="inline-flex items-center gap-2 bg-[#007bff] text-white font-medium px-5 py-2.5 rounded-lg hover:bg-[#0069d9] transition"
@@ -84,6 +111,8 @@ const EducationTraining = () => {
             </svg>
             Download Resume
           </button>
+          </motion.div>
+          <motion.div variants={fadeInUp} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
           <a
             href="https://www.linkedin.com"
             target="_blank"
@@ -95,8 +124,9 @@ const EducationTraining = () => {
             </svg>
             LinkedIn
           </a>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

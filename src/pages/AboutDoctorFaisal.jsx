@@ -11,7 +11,7 @@ import AnimatedSection from "../components/AnimatedSection";
 function AboutDoctorFaisal() {
   return (
     <AnimatedPage>
-      <AnimatedSection><AboutDoctorFaisalHero doctorImage="/images/dr-faisal-hero.png" /></AnimatedSection>
+      <AnimatedSection><AboutDoctorFaisalHero doctorImage="/images/Drfaisal.png" /></AnimatedSection>
       <AnimatedSection delay={80}><AboutDrFawazFaisalBio imageSrc="/images/Doc.png" /></AnimatedSection>
       <AnimatedSection delay={120}><EducationTraining /></AnimatedSection>
       <AnimatedSection delay={80}><Associations /></AnimatedSection>

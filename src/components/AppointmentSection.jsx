@@ -1,10 +1,30 @@
+import { motion } from "framer-motion";
+
+const springBounce = { type: "spring", stiffness: 260, damping: 20 };
+const staggerContainer = {
+  animate: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } },
+};
+const fadeInLeft = {
+  initial: { opacity: 0, x: -50 },
+  animate: { opacity: 1, x: 0, transition: springBounce },
+};
+const fadeInRight = {
+  initial: { opacity: 0, x: 50 },
+  animate: { opacity: 1, x: 0, transition: springBounce },
+};
+
 export default function AppointmentSection() {
     return (
       <div className="min-h-screen bg-white px-4 sm:px-6 md:px-16 py-12 md:py-20 overflow-x-hidden">
-        <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-start">
-          
+        <motion.div
+          className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-start"
+          variants={staggerContainer}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.15 }}
+        >
           {/* Left Content */}
-          <div className="text-left">
+          <motion.div className="text-left" variants={fadeInLeft}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-4 md:mb-6 leading-tight">
               We’re here to help you <br /> achieve health
             </h1>
@@ -55,10 +75,13 @@ export default function AppointmentSection() {
                 </span>
               </div>
             </div>
-          </div>
+          </motion.div>
   
           {/* Right Form Card */}
-          <div className="bg-white rounded-2xl p-5 sm:p-6 md:p-8 border border-gray-200 shadow-[0_4px_24px_rgba(0,0,0,0.06)] text-left">
+          <motion.div
+            className="bg-white rounded-2xl p-5 sm:p-6 md:p-8 border border-gray-200 shadow-[0_4px_24px_rgba(0,0,0,0.06)] text-left"
+            variants={fadeInRight}
+          >
             <h2 className="text-xl font-semibold text-gray-900 mb-6 text-left">
               Appointment Details
             </h2>
@@ -165,15 +188,17 @@ export default function AppointmentSection() {
               </div>
   
               {/* Button */}
-              <button
+              <motion.button
                 type="submit"
                 className="bg-[#1299ED] hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 Request Consultation
-              </button>
+              </motion.button>
             </form>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     );
   }
