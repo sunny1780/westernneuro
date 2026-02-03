@@ -45,24 +45,23 @@ const Navbar = () => {
                 {aboutDropdownOpen && (
                   <div className="absolute left-0 top-full pt-1">
                     <div
-                      className="py-1 rounded-lg shadow-lg min-w-[240px] z-50 text-left"
-                      style={{ background: "linear-gradient(to right, #96C7F2, white)" }}
+                      className="py-1 rounded-lg shadow-lg min-w-[240px] z-50 text-left bg-white"
                     >
                       <Link
                         to="/about/doctor-faisal"
-                        className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                        className="block px-4 py-2.5 text-sm text-gray-800 transition text-left hover:bg-[#ECEEF0]"
                       >
                         About Dr. Fawaz Faisal
                       </Link>
                       <Link
                         to="/about"
-                        className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                        className="block px-4 py-2.5 text-sm text-gray-800 transition text-left hover:bg-[#ECEEF0]"
                       >
                         About Western Neurological Associates
                       </Link>
                       <Link
                         to="/facility-tour"
-                        className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                        className="block px-4 py-2.5 text-sm text-gray-800 transition text-left hover:bg-[#ECEEF0]"
                       >
                         Facility Tour
                       </Link>
@@ -82,36 +81,35 @@ const Navbar = () => {
                 {servicesDropdownOpen && (
                   <div className="absolute left-0 top-full pt-1">
                     <div
-                      className="py-1 rounded-lg shadow-lg min-w-[200px] z-50 text-left"
-                      style={{ background: "linear-gradient(to right, #96C7F2, white)" }}
+                      className="py-1 rounded-lg shadow-lg min-w-[200px] z-50 text-left bg-white"
                     >
                   <Link
                     to="/services/epilepsy"
-                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                    className="block px-4 py-2.5 text-sm text-gray-800 transition text-left hover:bg-[#ECEEF0]"
                   >
                     Epilepsy
                   </Link>
                   <Link
                     to="/services/headaches"
-                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                    className="block px-4 py-2.5 text-sm text-gray-800 transition text-left hover:bg-[#ECEEF0]"
                   >
                     Headaches
                   </Link>
                   <Link
                     to="/services/neuromuscular-disorders"
-                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                    className="block px-4 py-2.5 text-sm text-gray-800 transition text-left hover:bg-[#ECEEF0]"
                   >
                     Neuromuscular Disorders
                   </Link>
                   <Link
                     to="/services/nerve-conduction-studies"
-                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                    className="block px-4 py-2.5 text-sm text-gray-800 transition text-left hover:bg-[#ECEEF0]"
                   >
                     Nerve Conduction Studies
                   </Link>
                   <Link
                     to="/services/sleep-disorders"
-                    className="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-200 transition text-left"
+                    className="block px-4 py-2.5 text-sm text-gray-800 transition text-left hover:bg-[#ECEEF0]"
                   >
                     Sleep Disorders
                   </Link>
@@ -135,10 +133,15 @@ const Navbar = () => {
 
         {/* Right: phone + CTA + mobile menu btn */}
         <div className="flex items-center gap-4 md:gap-6">
-          <div className="hidden sm:flex items-center gap-2 text-sm font-medium text-gray-800">
-            {phoneIcon}
-            <span>818.845.2255</span>
-          </div>
+        <div className="hidden sm:flex items-center gap-2 text-sm font-medium text-gray-800">
+  <img
+    src="/phone.png"
+    alt="Phone"
+    className="w-4 h-4 flex-shrink-0"
+  />
+  <span>818.845.2255</span>
+</div>
+
           <Link
             to="/book-appointment"
             className="rounded-md bg-[#1893FF] text-white text-xs font-semibold px-3 py-2 md:text-sm md:px-5 md:py-2.5 shadow-sm hover:bg-[#0f80dd] transition inline-block"

@@ -42,7 +42,7 @@ const Burbank = () => {
         </div>
 
         {/* Bottom - 3 Certification Logos */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6 md:mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6 md:mt-12">
           <div className="bg-white rounded-xl shadow-md p-4 flex items-center justify-center min-h-[120px]">
             <img
               src="/images/one.png"

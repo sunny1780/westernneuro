@@ -17,23 +17,41 @@ export default function AppointmentSection() {
 
             {/* Contact Info */}
             <div className="space-y-4 text-blue-600">
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 flex-shrink-0" />
-                <span className="text-gray-800 font-medium">818.845.2255</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Printer className="w-5 h-5 flex-shrink-0" />
-                <span className="text-gray-800 font-medium">818.845.2255</span>
-              </div>
+            <div className="flex items-center gap-3">
+  <img
+    src="./images/icon/PhoneCall.png"   // apni image ka path yahan do
+    alt="Phone"
+    className="w-5 h-5 flex-shrink-0"
+  />
+  <span className="text-gray-800 font-medium">818.845.2255</span>
+</div>
+
+<div className="flex items-center gap-3">
+  <img
+    src="./images/icon/CashRegister.png"
+    alt="Printer"
+    className="w-5 h-5 flex-shrink-0"
+  />
+  <span className="text-gray-800 font-medium">818.845.2255</span>
+</div>
+
               <div className="flex items-start gap-3">
-                <Clock className="w-5 h-5 flex-shrink-0 mt-0.5" />
+              <img
+    src="./images/icon/ClockCountdown.png"
+    alt="clock"
+    className="w-5 h-5 flex-shrink-0"
+  />
                 <div className="text-gray-800 font-medium">
                   <p>Mon - Fri: 9:00am - 4:00pm</p>
                   <p>Sat & Sun: Closed</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
+              <img
+    src="./images/icon/MapPinLine.png"
+    alt="Printer"
+    className="w-5 h-5 flex-shrink-0"
+  />
                 <span className="text-gray-800 font-medium">
                   1218 W Olive Ave. Burbank, CA 91506
                 </span>
@@ -56,7 +74,7 @@ export default function AppointmentSection() {
                   </label>
                   <input
                     type="text"
-                    placeholder="Input"
+                    placeholder="Enter First Name"
                     className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
                   />
                 </div>
@@ -67,7 +85,7 @@ export default function AppointmentSection() {
                   </label>
                   <input
                     type="text"
-                    placeholder="Input"
+                    placeholder="Enter Last Name"
                     className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
                   />
                 </div>
@@ -80,7 +98,7 @@ export default function AppointmentSection() {
                 </label>
                 <input
                   type="tel"
-                  placeholder="Input"
+                  placeholder="Enter Phone Number"
                   className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
                 />
               </div>
@@ -92,7 +110,7 @@ export default function AppointmentSection() {
                 </label>
                 <input
                   type="email"
-                  placeholder="Input"
+                  placeholder="Enter Email"
                   className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
                 />
               </div>

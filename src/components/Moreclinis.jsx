@@ -35,7 +35,7 @@ const Moreclinis = () => {
             </div>
 
             {/* Heading */}
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight text-left">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight text-left mt-16">
               More Than a Clinic — We're Your Health Partner
             </h2>
 
