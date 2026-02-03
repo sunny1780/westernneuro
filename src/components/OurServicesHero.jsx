@@ -1,0 +1,42 @@
+import React from 'react';
+
+const serviceImages = [
+  '/images/services/1.jpg',
+  '/images/services/2.jpg',
+  '/images/services/3.jpg',
+  '/images/services/disorder1.png',
+  '/images/services/head1.jpg',
+  '/images/services/eeg1.png',
+];
+
+const OurServicesHero = () => {
+  return (
+    <section className=" py-16 md:py-24 px-4 sm:px-6 md:px-16">
+      <div className="max-w-7xl mx-auto text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-[#0A8DDB] mb-4 md:mb-6">
+          Our Services
+        </h1>
+        <p className="text-gray-400 text-base md:text-lg max-w-3xl mx-auto mb-12 md:mb-16">
+          Specialized care for neuromuscular disorders using advanced EMG and nerve conduction studies for accurate diagnosis and targeted treatment.
+        </p>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+          {serviceImages.map((src, i) => (
+            <div
+              key={i}
+              className="aspect-square rounded-xl overflow-hidden bg-gray-800"
+            >
+              <img
+                src={src}
+                alt={`Service ${i + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default OurServicesHero;

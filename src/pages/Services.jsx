@@ -1,7 +1,7 @@
 import React from 'react';
 import AppointmentSection from '../components/AppointmentSection';
 import Footer from '../components/Footer';
-import ServiceSection from '../components/ServiceSection';
+import OurServicesHero from '../components/OurServicesHero';
 import InfoSection from '../components/InfoSection';
 import AnimatedPage from '../components/AnimatedPage';
 import AnimatedSection from '../components/AnimatedSection';
@@ -9,7 +9,7 @@ import AnimatedSection from '../components/AnimatedSection';
 function Services() {
   return (
     <AnimatedPage>
-      <AnimatedSection><ServiceSection /></AnimatedSection>
+      <AnimatedSection><OurServicesHero /></AnimatedSection>
       <AnimatedSection delay={80}><InfoSection /></AnimatedSection>
       <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
       <AnimatedSection><Footer /></AnimatedSection>
