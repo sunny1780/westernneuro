@@ -109,6 +109,12 @@ const Navbar = () => {
                   >
                     Sleep Disorders
                   </Link>
+                  <Link
+                    to="/services/eeg-testing"
+                    className="block px-4 py-2.5 text-sm text-gray-800 transition text-left hover:bg-[#ECEEF0]"
+                  >
+                    EEG Testing
+                  </Link>
                     </div>
                   </div>
                 )}
@@ -183,6 +189,7 @@ const Navbar = () => {
               <Link to="/services/neuromuscular-disorders" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Neuromuscular Disorders</Link>
               <Link to="/services/nerve-conduction-studies" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Nerve Conduction Studies</Link>
               <Link to="/services/sleep-disorders" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">Sleep Disorders</Link>
+              <Link to="/services/eeg-testing" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">EEG Testing</Link>
             </li>
             <li><Link to="/patient-information" onClick={() => setMobileMenuOpen(false)} className="block py-2">Patient Information</Link></li>
             <li><Link to="/blogs" onClick={() => setMobileMenuOpen(false)} className="block py-2">Blogs</Link></li>
