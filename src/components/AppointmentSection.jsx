@@ -1,5 +1,3 @@
-import { Phone, Printer, Clock, MapPin } from 'lucide-react';
-
 export default function AppointmentSection() {
     return (
       <div className="min-h-screen bg-white px-4 sm:px-6 md:px-16 py-12 md:py-20">
