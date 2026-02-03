@@ -36,7 +36,7 @@ export default function AppointmentSection() {
             <div className="space-y-4 text-blue-600">
             <div className="flex items-center gap-3">
   <img
-    src="./images/icon/PhoneCall.png"   // apni image ka path yahan do
+    src="/images/icon/PhoneCall.png"
     alt="Phone"
     className="w-5 h-5 flex-shrink-0"
   />
@@ -45,7 +45,7 @@ export default function AppointmentSection() {
 
 <div className="flex items-center gap-3">
   <img
-    src="./images/icon/CashRegister.png"
+    src="/images/icon/CashRegister.png"
     alt="Printer"
     className="w-5 h-5 flex-shrink-0"
   />
@@ -54,7 +54,7 @@ export default function AppointmentSection() {
 
               <div className="flex items-start gap-3">
               <img
-    src="./images/icon/ClockCountdown.png"
+    src="/images/icon/ClockCountdown.png"
     alt="clock"
     className="w-5 h-5 flex-shrink-0"
   />
@@ -65,7 +65,7 @@ export default function AppointmentSection() {
               </div>
               <div className="flex items-start gap-3">
               <img
-    src="./images/icon/MapPinLine.png"
+    src="/images/icon/MapPinLine.png"
     alt="Printer"
     className="w-5 h-5 flex-shrink-0"
   />
