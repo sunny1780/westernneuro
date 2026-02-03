@@ -137,7 +137,7 @@ const Navbar = () => {
         <div className="flex items-center gap-4 md:gap-6">
         <div className="hidden sm:flex items-center gap-2 text-sm font-medium text-gray-800">
   <img
-    src="/phone.png"
+    src="/images/icon/Phone.png"
     alt="Phone"
     className="w-4 h-4 flex-shrink-0"
   />
@@ -193,9 +193,14 @@ const Navbar = () => {
             <li><Link to="/patient-information" onClick={() => setMobileMenuOpen(false)} className="block py-2">Patient Information</Link></li>
             <li><Link to="/blogs" onClick={() => setMobileMenuOpen(false)} className="block py-2">Blogs</Link></li>
             <li className="pt-2 border-t border-gray-200 flex items-center gap-2">
-              {phoneIcon}
-              818.845.2255
-            </li>
+  <img
+    src="/images/icon/Phone.png"
+    alt="Phone"
+    className="w-4 h-4 flex-shrink-0"
+  />
+  <span>818.845.2255</span>
+</li>
+
           </ul>
         </div>
       )}
