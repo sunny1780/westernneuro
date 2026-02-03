@@ -15,37 +15,8 @@ const defaultBlock2 = {
 };
 
 const defaultExtra = {
-  sections: [
-    {
-      title: "Our Services Overview",
-      desc: "Western Neurological Associates and Western Sleep Center offer expert care in neurology, sleep medicine, and clinical neurophysiology. From initial consultation through ongoing management, we are committed to helping you achieve better health and quality of life.",
-    },
-    {
-      title: "Conditions We Treat",
-      desc: "Epilepsy, headaches, neuromuscular disorders, sleep apnea and other sleep disorders, nerve and muscle conditions, and more. We use advanced diagnostics including EEG and nerve conduction studies to guide treatment.",
-    },
-    {
-      title: "Location & Appointments",
-      desc: "We are located in Burbank, California. Schedule a consultation by calling 818.845.2255 or booking online. We look forward to supporting your neurological and sleep health.",
-    },
-  ],
-  list: {
-    title: "What to Expect",
-    items: [
-      {
-        title: "Initial Consultation",
-        desc: "A thorough review of your history, symptoms, and goals so we can recommend the right diagnostics and treatment plan.",
-      },
-      {
-        title: "Diagnostic Testing",
-        desc: "When needed, we arrange EEG, sleep studies, nerve conduction studies, or other tests in a comfortable, professional environment.",
-      },
-      {
-        title: "Ongoing Care",
-        desc: "Follow-up visits and care coordination to monitor your progress and adjust treatment for the best outcomes.",
-      },
-    ],
-  },
+  sections: [],
+  list: null,
 };
 
 const imgStyle = { width: '100%', maxWidth: '510px', aspectRatio: '510/600', borderRadius: '17.59px' };
@@ -120,11 +91,11 @@ const InfoSection = ({
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
     );
 
     elements.forEach(({ ref }) => {
-      if (ref.current) observer.observe(ref.current);
+      if (ref?.current) observer.observe(ref.current);
     });
 
     return () => observer.disconnect();
@@ -137,7 +108,7 @@ const InfoSection = ({
       {block1TextOnly ? (
         <div
           ref={textLeftRef}
-          className={`space-y-12 md:space-y-16 transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          className={`space-y-12 md:space-y-16 transition-all duration-[450ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
             animate && !inViewStates.textLeft ? 'opacity-0 translate-y-6' : 'opacity-100 translate-y-0'
           }`}
         >
@@ -281,8 +252,8 @@ const InfoSection = ({
             <>
               <div
                 ref={block3TextRef}
-                className={`space-y-6 transition-all duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                  inViewStates.block3Text ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
+                className={`space-y-6 transition-all duration-[850ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                  inViewStates.block3Text ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
               >
                 {(() => {
@@ -302,8 +273,8 @@ const InfoSection = ({
               </div>
               <div
                 ref={block3ImageRef}
-                className={`overflow-hidden bg-gray-100 transition-all duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] delay-150 ${
-                  inViewStates.block3Image ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
+                className={`overflow-hidden bg-gray-100 transition-all duration-[850ms] ease-[cubic-bezier(0.22,1,0.36,1)] delay-200 ${
+                  inViewStates.block3Image ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ width: '100%', maxWidth: '100%', aspectRatio: '1280/442', borderRadius: '17.59px' }}
               >

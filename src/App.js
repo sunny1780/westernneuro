@@ -17,6 +17,7 @@ import Service5 from './pages/Service5';
 import AboutWesternNeurologicalAssociates from './pages/AboutWesternNeurologicalAssociates';
 import AboutDoctorFaisal from './pages/AboutDoctorFaisal';
 import FacilityTour from './pages/FacilityTour';
+import EEGtesting from './pages/EEGTesting';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/services/neuromuscular-disorders" element={<Service3 />} />
           <Route path="/services/nerve-conduction-studies" element={<Service4 />} />
           <Route path="/services/sleep-disorders" element={<Service5 />} />
+          <Route path="/services/eeg-testing" element={<EEGtesting />} />
           <Route path="/about" element={<AboutWesternNeurologicalAssociates />} />
           <Route path="/about/doctor-faisal" element={<AboutDoctorFaisal />} />
           <Route path="/facility-tour" element={<FacilityTour />} />

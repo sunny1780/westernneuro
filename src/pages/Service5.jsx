@@ -16,6 +16,7 @@ function Service5() {
           title={serviceSection.title}
           description={serviceSection.description}
           image={serviceSection.image}
+          descriptionColor={serviceSection.descriptionColor}
         />
       </AnimatedSection>
       <AnimatedSection delay={80}>
@@ -24,7 +25,11 @@ function Service5() {
           image2={infoSection.image2}
           block1={infoSection.block1}
           block2={infoSection.block2}
+          block3={infoSection.block3}
+          block3Stacked={infoSection.block3Stacked}
           extra={infoSection.extra}
+          hideBlock2={infoSection.hideBlock2}
+          animate={infoSection.animate}
         />
       </AnimatedSection>
       <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>

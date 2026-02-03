@@ -16,6 +16,7 @@ function Service1() {
           title={serviceSection.title}
           description={serviceSection.description}
           image={serviceSection.image}
+          descriptionColor={serviceSection.descriptionColor}
         />
       </AnimatedSection>
       <AnimatedSection delay={80}>
