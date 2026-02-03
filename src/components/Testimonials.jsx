@@ -14,34 +14,34 @@
    {
      id: 1,
      rating: 5,
-     text: "This office is staffed with kind, smart, and fearless healthcare providers and staff. I truly consider it a blessing that I was referred here. I have nothing but the highest admiration for the staff. Consequently, it can sometimes be difficult to get scheduled in a short time (if needed). However, the quality of staff is impeccable. I cannot express the gratitude I have since I began treatment here. Thank you.",
-     name: "David G",
+     text: "Dr. Faisal is a gifted healer. My migraines improved greatly. His caring team goes above and beyond. Forever grateful to everyone.",
+     name: "Dr. Monica Carbajal",
     //  position: "Position, Company name",
-     avatar: "/images/testone.png"
+     avatar: "/images/testmonial/1.png"
    },
    {
      id: 2,
      rating: 5,
-     text: "This is an amazing place with amazing staff. Quick, and knowledgeable. Taylor was very helpful and very patient. She listened to me and made sure to pass along the information. Then Elaine confirmed all the information and gave me a coordination and mobility test. I really loved coming here. I haven’t felt so taken care of in the many medical facilities I’ve been to. This was a clean, well located place, with parking and easy access. Thank you so much to all the staff there answering our calls and questions!",
-     name: "John Manuela Garcia AmayaDoe",
+     text: "Very positive sleep study experience. Clean, comfortable facility. TJ was professional, reassuring, and made the entire process smooth and stress-free.",
+     name: "Sean Nielsen",
     //  position: "Position, Company name",
-     avatar: "/images/testtwo.png"
+     avatar: "/images/testmonial/2.png"
    },
    {
      id: 3,
      rating: 5,
-     text: "From moment I walked in I knew I was in good hands. Front girls at desk were top notch & so nice. Medical Assistant who took my intake was wonderful too(sorry forgot her name), very nice & thorough. Then I saw Dr. Elaine Chen. OMG! I've never in my life had a doctor who explained EVERYTHING so thoroughly. Then, even asked if I had any questions. Most doctors I've seen in the past just want to get you in & get you out. Never did I feel rushed, which for me is unheard of. She was a joy to deal with. I actually felt like a person & not a number. Thank You Dr. Chen for explaining everything to me so well!! Will make this my regular clinic from now on.",
-     name: "Joanne Schaeffer",
+     text: "Outstanding clinic. Dr. Faisal listens carefully and addresses concerns. Friendly staff consistently go above and beyond, making patients feel valued.",
+     name: "Anthony Haddad",
     //  position: "Position, Company name",
-     avatar: "/images/testthree.png"
+     avatar: "/images/testmonial/3.png"
    },
    {
      id: 4,
      rating: 5,
-     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-     name: "Name Surname",
+     text: "My husband’s appointment went great. Antonio was friendly and professional. Staff were helpful and kind. Overall a pleasant experience.",
+     name: "Kathryn Nelson",
     //  position: "Position, Company name",
-     avatar: "/images/testfour.png"
+     avatar: "/images/testmonial/4.png"
    }
  ];
  
@@ -49,10 +49,10 @@
    {
      id: 5,
      rating: 5,
-     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-     name: "Name Surname",
+     text: "Great experience with WNA. Dr. Faisal was thorough, knowledgeable, and caring. Team was welcoming and helpful. Highly recommended.",
+     name: "Mona A",
     //  position: "Position, Company name",
-     avatar: "/images/testfive.png"
+     avatar: "/images/testmonial/5.png"
    },
    {
      id: 6,
