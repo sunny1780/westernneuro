@@ -14,8 +14,10 @@ function Service3() {
       <AnimatedSection>
         <ServiceSection
           title={serviceSection.title}
+          titleLines={serviceSection.titleLines}
           description={serviceSection.description}
           image={serviceSection.image}
+          layout={serviceSection.layout}
         />
       </AnimatedSection>
       <AnimatedSection delay={80}>
@@ -24,7 +26,11 @@ function Service3() {
           image2={infoSection.image2}
           block1={infoSection.block1}
           block2={infoSection.block2}
+          block3={infoSection.block3}
           extra={infoSection.extra}
+          block1TextOnly={infoSection.block1TextOnly}
+          block1ImageLeft={infoSection.block1ImageLeft}
+          animate={infoSection.animate}
         />
       </AnimatedSection>
       <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>

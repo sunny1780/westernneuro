@@ -8,25 +8,30 @@ const ServiceSection = ({
     imageStyle,
     textFirst = false,
     descriptionColor = "text-gray-400",
+    layout = "sideBySide",
   }) => {
     const imageRef = useRef(null);
     const textRef = useRef(null);
+    const sectionRef = useRef(null);
     const [imageVisible, setImageVisible] = useState(false);
     const [textVisible, setTextVisible] = useState(false);
 
     useEffect(() => {
-      const targets = [imageRef.current, textRef.current].filter(Boolean);
+      const targets = layout === "stacked"
+        ? [sectionRef.current]
+        : [imageRef.current, textRef.current].filter(Boolean);
       if (!targets.length) return;
 
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              if (entry.target === imageRef.current) {
+              if (layout === "stacked") {
                 setImageVisible(true);
-              }
-              if (entry.target === textRef.current) {
                 setTextVisible(true);
+              } else {
+                if (entry.target === imageRef.current) setImageVisible(true);
+                if (entry.target === textRef.current) setTextVisible(true);
               }
               observer.unobserve(entry.target);
             }
@@ -35,10 +40,55 @@ const ServiceSection = ({
         { threshold: 0.25 }
       );
 
-      targets.forEach((target) => observer.observe(target));
+      targets.forEach((target) => target && observer.observe(target));
 
       return () => observer.disconnect();
-    }, []);
+    }, [layout]);
+
+    if (layout === "stacked") {
+      return (
+        <section ref={sectionRef} className="py-24 text-left">
+          <div className="max-w-7xl mx-auto px-6">
+            <div
+              ref={textRef}
+              className={`mb-8 md:mb-10 transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+              }`}
+            >
+              <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold text-[#053759] mb-4 md:mb-6 leading-tight">
+                {titleLines ? (
+                  <>
+                    {titleLines[0]}
+                    {titleLines[1] && <><br />{titleLines[1]}</>}
+                  </>
+                ) : (
+                  title
+                )}
+              </h2>
+              <p className={`${descriptionColor} max-w-3xl leading-relaxed`}>
+                {description}
+              </p>
+            </div>
+
+            {image && (
+              <div
+                ref={imageRef}
+                className={`w-full rounded-xl overflow-hidden transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] delay-150 ${
+                  imageVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+                }`}
+              >
+                <img
+                  src={image}
+                  alt={title}
+                  className="w-full h-auto object-cover"
+                  style={{ maxHeight: '420px' }}
+                />
+              </div>
+            )}
+          </div>
+        </section>
+      );
+    }
 
     return (
       <section className="py-24 text-left">
