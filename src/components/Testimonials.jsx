@@ -57,30 +57,32 @@
    {
      id: 6,
      rating: 5,
-     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-     name: "Name Surname",
+     text: "This office is staffed with kind, smart, fearless providers. I feel blessed being referred here. Quality is impeccable. Thank you always.",
+     name: "David G",
     //  position: "Position, Company name",
      avatar: "/images/testone.png"
    },
    {
      id: 7,
      rating: 5,
-     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-     name: "Name Surname",
+     text: "This is an amazing place with amazing staff. Quick, knowledgeable, caring. Taylor and Elaine were patient, helpful, thorough. Clean location, access.",
+     name: "John Manuela Garcia AmayaDoe",
     //  position: "Position, Company name",
      avatar: "/images/testtwo.png"
    },
    {
      id: 8,
      rating: 5,
-     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-     name: "Name Surname",
+     text: "From the moment I walked in, I knew I was in good hands. Dr. Elaine Chen was thorough, kind, never rushed.",
+     name: "Joanne Schaeffer",
     //  position: "Position, Company name",
      avatar: "/images/testthree.png"
    }
  ];
  
  function TestimonialsMarquee() {
+   const [selectedTestimonial, setSelectedTestimonial] = React.useState(null);
+
    React.useEffect(() => {
      const styleSheet = document.createElement("style");
      styleSheet.innerText = `
@@ -97,9 +99,9 @@
      };
    }, []);
  
-   const Marquee = ({ testimonials, direction = 'forwards' }) => {
+   const Marquee = ({ testimonials, direction = 'forwards', onCardClick }) => {
      const numItems = testimonials.length;
-     const speed = '40s'; // Testimonials ke liye thoda slow
+     const speed = '40s';
      const itemGap = '20px';
  
      return (
@@ -124,7 +126,11 @@
            {[...testimonials, ...testimonials].map((testimonial, index) => (
              <div
                key={index}
-               className="flex-shrink-0 bg-white rounded-2xl p-6 shadow-lg border border-gray-200"
+               onClick={() => onCardClick(testimonial)}
+               role="button"
+               tabIndex={0}
+               onKeyDown={(e) => e.key === 'Enter' && onCardClick(testimonial)}
+               className="group flex-shrink-0 bg-white rounded-2xl p-6 shadow-lg border border-gray-200 cursor-pointer hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
                style={{
                  width: 'min(350px, 85vw)',
                  marginRight: 'var(--item-gap)',
@@ -139,24 +145,31 @@
                </div>
  
                {/* Testimonial Text */}
-               <p className="text-gray-700 text-sm mb-6 leading-relaxed">
+               <p className="text-gray-700 text-sm mb-6 leading-relaxed line-clamp-4">
                  "{testimonial.text}"
                </p>
  
                {/* User Info */}
-               <div className="flex items-center gap-3">
-                 <img
-                   src={testimonial.avatar}
-                   alt={testimonial.name}
-                   className="w-12 h-12 rounded-full object-cover"
-                 />
-                 <div>
-                   <h4 className="font-semibold text-gray-900 text-sm">
-                     {testimonial.name}
-                   </h4>
-                   <p className="text-gray-500 text-xs">
-                     {testimonial.position}
-                   </p>
+               <div className="flex items-center justify-between gap-3">
+                 <div className="flex items-center gap-3">
+                   <img
+                     src={testimonial.avatar}
+                     alt={testimonial.name}
+                     className="w-12 h-12 rounded-full object-cover"
+                   />
+                   <div>
+                     <h4 className="font-semibold text-gray-900 text-sm">
+                       {testimonial.name}
+                     </h4>
+                     <p className="text-gray-500 text-xs">
+                       {testimonial.position}
+                     </p>
+                   </div>
+                 </div>
+                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 group-hover:bg-[#1299ED] group-hover:text-white transition-all duration-200" title="View full testimonial">
+                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                   </svg>
                  </div>
                </div>
              </div>
@@ -167,7 +180,7 @@
    };
  
    return (
-     <div className="py-12 md:py-16 bg-gray-50">
+     <div className="py-12 md:py-16 bg-gray-50 relative">
        <div className="container mx-auto px-4 sm:px-6">
          {/* Header */}
          <div className="text-center mb-8 md:mb-12">
@@ -186,10 +199,51 @@ Testimonials
  
          {/* Marquee Rows */}
          <div className="flex flex-col gap-6">
-           <Marquee testimonials={testimonials1} />
-           <Marquee testimonials={testimonials2} direction="reverse" />
+           <Marquee testimonials={testimonials1} onCardClick={setSelectedTestimonial} />
+           <Marquee testimonials={testimonials2} direction="reverse" onCardClick={setSelectedTestimonial} />
          </div>
        </div>
+
+       {/* Modal - Full testimonial on click */}
+       {selectedTestimonial && (
+         <div
+           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50"
+           onClick={() => setSelectedTestimonial(null)}
+         >
+           <div
+             className="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 md:p-8"
+             onClick={(e) => e.stopPropagation()}
+           >
+             <button
+               onClick={() => setSelectedTestimonial(null)}
+               className="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-gray-900 transition-colors duration-200"
+               aria-label="Close"
+             >
+               <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M18 6L6 18" />
+               </svg>
+             </button>
+             <div className="flex gap-1 text-yellow-400 mb-4">
+               {[...Array(selectedTestimonial.rating)].map((_, i) => (
+                 <StarIcon key={i} />
+               ))}
+             </div>
+             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+               "{selectedTestimonial.text}"
+             </p>
+             <div className="flex items-center gap-3">
+               <img
+                 src={selectedTestimonial.avatar}
+                 alt={selectedTestimonial.name}
+                 className="w-14 h-14 rounded-full object-cover"
+               />
+               <h4 className="font-semibold text-gray-900">
+                 {selectedTestimonial.name}
+               </h4>
+             </div>
+           </div>
+         </div>
+       )}
      </div>
    );
  }

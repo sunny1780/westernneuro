@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const services = [
@@ -42,15 +42,48 @@ const ArrowButton = () => (
   </div>
 );
 
+const useInView = (options = {}) => {
+  const ref = useRef(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setIsInView(true);
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px', ...options }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [options.threshold, options.rootMargin]);
+
+  return [ref, isInView];
+};
+
 function InformedCards() {
+  const [sectionRef, sectionInView] = useInView();
+
   return (
-    <section className="bg-white py-16 md:py-24 px-4 sm:px-6 md:px-16">
+    <section ref={sectionRef} className="bg-white py-16 md:py-24 px-4 sm:px-6 md:px-16 overflow-hidden">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-3">
+        <h2
+          className={`text-3xl md:text-4xl font-bold text-gray-900 text-center mb-3 ${
+            sectionInView ? 'animate-slide-up-bounce' : 'opacity-0'
+          }`}
+        >
           Our Services
         </h2>
-        <p className="text-gray-600 text-base md:text-lg text-center mb-12 md:mb-16 max-w-2xl mx-auto">
+        <p
+          className={`text-gray-600 text-base md:text-lg text-center mb-12 md:mb-16 max-w-2xl mx-auto ${
+            sectionInView ? 'animate-slide-up-bounce' : 'opacity-0'
+          }`}
+          style={sectionInView ? { animationDelay: '100ms' } : {}}
+        >
           Our physicians are affiliated with these local hospitals.
         </p>
 
@@ -63,14 +96,25 @@ function InformedCards() {
               )}
               <Link
                 to={service.to}
-                className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 py-6 md:py-8 group"
+                className={`flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 py-6 md:py-8 group ${
+                  sectionInView
+                    ? index % 2 === 0
+                      ? 'animate-slide-in-right-bounce'
+                      : 'animate-slide-in-left-bounce'
+                    : 'opacity-0'
+                }`}
+                style={
+                  sectionInView
+                    ? { animationDelay: `${200 + index * 120}ms` }
+                    : {}
+                }
               >
                 {/* Image */}
                 <div className="w-full sm:w-32 md:w-40 flex-shrink-0 rounded-xl overflow-hidden bg-gray-100 aspect-[4/3] sm:aspect-square">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
 
@@ -85,7 +129,7 @@ function InformedCards() {
                 </div>
 
                 {/* Arrow Button */}
-                <div className="flex-shrink-0 group-hover:scale-105 transition-transform">
+                <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                   <ArrowButton />
                 </div>
               </Link>

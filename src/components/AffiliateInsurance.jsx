@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 const logos = [
   '/images/affone.png',
@@ -15,17 +15,50 @@ const logos = [
   '/images/afftwelve.png',
 ];
 
+const useInView = (options = {}) => {
+  const ref = useRef(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setIsInView(true);
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -40px 0px', ...options }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [options.threshold, options.rootMargin]);
+
+  return [ref, isInView];
+};
+
 const AffiliateInsurance = () => {
+  const [sectionRef, sectionInView] = useInView();
+
   return (
-    <section className="bg-white py-12 md:py-16 px-4 sm:px-6">
+    <section ref={sectionRef} className="bg-white py-12 md:py-16 px-4 sm:px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto text-center">
         {/* Main heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2
+          className={`text-3xl md:text-4xl font-bold text-gray-900 mb-4 ${
+            sectionInView ? 'animate-slide-up-bounce' : 'opacity-0'
+          }`}
+        >
           Affiliate Insurance
         </h2>
 
         {/* Subheading */}
-        <p className="text-base md:text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
+        <p
+          className={`text-base md:text-lg text-gray-700 mb-12 max-w-2xl mx-auto ${
+            sectionInView ? 'animate-slide-up-bounce' : 'opacity-0'
+          }`}
+          style={sectionInView ? { animationDelay: '100ms' } : {}}
+        >
           Our physicians are affiliated with these local hospitals
         </p>
 
@@ -34,7 +67,14 @@ const AffiliateInsurance = () => {
           {logos.map((src, index) => (
             <div
               key={index}
-              className="rounded-xl bg-white border border-gray-200 shadow-sm overflow-hidden flex items-center justify-center aspect-[2/1] min-h-[80px] p-4"
+              className={`rounded-xl bg-white border border-gray-200 shadow-sm overflow-hidden flex items-center justify-center aspect-[2/1] min-h-[80px] p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#1299ED]/30 ${
+                sectionInView ? 'animate-pop-in' : 'opacity-0'
+              }`}
+              style={
+                sectionInView
+                  ? { animationDelay: `${200 + index * 60}ms` }
+                  : {}
+              }
             >
               <img
                 src={src}
