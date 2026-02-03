@@ -14,25 +14,25 @@
    {
      id: 1,
      rating: 5,
-     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-     name: "Name Surname",
-     position: "Position, Company name",
+     text: "This office is staffed with kind, smart, and fearless healthcare providers and staff. I truly consider it a blessing that I was referred here. I have nothing but the highest admiration for the staff. Consequently, it can sometimes be difficult to get scheduled in a short time (if needed). However, the quality of staff is impeccable. I cannot express the gratitude I have since I began treatment here. Thank you.",
+     name: "David G",
+    //  position: "Position, Company name",
      avatar: "/images/testone.png"
    },
    {
      id: 2,
      rating: 5,
-     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-     name: "Name Surname",
-     position: "Position, Company name",
+     text: "This is an amazing place with amazing staff. Quick, and knowledgeable. Taylor was very helpful and very patient. She listened to me and made sure to pass along the information. Then Elaine confirmed all the information and gave me a coordination and mobility test. I really loved coming here. I haven’t felt so taken care of in the many medical facilities I’ve been to. This was a clean, well located place, with parking and easy access. Thank you so much to all the staff there answering our calls and questions!",
+     name: "John Manuela Garcia AmayaDoe",
+    //  position: "Position, Company name",
      avatar: "/images/testtwo.png"
    },
    {
      id: 3,
      rating: 5,
-     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-     name: "Name Surname",
-     position: "Position, Company name",
+     text: "From moment I walked in I knew I was in good hands. Front girls at desk were top notch & so nice. Medical Assistant who took my intake was wonderful too(sorry forgot her name), very nice & thorough. Then I saw Dr. Elaine Chen. OMG! I've never in my life had a doctor who explained EVERYTHING so thoroughly. Then, even asked if I had any questions. Most doctors I've seen in the past just want to get you in & get you out. Never did I feel rushed, which for me is unheard of. She was a joy to deal with. I actually felt like a person & not a number. Thank You Dr. Chen for explaining everything to me so well!! Will make this my regular clinic from now on.",
+     name: "Joanne Schaeffer",
+    //  position: "Position, Company name",
      avatar: "/images/testthree.png"
    },
    {
@@ -40,7 +40,7 @@
      rating: 5,
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
-     position: "Position, Company name",
+    //  position: "Position, Company name",
      avatar: "/images/testfour.png"
    }
  ];
@@ -51,7 +51,7 @@
      rating: 5,
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
-     position: "Position, Company name",
+    //  position: "Position, Company name",
      avatar: "/images/testfive.png"
    },
    {
@@ -59,7 +59,7 @@
      rating: 5,
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
-     position: "Position, Company name",
+    //  position: "Position, Company name",
      avatar: "/images/testone.png"
    },
    {
@@ -67,7 +67,7 @@
      rating: 5,
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
-     position: "Position, Company name",
+    //  position: "Position, Company name",
      avatar: "/images/testtwo.png"
    },
    {
@@ -75,7 +75,7 @@
      rating: 5,
      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
      name: "Name Surname",
-     position: "Position, Company name",
+    //  position: "Position, Company name",
      avatar: "/images/testthree.png"
    }
  ];

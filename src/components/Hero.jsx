@@ -2,16 +2,16 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Video Background */}
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover opacity-70"
       >
-        <source src="/images/bgvideo.mp4" type="video/mp4" />
+        <source src="/images/0202.mp4" type="video/mp4" />
       </video>
 
       {/* Dark overlay for text readability */}
@@ -25,9 +25,7 @@ const Hero = () => {
           Care <span className="text-[#369AFF]">You Can Trust</span>
         </h1>
         <p className="text-gray-200 text-base md:text-lg max-w-2xl mx-auto mb-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation
+        Led by triple board–certified neurologist Dr. Fawaz Faisal, delivering expert diagnosis and personalized treatment with over 12 years of clinical excellence.
         </p>
         <a
           href="/services"
