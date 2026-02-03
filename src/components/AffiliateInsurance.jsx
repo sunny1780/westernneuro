@@ -32,6 +32,7 @@ const useInView = (options = {}) => {
 
     observer.observe(el);
     return () => observer.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [options.threshold, options.rootMargin]);
 
   return [ref, isInView];
