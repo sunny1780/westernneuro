@@ -30,11 +30,12 @@ const EducationTraining = () => {
         >
           Education & Training
         </motion.h2>
-        {/* <p className="text-gray-600 mb-10 md:mb-12 leading-relaxed max-w-3xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation.
-        </p> */}
+        <motion.p
+          variants={fadeInUp}
+          className="text-gray-600 mb-10 md:mb-12 leading-relaxed max-w-3xl"
+        >
+          Dr. Fawaz Faisal's extensive training from Stanford University and UCLA ensures expert, comprehensive neurological care.
+        </motion.p>
 
         <motion.div className="space-y-8 md:space-y-10" variants={staggerContainer}>
           {/* Education */}
