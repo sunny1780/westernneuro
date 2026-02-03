@@ -82,7 +82,7 @@ export const neuromuscularContent = {
     title: "Neuromuscular Disorders",
     titleLines: ["Neuromuscular", "Disorders"],
     description: "Specialized care for neuromuscular disorders using advanced EMG and nerve conduction studies for accurate diagnosis and targeted treatment.",
-    image: "/images/services/disorder1.png",
+    image: "/images/fade.png",
     layout: "stacked",
   },
   infoSection: {

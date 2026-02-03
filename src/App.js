@@ -20,7 +20,7 @@ import FacilityTour from './pages/FacilityTour';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <BrowserRouter>
         <ScrollToTop />
         <Navbar />

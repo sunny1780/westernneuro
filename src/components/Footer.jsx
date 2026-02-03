@@ -54,7 +54,7 @@ const Footer = () => {
       className="rounded-t-[3rem] font-sans"
       style={{ backgroundColor: '#e0f2fe' }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16">
+      <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-12 md:py-16 overflow-x-hidden">
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-10 md:gap-12">
           {/* Left Column - Logo, Contact, Social */}
           <div className="space-y-6">

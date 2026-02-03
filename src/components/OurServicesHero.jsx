@@ -27,8 +27,8 @@ const OurServicesHero = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-24 px-4 sm:px-6 md:px-16">
-      <div className="max-w-7xl mx-auto text-center">
+    <section ref={sectionRef} className="py-16 md:py-24 px-4 sm:px-6 md:px-16 overflow-x-hidden">
+      <div className="max-w-6xl mx-auto w-full text-center">
         <h1
           className={`text-4xl sm:text-5xl md:text-6xl font-semibold text-[#0A8DDB] mb-4 md:mb-6 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
@@ -37,7 +37,7 @@ const OurServicesHero = () => {
           Our Services
         </h1>
         <p
-          className={`text-gray-400 text-base md:text-lg max-w-3xl mx-auto mb-12 md:mb-16 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          className={`text-[#687076] text-base md:text-lg max-w-3xl mx-auto mb-12 md:mb-16 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
           style={{ transitionDelay: isVisible ? '150ms' : '0ms' }}

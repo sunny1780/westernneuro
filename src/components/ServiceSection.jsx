@@ -7,7 +7,7 @@ const ServiceSection = ({
     image,
     imageStyle,
     textFirst = false,
-    descriptionColor = "text-gray-400",
+    descriptionColor = "text-[#687076]",
     layout = "sideBySide",
   }) => {
     const imageRef = useRef(null);
@@ -47,8 +47,8 @@ const ServiceSection = ({
 
     if (layout === "stacked") {
       return (
-        <section ref={sectionRef} className="py-24 text-left">
-          <div className="max-w-7xl mx-auto px-6">
+        <section ref={sectionRef} className="py-16 md:py-24 px-4 sm:px-6 text-left overflow-x-hidden">
+          <div className="max-w-6xl mx-auto w-full">
             <div
               ref={textRef}
               className={`mb-8 md:mb-10 transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
@@ -91,9 +91,9 @@ const ServiceSection = ({
     }
 
     return (
-      <section className="py-24 text-left">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-20">
+      <section className="py-16 md:py-24 px-4 sm:px-6 text-left overflow-x-hidden">
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 md:gap-16 lg:gap-20">
             
             {/* Image Card */}
             <div
@@ -103,8 +103,8 @@ const ServiceSection = ({
               }`}
             >
               <div
-                className="bg-gray-200 overflow-hidden"
-                style={imageStyle || { width: "510.24px", maxWidth: "100%", height: "599.97px", borderRadius: "17.59px" }}
+                className="bg-gray-200 overflow-hidden w-full max-w-full"
+                style={{ ...(imageStyle || { width: "510px", height: "600px", borderRadius: "17.59px" }), maxWidth: "100%" }}
               >
                 {image ? (
                   <img

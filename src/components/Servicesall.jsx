@@ -67,13 +67,13 @@ const ServiceCard = ({ service, index }) => {
   return (
     <div
       ref={cardRef}
-      className={`flex flex-col sm:flex-row gap-5 sm:gap-8 items-start sm:items-center p-5 sm:p-6 bg-white rounded-xl shadow-sm border-b border-gray-200 last:border-b-0 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+      className={`flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 items-start sm:items-center p-4 sm:p-5 lg:p-6 bg-white rounded-xl shadow-sm border-b border-gray-200 last:border-b-0 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] overflow-hidden ${
         isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
       }`}
       style={{ transitionDelay: isVisible ? `${index * 60}ms` : '0ms' }}
     >
             {/* Image */}
-            <div className="w-full sm:w-40 md:w-48 aspect-[1.8] rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
+            <div className="w-full sm:w-36 md:w-40 lg:w-48 aspect-[1.8] rounded-xl overflow-hidden bg-gray-100 flex-shrink-0 min-w-0">
               <img
                 src={service.image}
                 alt={service.title}
@@ -81,20 +81,20 @@ const ServiceCard = ({ service, index }) => {
               />
             </div>
 
-            {/* Title + Description - 2 divs in a row */}
-            <div className="flex-1 min-w-0 flex flex-row gap-4 sm:gap-6 items-start sm:items-center">
-              <div className="flex-shrink-0" style={{ width: '300px', maxWidth: '100%' }}>
+            {/* Title + Description - responsive layout */}
+            <div className="flex-1 min-w-0 flex flex-col lg:flex-row gap-3 lg:gap-6 items-start lg:items-center w-full">
+              <div className="w-full lg:max-w-[300px] lg:flex-shrink-0">
                 <h3
-                  className="text-xl sm:text-2xl font-bold"
+                  className="text-lg sm:text-xl lg:text-2xl font-bold"
                   style={{ color: '#006699' }}
                 >
                   {service.title}
                 </h3>
               </div>
-              <div className="flex-shrink-0" style={{ width: '462px', maxWidth: '100%' }}>
+              <div className="w-full lg:max-w-[462px] min-w-0">
                 <p
                   className="text-sm sm:text-base leading-relaxed break-words"
-                  style={{ color: '#6C757D' }}
+                  style={{ color: '#687076' }}
                 >
                   {service.description}
                 </p>
@@ -116,8 +116,8 @@ const ServiceCard = ({ service, index }) => {
 
 const Servicesall = () => {
   return (
-    <section className="bg-white py-12 md:py-16 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto space-y-0 text-left">
+    <section className="bg-white py-12 md:py-16 px-4 sm:px-6 overflow-x-hidden">
+      <div className="max-w-6xl mx-auto w-full space-y-0 text-left">
         {services.map((service, index) => (
           <ServiceCard key={service.title} service={service} index={index} />
         ))}
