@@ -29,8 +29,7 @@ export default function AppointmentSection() {
               We’re here to help you <br /> achieve health
             </h1>
             <p className="text-[#687076] max-w-md mb-6 md:mb-8">
-              Join our expert network to contribute your knowledge, mentor
-              startups, or speak at events.
+            Join our expert neurological care team. Share your knowledge, ask questions, or schedule your appointment today.
             </p>
 
             {/* Contact Info */}

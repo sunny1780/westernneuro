@@ -91,7 +91,7 @@ const WhatSets = () => {
           {features.map((item, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl shadow-md border border-gray-100 p-6 h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1 ${
+              className={`bg-white rounded-xl shadow-md border border-gray-100 p-6 h-full flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1 ${
                 sectionInView ? "animate-pop-in" : "opacity-0"
               }`}
               style={
@@ -100,7 +100,7 @@ const WhatSets = () => {
                   : {}
               }
             >
-              <div className="flex items-start gap-3 mb-4">
+              <div className="flex flex-col items-center gap-3 mb-4">
                 <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-blue-500 text-lg">
                   ✨
                 </div>

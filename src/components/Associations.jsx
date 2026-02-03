@@ -66,7 +66,7 @@ const Associations = ({ associations = defaultAssociations }) => {
         >
           Associations
         </h2>
-        <p
+        {/* <p
           className={`text-gray-600 text-base md:text-lg max-w-2xl mx-auto mb-12 md:mb-16 ${
             sectionInView ? "animate-slide-up-bounce" : "opacity-0"
           }`}
@@ -74,7 +74,7 @@ const Associations = ({ associations = defaultAssociations }) => {
         >
           Our physicians are affiliated with these prestigious local hospitals and
           board certifications.
-        </p>
+        </p> */}
 
         {/* Certification cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
