@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 
 const blogs = [
   {
-    title: "Stay Informed About Your Neurological Health",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    image: "/images/blog.png",
+    title: "ADHD Uncovered: A Comprehensive Guide to Symptoms, Causes, and Effective Treatment",
+    description: "If you or your child have recently been diagnosed with ADHD, or if you suspect ADHD may be present, it’s completely normal to feel worried, confused, or overwhelmed.",
+    image: "/images/blog/1.png",
+  },
+  {
+    title: "Anxiety Disorders: Symptoms, Causes & Treatment",
+    description: "Autism Spectrum Disorder (ASD) is one of the most complex and often misunderstood neurodevelopmental conditions affecting children and adults today.",
+    image: "/images/blog/2.png",
   },
   {
     title: "Stay Informed About Your Neurological Health",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    image: "/images/blghero.png",
-  },
-  {
-    title: "Stay Informed About Your Neurological Health",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    image: "/images/blog.png",
+    description: "Almost everyone experiences worry at some point about health, finances, work, or relationships. Feeling anxious from time to time is a normal and even healthy response to life’s uncertainties.",
+    image: "/images/blog/3.png",
   },
   {
     title: "Stay Informed About Your Neurological Health",
