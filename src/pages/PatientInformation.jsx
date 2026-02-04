@@ -9,13 +9,16 @@ import AppointmentSection from '../components/AppointmentSection';
 import Footer from '../components/Footer';
 import AnimatedPage from '../components/AnimatedPage';
 import AnimatedSection from '../components/AnimatedSection';
+import HospitalAffiliations from '../components/HospitalAffiliations';
 
 function PatientInformation() {
   return (
     <AnimatedPage>
       <AnimatedSection><PatientInfo /></AnimatedSection>
-      <AnimatedSection delay={80}><AffiliateInsurance /></AnimatedSection>
+      <AnimatedSection delay={80}><HospitalAffiliations /></AnimatedSection>
       <AnimatedSection delay={120}><FirstAppointment /></AnimatedSection>
+      <AnimatedSection delay={80}><AffiliateInsurance /></AnimatedSection>
+
       <AnimatedSection delay={80}><SleepStudyInformation /></AnimatedSection>
       <AnimatedSection delay={120}><InsurancePaymentInfo /></AnimatedSection>
       <AnimatedSection delay={80}><PrivacyPractices /></AnimatedSection>

@@ -3,6 +3,7 @@ import AboutDoctorFaisalHero from "../components/AboutDoctorFaisalHero";
 import AboutDrFawazFaisalBio from "../components/AboutDrFawazFaisalBio";
 import EducationTraining from "../components/EducationTraining";
 import Associations from "../components/Associations";
+
 import Footer from "../components/Footer";
 import AppointmentSection from "../components/AppointmentSection";
 import AnimatedPage from "../components/AnimatedPage";
@@ -15,6 +16,7 @@ function AboutDoctorFaisal() {
       <AnimatedSection delay={80}><AboutDrFawazFaisalBio imageSrc="/images/Doc.png" /></AnimatedSection>
       <AnimatedSection delay={120}><EducationTraining /></AnimatedSection>
       <AnimatedSection delay={80}><Associations /></AnimatedSection>
+    
       <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
       <AnimatedSection><Footer /></AnimatedSection>
     </AnimatedPage>

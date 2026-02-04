@@ -184,9 +184,9 @@
        <div className="container mx-auto px-4 sm:px-6">
          {/* Header */}
          <div className="text-center mb-8 md:mb-12">
-           <p className="text-teal-500 text-sm font-medium mb-2">
+           {/* <p className="text-teal-500 text-sm font-medium mb-2">
              What Clients Say
-           </p>
+           </p> */}
            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
              
 Testimonials

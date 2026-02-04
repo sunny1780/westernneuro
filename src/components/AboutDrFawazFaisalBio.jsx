@@ -43,7 +43,7 @@ const AboutDrFawazFaisalBio = ({ imageSrc = "/images/dr-faisal-hero.png" }) => {
           </motion.div>
 
           {/* Right: Text content */}
-          <motion.div className="text-left" variants={staggerContainer}>
+          <motion.div className="text-center" variants={staggerContainer}>
             <motion.h2
               variants={fadeInRight}
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 md:mb-8"

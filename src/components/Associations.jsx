@@ -20,6 +20,12 @@ const defaultAssociations = [
     className: "text-[#7c3aed]",
     image: "/images/three.png",
   },
+  {
+    title: "Additional Association",
+    abbr: "",
+    className: "text-[#7c3aed]",
+    image: "/images/thee.png",
+  },
 ];
 
 const useInView = (options = {}) => {
@@ -77,7 +83,7 @@ const Associations = ({ associations = defaultAssociations }) => {
         </p> */}
 
         {/* Certification cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12 md:mb-16">
           {associations.map((item, index) => (
             <div
               key={index}
