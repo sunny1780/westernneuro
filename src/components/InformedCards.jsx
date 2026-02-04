@@ -29,13 +29,13 @@ const services = [
   {
     title: 'EEG Testing',
     description: 'State-of-the-art electroencephalogram testing performed by expert technicians with interpretation by our board-certified clinical neurophysiologist.',
-    image: '/images/services/3.jpg',
+    image: '/images/services/eeg1.png',
     to: '/services/epilepsy',
   },
 ];
 
 const ArrowButton = () => (
-  <div className="w-12 h-12 rounded-full bg-[#1299ED] flex items-center justify-center flex-shrink-0">
+  <div className="w-12 h-12 rounded-full bg-[#69B0E9] flex items-center justify-center flex-shrink-0">
     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
     </svg>
@@ -85,56 +85,52 @@ function InformedCards() {
           }`}
           style={sectionInView ? { animationDelay: '100ms' } : {}}
         >
-          Our physicians are affiliated with these local hospitals.
+          Our physicians provide Comprehensive Care
         </p>
 
         {/* Service Cards */}
-        <div className="space-y-0">
+        <div className="divide-y divide-gray-200">
           {services.map((service, index) => (
-            <React.Fragment key={service.to}>
-              {index > 0 && (
-                <div className="border-t border-gray-200 my-0" />
-              )}
-              <Link
-                to={service.to}
-                className={`flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 py-6 md:py-8 group ${
-                  sectionInView
-                    ? index % 2 === 0
-                      ? 'animate-slide-in-right-bounce'
-                      : 'animate-slide-in-left-bounce'
-                    : 'opacity-0'
-                }`}
-                style={
-                  sectionInView
-                    ? { animationDelay: `${200 + index * 120}ms` }
-                    : {}
-                }
-              >
-                {/* Image */}
-                <div className="w-full sm:w-32 md:w-40 flex-shrink-0 rounded-xl overflow-hidden bg-gray-100 aspect-[4/3] sm:aspect-square">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
+            <Link
+              key={service.to}
+              to={service.to}
+              className={`flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 py-6 md:py-8 group block ${
+                sectionInView
+                  ? index % 2 === 0
+                    ? 'animate-slide-in-right-bounce'
+                    : 'animate-slide-in-left-bounce'
+                  : 'opacity-0'
+              }`}
+              style={
+                sectionInView
+                  ? { animationDelay: `${200 + index * 120}ms` }
+                  : {}
+              }
+            >
+              {/* Image - Far Left */}
+              <div className="w-full sm:w-40 md:w-48 flex-shrink-0 rounded-xl overflow-hidden bg-gray-100 aspect-[4/3]">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
 
-                {/* Title + Description */}
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg md:text-xl font-bold text-[#1e3a5f] mb-2">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
+              {/* Title + Description - Right of image, heading above paragraph, left-aligned */}
+              <div className="flex-1 min-w-0 text-left">
+                <h3 className="text-lg md:text-xl font-bold text-[#154360] mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
 
-                {/* Arrow Button */}
-                <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <ArrowButton />
-                </div>
-              </Link>
-            </React.Fragment>
+              {/* Arrow Button - Far Right, vertically centered */}
+              <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300 self-center sm:self-auto">
+                <ArrowButton />
+              </div>
+            </Link>
           ))}
         </div>
       </div>

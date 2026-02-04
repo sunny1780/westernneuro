@@ -62,7 +62,8 @@ const WhatSets = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-gradient-to-b from-[#FFFFFF] to-[#69B0E9] py-12 md:py-16 lg:py-20 px-4 sm:px-6 overflow-hidden"
+      className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 overflow-hidden"
+      style={{ background: "linear-gradient(to bottom, #FFFFFF, #69B0E9)" }}
     >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
