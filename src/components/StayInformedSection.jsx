@@ -10,7 +10,7 @@ const cards = [
     to: "/blogs",
   },
   {
-    title: "Stay Informed About Your Neurological Health",
+    title: "Anxiety Disorders: Symptoms, Causes & Treatment",
     description:
       "Autism Spectrum Disorder (ASD) is one of the most complex and often misunderstood neurodevelopmental conditions affecting children and adults today.",
     image: "/images/blog/2.png",
