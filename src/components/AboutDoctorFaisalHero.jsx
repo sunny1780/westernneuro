@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
+// data
 const springBounce = { type: "spring", stiffness: 300, damping: 20 };
 const springSmooth = { type: "spring", stiffness: 100, damping: 15 };
 
