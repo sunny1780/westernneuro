@@ -3,6 +3,11 @@ import AppointmentSection from '../components/AppointmentSection';
 import Footer from '../components/Footer';
 import ServiceSection from '../components/ServiceSection';
 import InfoSection from '../components/InfoSection';
+import EpilepsyTextSection from '../components/EpilepsyTextSection';
+import EpilepsyTypesSection from '../components/EpilepsyTypesSection';
+import EpilepsyApproachSection from '../components/EpilepsyApproachSection';
+import FAQSection from '../components/FAQSection';
+import StayInformedSection from '../components/StayInformedSection';
 import AnimatedPage from '../components/AnimatedPage';
 import AnimatedSection from '../components/AnimatedSection';
 
@@ -59,7 +64,8 @@ function Service1() {
           descriptionColor={serviceSection.descriptionColor}
         />
       </AnimatedSection>
-      <AnimatedSection delay={80}>
+      {/* Old detailed epilepsy layout (image + text) */}
+      {/* <AnimatedSection delay={80}>
         <InfoSection
           image1={infoSection.image1}
           image2={infoSection.image2}
@@ -68,8 +74,28 @@ function Service1() {
           extra={infoSection.extra}
           animate={infoSection.animate}
         />
+      </AnimatedSection> */}
+      {/* New text-only overview section */}
+      <AnimatedSection delay={80}>
+        <EpilepsyTextSection />
       </AnimatedSection>
-      <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
+      {/* Types & causes section */}
+      <AnimatedSection delay={120}>
+        <EpilepsyTypesSection />
+      </AnimatedSection>
+      {/* Diagnostic & treatment approach with image */}
+      <AnimatedSection delay={160}>
+        <EpilepsyApproachSection />
+      </AnimatedSection>
+      {/* FAQs */}
+      <AnimatedSection delay={200}>
+        <FAQSection />
+      </AnimatedSection>
+      {/* Stay informed cards section */}
+      <AnimatedSection delay={240}>
+        <StayInformedSection />
+      </AnimatedSection>
+      <AnimatedSection delay={280}><AppointmentSection /></AnimatedSection>
       <AnimatedSection><Footer /></AnimatedSection>
     </AnimatedPage>
   );

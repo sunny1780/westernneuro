@@ -5,6 +5,7 @@ import ServiceSection from '../components/ServiceSection';
 import InfoSection from '../components/InfoSection';
 import AnimatedPage from '../components/AnimatedPage';
 import AnimatedSection from '../components/AnimatedSection';
+import HeadacheTextSection from '../components/HeadacheTextSection';
 
 const headachesServiceSection = {
   title: "Headaches & Migraines",
@@ -67,7 +68,7 @@ function Service2() {
           descriptionColor={serviceSection.descriptionColor}
         />
       </AnimatedSection>
-      <AnimatedSection delay={80}>
+      {/* <AnimatedSection delay={80}>
         <InfoSection
           image1={infoSection.image1}
           image2={infoSection.image2}
@@ -78,8 +79,11 @@ function Service2() {
           imageDimensions={infoSection.imageDimensions}
           animate={infoSection.animate}
         />
+      </AnimatedSection> */}
+      <AnimatedSection delay={80}>
+        <HeadacheTextSection />
       </AnimatedSection>
-      <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
+      <AnimatedSection delay={140}><AppointmentSection /></AnimatedSection>
       <AnimatedSection><Footer /></AnimatedSection>
     </AnimatedPage>
   );

@@ -37,7 +37,7 @@ const cards = [
 
 const StayInformedSection = () => {
   return (
-    <section className="bg-white py-16 md:py-24 px-4 sm:px-6 md:px-16 overflow-hidden">
+    <section className="py-16 md:py-24 px-4 sm:px-6 md:px-16 overflow-hidden bg-gradient-to-b from-white via-white to-[#69B0E9]/30">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <motion.div
