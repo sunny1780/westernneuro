@@ -2,7 +2,10 @@ import React from 'react';
 import AppointmentSection from '../components/AppointmentSection';
 import Footer from '../components/Footer';
 import ServiceSection from '../components/ServiceSection';
-import InfoSection from '../components/InfoSection';
+import SleepDetailSection from '../components/SleepDetailSection';
+import SleepTreatmentSection from '../components/SleepTreatmentSection';
+import SleepFaqs from '../components/SleepFaqs';
+import StayInformed from '../components/StayInformed';
 import AnimatedPage from '../components/AnimatedPage';
 import AnimatedSection from '../components/AnimatedSection';
 
@@ -57,9 +60,13 @@ const sleepDisordersInfoSection = {
 };
 
 function Service5() {
+<<<<<<< HEAD
   const serviceSection = sleepDisordersServiceSection;
   const infoSection = sleepDisordersInfoSection;
 
+=======
+  const { serviceSection } = sleepDisordersContent;
+>>>>>>> 33a6eec (Services updated)
   return (
     <AnimatedPage>
       <AnimatedSection>
@@ -68,22 +75,18 @@ function Service5() {
           description={serviceSection.description}
           image={serviceSection.image}
           descriptionColor={serviceSection.descriptionColor}
+          showButtons={serviceSection.showButtons}
         />
       </AnimatedSection>
       <AnimatedSection delay={80}>
-        <InfoSection
-          image1={infoSection.image1}
-          image2={infoSection.image2}
-          block1={infoSection.block1}
-          block2={infoSection.block2}
-          block3={infoSection.block3}
-          block3Stacked={infoSection.block3Stacked}
-          extra={infoSection.extra}
-          hideBlock2={infoSection.hideBlock2}
-          animate={infoSection.animate}
-        />
+        <SleepDetailSection animate />
       </AnimatedSection>
-      <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
+      <AnimatedSection delay={120}>
+        <SleepTreatmentSection animate />
+      </AnimatedSection>
+      <AnimatedSection delay={160}><SleepFaqs /></AnimatedSection>
+      <AnimatedSection delay={180}><StayInformed /></AnimatedSection>
+      <AnimatedSection delay={200}><AppointmentSection /></AnimatedSection>
       <AnimatedSection><Footer /></AnimatedSection>
     </AnimatedPage>
   );

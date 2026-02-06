@@ -35,6 +35,9 @@ const InfoSection = ({
   animate = false,
   block1ImageLeft = false,
   block1TextOnly = false,
+  block1ImageOnly = false,
+  block1ImageStyle,
+  contentBlock,
   imageDimensions = "short",
 }) => {
   const imgDim = imageDimensions === "tall" ? imgStyle : imgStyleShort;
@@ -104,12 +107,24 @@ const InfoSection = ({
   return (
     <section className="px-4 sm:px-6 md:px-16 py-12 md:py-16 text-left overflow-x-hidden">
       <div className="max-w-6xl mx-auto w-full space-y-16 md:space-y-24">
-      {/* Section 1 - block1TextOnly: text-only; block1ImageLeft: Image left / Text right; else: Text left / Image right */}
-      {block1TextOnly ? (
+      {/* Section 1 - block1ImageOnly: image only; block1TextOnly: text-only; block1ImageLeft: Image left / Text right; else: Text left / Image right */}
+      {block1ImageOnly ? (
+        <div
+          ref={imageLeftRef}
+          className={`overflow-hidden rounded-[17.59px] bg-gray-100 flex justify-center w-full mx-auto ${
+            inViewStates.imageLeft ? 'animate-slide-up-bounce' : 'opacity-0'
+          }`}
+          style={block1ImageStyle || { width: '100%', maxWidth: '1280px', aspectRatio: '1280/520', borderRadius: '17.59px' }}
+        >
+          {image1 && (
+            <img src={image1} alt="" className="w-full h-full object-cover" style={{ borderRadius: '17.59px' }} />
+          )}
+        </div>
+      ) : block1TextOnly ? (
         <div
           ref={textLeftRef}
-          className={`space-y-12 md:space-y-16 transition-all duration-[450ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-            animate && !inViewStates.textLeft ? 'opacity-0 translate-y-6' : 'opacity-100 translate-y-0'
+          className={`space-y-12 md:space-y-16 ${
+            animate && !inViewStates.textLeft ? 'opacity-0' : 'animate-slide-up-bounce'
           }`}
         >
           <div className="space-y-4">
@@ -135,8 +150,8 @@ const InfoSection = ({
           <>
             <div
               ref={imageLeftRef}
-              className={`overflow-hidden rounded-[17.59px] bg-gray-100 flex justify-center md:justify-start w-full max-w-full transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                inViewStates.imageLeft ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
+              className={`overflow-hidden rounded-[17.59px] bg-gray-100 flex justify-center md:justify-start w-full max-w-full ${
+                inViewStates.imageLeft ? 'animate-slide-in-left-bounce' : 'opacity-0'
               }`}
               style={imgDim}
             >
@@ -146,9 +161,7 @@ const InfoSection = ({
             </div>
             <div
               ref={textRightRef}
-              className={`transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                inViewStates.textRight ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
-              }`}
+              className={inViewStates.textRight ? 'animate-slide-in-right-bounce' : 'opacity-0'}
             >
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">{b1.title1}</h2>
               <p className="text-[#687076] mb-6">{b1.desc1}</p>
@@ -160,9 +173,7 @@ const InfoSection = ({
           <>
             <div
               ref={textLeftRef}
-              className={`transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                inViewStates.textLeft ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
-              }`}
+              className={inViewStates.textLeft ? 'animate-slide-in-left-bounce' : 'opacity-0'}
             >
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">{b1.title1}</h2>
               <p className="text-[#687076] mb-6">{b1.desc1}</p>
@@ -171,8 +182,8 @@ const InfoSection = ({
             </div>
             <div
               ref={imageRightRef}
-              className={`flex justify-center md:justify-end w-full max-w-full transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                inViewStates.imageRight ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
+              className={`flex justify-center md:justify-end w-full max-w-full ${
+                inViewStates.imageRight ? 'animate-slide-in-right-bounce' : 'opacity-0'
               }`}
               style={imgDim}
             >
@@ -185,6 +196,35 @@ const InfoSection = ({
       </div>
       )}
 
+      {/* Content Block - replaces block2 and extra when provided */}
+      {contentBlock ? (
+        <div
+          ref={extraRef}
+          className={`space-y-8 md:space-y-10 text-left ${
+            inViewStates.extra ? 'animate-slide-up-bounce' : 'opacity-0'
+          }`}
+        >
+          <h2 className="text-2xl md:text-3xl font-bold text-[#11181C]">
+            {contentBlock.mainTitle}
+          </h2>
+          <p className="text-base md:text-lg text-[#687076] leading-relaxed">
+            {contentBlock.intro}
+          </p>
+          {contentBlock.sections && contentBlock.sections.map((sec, idx) => (
+            <div key={idx} className="space-y-4">
+              <h3 className="text-xl md:text-2xl font-bold text-[#11181C]">
+                {sec.title}
+              </h3>
+              <ul className="list-disc list-inside space-y-2 text-base md:text-lg text-[#687076] leading-relaxed pl-2">
+                {sec.items && sec.items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      ) : (
+      <>
       {/* Section 2 - block1ImageLeft: Text left / Image right; else: Image left / Text right */}
       {!hideBlock2 && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-start">
@@ -192,9 +232,7 @@ const InfoSection = ({
             <>
               <div
                 ref={textLeftRef}
-                className={`transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                  inViewStates.textLeft ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
-                }`}
+                className={inViewStates.textLeft ? 'animate-slide-in-left-bounce' : 'opacity-0'}
               >
                 <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-4">{b2.title1}</h2>
                 <p className="text-base md:text-lg text-[#687076] leading-relaxed mb-6">{b2.desc1}</p>
@@ -203,8 +241,8 @@ const InfoSection = ({
               </div>
               <div
                 ref={imageRightRef}
-                className={`overflow-hidden rounded-[17.59px] bg-gray-100 flex justify-center md:justify-end w-full max-w-full transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                  inViewStates.imageRight ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
+                className={`overflow-hidden rounded-[17.59px] bg-gray-100 flex justify-center md:justify-end w-full max-w-full ${
+                  inViewStates.imageRight ? 'animate-slide-in-right-bounce' : 'opacity-0'
                 }`}
                 style={imgDim}
               >
@@ -217,8 +255,8 @@ const InfoSection = ({
             <>
               <div
                 ref={imageLeftRef}
-                className={`overflow-hidden bg-gray-100 order-2 md:order-1 flex justify-center md:justify-start w-full max-w-full transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                  inViewStates.imageLeft ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
+                className={`overflow-hidden bg-gray-100 order-2 md:order-1 flex justify-center md:justify-start w-full max-w-full ${
+                  inViewStates.imageLeft ? 'animate-slide-in-left-bounce' : 'opacity-0'
                 }`}
                 style={imgDim}
               >
@@ -228,9 +266,7 @@ const InfoSection = ({
               </div>
               <div
                 ref={textRightRef}
-                className={`order-1 md:order-2 transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                  inViewStates.textRight ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
-                }`}
+                className={`order-1 md:order-2 ${inViewStates.textRight ? 'animate-slide-in-right-bounce' : 'opacity-0'}`}
               >
                 <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-4">{b2.title1}</h2>
                 <p className="text-base md:text-lg text-[#687076] leading-relaxed mb-6">{b2.desc1}</p>
@@ -252,9 +288,7 @@ const InfoSection = ({
             <>
               <div
                 ref={block3TextRef}
-                className={`space-y-6 transition-all duration-[850ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                  inViewStates.block3Text ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                }`}
+                className={`space-y-6 ${inViewStates.block3Text ? 'animate-slide-up-bounce' : 'opacity-0'}`}
               >
                 {(() => {
                   const items = block3.items && block3.items.length
@@ -273,10 +307,8 @@ const InfoSection = ({
               </div>
               <div
                 ref={block3ImageRef}
-                className={`overflow-hidden bg-gray-100 transition-all duration-[850ms] ease-[cubic-bezier(0.22,1,0.36,1)] delay-200 ${
-                  inViewStates.block3Image ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                }`}
-                style={{ width: '100%', maxWidth: '100%', aspectRatio: '1280/442', borderRadius: '17.59px' }}
+                className={`overflow-hidden bg-gray-100 ${inViewStates.block3Image ? 'animate-slide-up-bounce' : 'opacity-0'}`}
+                style={{ width: '100%', maxWidth: '100%', aspectRatio: '1280/442', borderRadius: '17.59px', ...(inViewStates.block3Image && { animationDelay: '200ms' }) }}
               >
                 <img
                   src={block3.image || image1}
@@ -292,9 +324,7 @@ const InfoSection = ({
                 ref={block3ImageRef}
                 className={`overflow-hidden bg-gray-100 flex justify-center ${
                   block3ImageRight ? 'md:justify-end md:order-2' : 'md:justify-start'
-                } transition-all duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                  inViewStates.block3Image ? 'opacity-100 translate-x-0' : block3ImageRight ? 'opacity-0 translate-x-12' : 'opacity-0 -translate-x-12'
-                }`}
+                } ${inViewStates.block3Image ? (block3ImageRight ? 'animate-slide-in-right-bounce' : 'animate-slide-in-left-bounce') : 'opacity-0'}`}
                 style={{ width: '100%', maxWidth: '100%', aspectRatio: '1280/442', borderRadius: '17.59px' }}
               >
             <img
@@ -306,9 +336,8 @@ const InfoSection = ({
           </div>
           <div
             ref={block3TextRef}
-            className={`space-y-6 transition-all duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] delay-150 ${
-              inViewStates.block3Text ? 'opacity-100 translate-x-0' : block3ImageRight ? 'opacity-0 -translate-x-12' : 'opacity-0 translate-x-12'
-            } ${block3ImageRight ? 'md:order-1' : ''}`}
+            className={`space-y-6 ${inViewStates.block3Text ? (block3ImageRight ? 'animate-slide-in-left-bounce' : 'animate-slide-in-right-bounce') : 'opacity-0'} ${block3ImageRight ? 'md:order-1' : ''}`}
+            style={inViewStates.block3Text ? { animationDelay: '150ms' } : {}}
           >
             {(() => {
               const items = block3.items && block3.items.length
@@ -333,11 +362,11 @@ const InfoSection = ({
       {/* Text Section */}
       <div
         ref={extraRef}
-        className={`space-y-12 md:space-y-16 transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-          inViewStates.extra ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+        className={`space-y-12 md:space-y-16 ${
+          inViewStates.extra ? 'animate-slide-up-bounce' : 'opacity-0'
         }`}
       >
-        {extraContent.sections.map((section, index) => (
+        {extraContent.sections && extraContent.sections.map((section, index) => (
           <div key={index} className="space-y-4">
             {section.title && (
               <h2 className="text-2xl md:text-3xl font-bold text-[#333333]">
@@ -376,6 +405,8 @@ const InfoSection = ({
             ))}
           </ol>
         </div>
+      )}
+      </>
       )}
       </div>
     </section>

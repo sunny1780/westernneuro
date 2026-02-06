@@ -2,7 +2,10 @@ import React from 'react';
 import AppointmentSection from '../components/AppointmentSection';
 import Footer from '../components/Footer';
 import ServiceSection from '../components/ServiceSection';
-import InfoSection from '../components/InfoSection';
+import HeadachesDetailSection from '../components/HeadachesDetailSection';
+import HeadachesTreatmentSection from '../components/HeadachesTreatmentSection';
+import HeadacheFaqs from '../components/HeadacheFaqs';
+import StayInformed from '../components/StayInformed';
 import AnimatedPage from '../components/AnimatedPage';
 import AnimatedSection from '../components/AnimatedSection';
 import HeadacheTextSection from '../components/HeadacheTextSection';
@@ -52,9 +55,13 @@ const headachesInfoSection = {
 };
 
 function Service2() {
+<<<<<<< HEAD
   const serviceSection = headachesServiceSection;
   const infoSection = headachesInfoSection;
 
+=======
+  const { serviceSection } = headachesContent;
+>>>>>>> 33a6eec (Services updated)
   return (
     <AnimatedPage>
       <AnimatedSection>
@@ -66,8 +73,10 @@ function Service2() {
           imageStyle={serviceSection.imageStyle}
           textFirst={serviceSection.textFirst}
           descriptionColor={serviceSection.descriptionColor}
+          showButtons={serviceSection.showButtons}
         />
       </AnimatedSection>
+<<<<<<< HEAD
       {/* <AnimatedSection delay={80}>
         <InfoSection
           image1={infoSection.image1}
@@ -84,6 +93,17 @@ function Service2() {
         <HeadacheTextSection />
       </AnimatedSection>
       <AnimatedSection delay={140}><AppointmentSection /></AnimatedSection>
+=======
+      <AnimatedSection delay={80}>
+        <HeadachesDetailSection animate />
+      </AnimatedSection>
+      <AnimatedSection delay={120}>
+        <HeadachesTreatmentSection animate />
+      </AnimatedSection>
+      <AnimatedSection delay={160}><HeadacheFaqs /></AnimatedSection>
+      <AnimatedSection delay={180}><StayInformed /></AnimatedSection>
+      <AnimatedSection delay={200}><AppointmentSection /></AnimatedSection>
+>>>>>>> 33a6eec (Services updated)
       <AnimatedSection><Footer /></AnimatedSection>
     </AnimatedPage>
   );

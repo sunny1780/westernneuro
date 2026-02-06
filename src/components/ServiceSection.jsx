@@ -10,6 +10,7 @@ const ServiceSection = ({
     textFirst = false,
     descriptionColor = "text-[#687076]",
     layout = "sideBySide",
+    showButtons = false,
   }) => {
     const imageRef = useRef(null);
     const textRef = useRef(null);
@@ -52,9 +53,7 @@ const ServiceSection = ({
           <div className="max-w-6xl mx-auto w-full">
             <div
               ref={textRef}
-              className={`mb-8 md:mb-10 transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-              }`}
+              className={`mb-8 md:mb-10 ${textVisible ? 'animate-slide-up-bounce' : 'opacity-0'}`}
             >
               <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold text-[#053759] mb-4 md:mb-6 leading-tight">
                 {titleLines ? (
@@ -66,17 +65,35 @@ const ServiceSection = ({
                   title
                 )}
               </h2>
-              <p className={`${descriptionColor} max-w-3xl leading-relaxed`}>
+              <p className={`${descriptionColor} max-w-3xl leading-relaxed mb-6`}>
                 {description}
               </p>
+              {showButtons && (
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    to="/book-appointment"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium text-white bg-[#1893FF] hover:bg-[#0f80dd] transition"
+                  >
+                    Schedule Appointment
+                  </Link>
+                  <Link
+                    to="/book-appointment"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium text-[#1893FF] border-2 border-[#1893FF] bg-white hover:bg-[#f8fbff] transition"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    Contact us
+                  </Link>
+                </div>
+              )}
             </div>
 
             {image && (
               <div
                 ref={imageRef}
-                className={`w-full rounded-xl overflow-hidden transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] delay-150 ${
-                  imageVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-                }`}
+                className={`w-full rounded-xl overflow-hidden ${imageVisible ? 'animate-slide-up-bounce' : 'opacity-0'}`}
+                style={imageVisible ? { animationDelay: '150ms' } : {}}
               >
                 <img
                   src={image}
@@ -99,8 +116,8 @@ const ServiceSection = ({
             {/* Image Card */}
             <div
               ref={imageRef}
-              className={`flex justify-center ${textFirst ? 'lg:justify-end lg:order-2' : 'lg:justify-start'} transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                imageVisible ? 'opacity-100 translate-x-0' : textFirst ? 'opacity-0 translate-x-12' : 'opacity-0 -translate-x-12'
+              className={`flex justify-center ${textFirst ? 'lg:justify-end lg:order-2' : 'lg:justify-start'} ${
+                imageVisible ? (textFirst ? 'animate-slide-in-right-bounce' : 'animate-slide-in-left-bounce') : 'opacity-0'
               }`}
             >
               <div
@@ -120,9 +137,8 @@ const ServiceSection = ({
             {/* Content */}
             <div
               ref={textRef}
-              className={`${textFirst ? 'lg:order-1' : ''} transition-all duration-[750ms] ease-[cubic-bezier(0.22,1,0.36,1)] delay-150 ${
-                textVisible ? 'opacity-100 translate-x-0' : textFirst ? 'opacity-0 -translate-x-12' : 'opacity-0 translate-x-12'
-              }`}
+              className={`${textFirst ? 'lg:order-1' : ''} ${textVisible ? (textFirst ? 'animate-slide-in-left-bounce' : 'animate-slide-in-right-bounce') : 'opacity-0'}`}
+              style={textVisible ? { animationDelay: '150ms' } : {}}
             >
               <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold text-[#053759] mb-4 md:mb-6 leading-tight">
                 {titleLines ? (
@@ -134,9 +150,10 @@ const ServiceSection = ({
                   title
                 )}
               </h2>
-              <p className={`${descriptionColor} max-w-xl leading-relaxed`}>
+              <p className={`${descriptionColor} max-w-xl leading-relaxed mb-6`}>
                 {description}
               </p>
+<<<<<<< HEAD
               {/* Primary CTAs */}
               <div className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
                 <Link
@@ -157,6 +174,27 @@ const ServiceSection = ({
                   Contact us
                 </Link>
               </div>
+=======
+              {showButtons && (
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    to="/book-appointment"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium text-white bg-[#1893FF] hover:bg-[#0f80dd] transition"
+                  >
+                    Schedule Appointment
+                  </Link>
+                  <Link
+                    to="/book-appointment"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium text-[#1893FF] border-2 border-[#1893FF] bg-white hover:bg-[#f8fbff] transition"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    Contact us
+                  </Link>
+                </div>
+              )}
+>>>>>>> 33a6eec (Services updated)
             </div>
   
           </div>

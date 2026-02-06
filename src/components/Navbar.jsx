@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="w-full sticky top-0 z-50 font-sans"
+      className="w-full z-[9999] font-sans relative"
       style={{ background: "#0000000D" }}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 py-3 md:py-4">
@@ -37,9 +37,9 @@ const Navbar = () => {
                 {chevronDown}
                 {/* pt-1 bridge so dropdown doesn't disappear when moving mouse down */}
                 {aboutDropdownOpen && (
-                  <div className="absolute left-0 top-full pt-1">
+                  <div className="absolute left-0 top-full pt-1 z-[9999]">
                     <div
-                      className="py-1 rounded-lg shadow-lg min-w-[240px] z-50 text-left bg-white"
+                      className="py-1 rounded-lg shadow-lg min-w-[240px] text-left bg-white"
                     >
                       <Link
                         to="/about/doctor-faisal"
@@ -75,9 +75,9 @@ const Navbar = () => {
                   {chevronDown}
                 </Link>
                 {servicesDropdownOpen && (
-                  <div className="absolute left-0 top-full pt-1">
+                  <div className="absolute left-0 top-full pt-1 z-[9999]">
                     <div
-                      className="py-1 rounded-lg shadow-lg min-w-[200px] z-50 text-left bg-white"
+                      className="py-1 rounded-lg shadow-lg min-w-[200px] text-left bg-white"
                     >
                   <Link
                     to="/services/epilepsy"

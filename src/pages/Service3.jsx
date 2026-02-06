@@ -2,7 +2,10 @@ import React from 'react';
 import AppointmentSection from '../components/AppointmentSection';
 import Footer from '../components/Footer';
 import ServiceSection from '../components/ServiceSection';
-import InfoSection from '../components/InfoSection';
+import NeuromuscularDetailSection from '../components/NeuromuscularDetailSection';
+import NeuromuscularTreatmentSection from '../components/NeuromuscularTreatmentSection';
+import NeuromuscularFaqs from '../components/NeuromuscularFaqs';
+import StayInformed from '../components/StayInformed';
 import AnimatedPage from '../components/AnimatedPage';
 import AnimatedSection from '../components/AnimatedSection';
 
@@ -52,9 +55,13 @@ const neuromuscularInfoSection = {
 };
 
 function Service3() {
+<<<<<<< HEAD
   const serviceSection = neuromuscularServiceSection;
   const infoSection = neuromuscularInfoSection;
 
+=======
+  const { serviceSection } = neuromuscularContent;
+>>>>>>> 33a6eec (Services updated)
   return (
     <AnimatedPage>
       <AnimatedSection>
@@ -63,25 +70,26 @@ function Service3() {
           titleLines={serviceSection.titleLines}
           description={serviceSection.description}
           image={serviceSection.image}
+<<<<<<< HEAD
           textFirst={serviceSection.textFirst}
+=======
+          imageStyle={serviceSection.imageStyle}
+>>>>>>> 33a6eec (Services updated)
           layout={serviceSection.layout}
+          textFirst={serviceSection.textFirst}
           descriptionColor={serviceSection.descriptionColor}
+          showButtons={serviceSection.showButtons}
         />
       </AnimatedSection>
       <AnimatedSection delay={80}>
-        <InfoSection
-          image1={infoSection.image1}
-          image2={infoSection.image2}
-          block1={infoSection.block1}
-          block2={infoSection.block2}
-          block3={infoSection.block3}
-          extra={infoSection.extra}
-          block1TextOnly={infoSection.block1TextOnly}
-          block1ImageLeft={infoSection.block1ImageLeft}
-          animate={infoSection.animate}
-        />
+        <NeuromuscularDetailSection animate />
       </AnimatedSection>
-      <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
+      <AnimatedSection delay={120}>
+        <NeuromuscularTreatmentSection animate />
+      </AnimatedSection>
+      <AnimatedSection delay={160}><NeuromuscularFaqs /></AnimatedSection>
+      <AnimatedSection delay={180}><StayInformed /></AnimatedSection>
+      <AnimatedSection delay={200}><AppointmentSection /></AnimatedSection>
       <AnimatedSection><Footer /></AnimatedSection>
     </AnimatedPage>
   );

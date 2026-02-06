@@ -3,11 +3,17 @@ import AppointmentSection from '../components/AppointmentSection';
 import Footer from '../components/Footer';
 import ServiceSection from '../components/ServiceSection';
 import InfoSection from '../components/InfoSection';
+<<<<<<< HEAD
 import EpilepsyTextSection from '../components/EpilepsyTextSection';
 import EpilepsyTypesSection from '../components/EpilepsyTypesSection';
 import EpilepsyApproachSection from '../components/EpilepsyApproachSection';
 import FAQSection from '../components/FAQSection';
 import StayInformedSection from '../components/StayInformedSection';
+=======
+import EpilepsyDetailSection from '../components/EpilepsyDetailSection';
+import EpilepsyFaqs from '../components/EpilepsyFaqs';
+import StayInformed from '../components/StayInformed';
+>>>>>>> 33a6eec (Services updated)
 import AnimatedPage from '../components/AnimatedPage';
 import AnimatedSection from '../components/AnimatedSection';
 
@@ -62,16 +68,25 @@ function Service1() {
           description={serviceSection.description}
           image={serviceSection.image}
           descriptionColor={serviceSection.descriptionColor}
+          showButtons={serviceSection.showButtons}
         />
       </AnimatedSection>
+<<<<<<< HEAD
       {/* Old detailed epilepsy layout (image + text) */}
       {/* <AnimatedSection delay={80}>
+=======
+      <AnimatedSection delay={80}>
+        <EpilepsyDetailSection animate />
+      </AnimatedSection>
+      <AnimatedSection delay={120}>
+>>>>>>> 33a6eec (Services updated)
         <InfoSection
           image1={infoSection.image1}
           image2={infoSection.image2}
           block1={infoSection.block1}
-          block2={infoSection.block2}
-          extra={infoSection.extra}
+          block1ImageOnly={infoSection.block1ImageOnly}
+          block1ImageStyle={infoSection.block1ImageStyle}
+          contentBlock={infoSection.contentBlock}
           animate={infoSection.animate}
         />
       </AnimatedSection> */}
@@ -79,6 +94,7 @@ function Service1() {
       <AnimatedSection delay={80}>
         <EpilepsyTextSection />
       </AnimatedSection>
+<<<<<<< HEAD
       {/* Types & causes section */}
       <AnimatedSection delay={120}>
         <EpilepsyTypesSection />
@@ -96,6 +112,11 @@ function Service1() {
         <StayInformedSection />
       </AnimatedSection>
       <AnimatedSection delay={280}><AppointmentSection /></AnimatedSection>
+=======
+      <AnimatedSection delay={160}><EpilepsyFaqs /></AnimatedSection>
+      <AnimatedSection delay={180}><StayInformed /></AnimatedSection>
+      <AnimatedSection delay={200}><AppointmentSection /></AnimatedSection>
+>>>>>>> 33a6eec (Services updated)
       <AnimatedSection><Footer /></AnimatedSection>
     </AnimatedPage>
   );

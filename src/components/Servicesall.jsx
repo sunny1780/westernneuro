@@ -67,10 +67,10 @@ const ServiceCard = ({ service, index }) => {
   return (
     <div
       ref={cardRef}
-      className={`flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 items-start sm:items-center p-4 sm:p-5 lg:p-6 bg-white rounded-xl shadow-sm border-b border-gray-200 last:border-b-0 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] overflow-hidden ${
-        isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
+      className={`flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 items-start sm:items-center p-4 sm:p-5 lg:p-6 bg-white rounded-xl shadow-sm border-b border-gray-200 last:border-b-0 overflow-hidden ${
+        isVisible ? 'animate-slide-in-right-bounce' : 'opacity-0'
       }`}
-      style={{ transitionDelay: isVisible ? `${index * 60}ms` : '0ms' }}
+      style={isVisible ? { animationDelay: `${index * 60}ms` } : {}}
     >
             {/* Image */}
             <div className="w-full sm:w-36 md:w-40 lg:w-48 aspect-[1.8] rounded-xl overflow-hidden bg-gray-100 flex-shrink-0 min-w-0">
