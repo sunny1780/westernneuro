@@ -153,28 +153,6 @@ const ServiceSection = ({
               <p className={`${descriptionColor} max-w-xl leading-relaxed mb-6`}>
                 {description}
               </p>
-<<<<<<< HEAD
-              {/* Primary CTAs */}
-              <div className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
-                <Link
-                  to="/book-appointment"
-                  className="inline-flex items-center justify-center px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl bg-[#1299ED] hover:bg-[#0d7bc7] text-white text-sm sm:text-base font-semibold shadow-[0_8px_24px_rgba(18,153,237,0.35)] transition-colors duration-200"
-                >
-                  Schedule Appointment
-                </Link>
-                <Link
-                  to="/patient-information"
-                  className="inline-flex items-center justify-center px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl border border-[#1299ED] text-[#1299ED] hover:bg-[#1299ED]/5 text-sm sm:text-base font-semibold transition-colors duration-200"
-                >
-                  <img
-                    src="/images/icon/Vector.png"
-                    alt="Phone icon"
-                    className="w-4 h-4 sm:w-5 sm:h-5 mr-2"
-                  />
-                  Contact us
-                </Link>
-              </div>
-=======
               {showButtons && (
                 <div className="flex flex-wrap gap-4">
                   <Link
@@ -194,7 +172,6 @@ const ServiceSection = ({
                   </Link>
                 </div>
               )}
->>>>>>> 33a6eec (Services updated)
             </div>
   
           </div>
