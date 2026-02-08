@@ -7,10 +7,11 @@ import Associations from '../components/Associations';
 import Moreclinis from '../components/Moreclinis';
 import TestimonialsMarquee from '../components/Testimonials';
 import WhatSets from '../components/WhatSets';
-import InformedCards from '../components/InformedCards';
-import StayInformedSection from '../components/StayInformedSection';
+// import InformedCards from '../components/InformedCards';
+// import StayInformedSection from '../components/StayInformedSection';
 import AppointmentSection from '../components/AppointmentSection';
 import Footer from '../components/Footer';
+import StayInformed from '../components/StayInformed';
 
 function Home() {
   return (
@@ -23,8 +24,9 @@ function Home() {
       <WhatSets />
       <Associations />
       <TestimonialsMarquee />
-      <InformedCards />
-      <StayInformedSection />
+      {/* <InformedCards />
+      <StayInformedSection /> */}
+      <StayInformed />
       <AppointmentSection/>
       <Footer />
     </div>
