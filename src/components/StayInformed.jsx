@@ -3,22 +3,22 @@ import { Link } from 'react-router-dom';
 
 const cards = [
   {
-    image: "/images/blghero.png",
-    title: "Stay Informed About Your Neurological Health",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    link: "/blogs",
+    image: "/images/Blog1.jpg",
+    title: "ADHD Uncovered: A Comprehensive Guide",
+    desc: "Learn about ADHD symptoms, causes, and effective treatments for children and adults. Discover how proper support can help individuals thrive.",
+    link: "/blog1",
   },
   {
-    image: "/images/blghero.png",
-    title: "Stay Informed About Your Neurological Health",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    link: "/blogs",
+    image: "/images/Blog2.jpg",
+    title: "Unraveling Autism: Understanding ASD",
+    desc: "A comprehensive guide to understanding, diagnosing, and treating Autism Spectrum Disorder for children and adults.",
+    link: "/blog2",
   },
   {
-    image: "/images/blghero.png",
-    title: "Stay Informed About Your Neurological Health",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    link: "/blogs",
+    image: "/images/Blog3.jpg",
+    title: "Anxiety: Understanding & Treatment",
+    desc: "Learn about anxiety disorders, their symptoms, causes, and effective treatment options including therapy and lifestyle changes.",
+    link: "/blog3",
   },
 ];
 
