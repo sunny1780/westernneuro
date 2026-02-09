@@ -54,29 +54,31 @@ const WestTeam = () => {
 
           {/* Team Cards */}
           <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6"
             variants={staggerContainer}
           >
             {teamMembers.map((member) => (
               <motion.div
                 key={member.name}
                 variants={cardPop}
-                className="bg-white rounded-3xl shadow-[0_10px_30px_rgba(15,23,42,0.08)] border border-white/80 overflow-hidden flex flex-col"
-                whileHover={{ y: -6, boxShadow: "0 16px 40px rgba(15,23,42,0.12)" }}
+                className="bg-white rounded-2xl shadow-sm border border-[#D9EAFB] overflow-hidden flex flex-col"
+                whileHover={{ y: -4, boxShadow: "0 10px 24px rgba(15,23,42,0.08)" }}
                 transition={springBounce}
               >
-                <div className="aspect-[4/5] bg-gray-100">
-                  <img
-                    src={member.image || '/images/Team.png'}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="p-3">
+                  <div className="aspect-[4/5] bg-gray-100 rounded-2xl overflow-hidden">
+                    <img
+                      src={member.image || '/images/Team.png'}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
-                <div className="px-5 py-4 text-center">
-                  <h3 className="font-semibold text-[#053759] text-base md:text-lg">
+                <div className="px-4 pb-4 text-center">
+                  <h3 className="font-semibold text-[#053759] text-sm md:text-base">
                     {member.name}
                   </h3>
-                  <p className="text-sm text-gray-600 mt-1">{member.title}</p>
+                  <p className="text-xs text-gray-600 mt-1">{member.title}</p>
                 </div>
               </motion.div>
             ))}
