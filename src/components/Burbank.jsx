@@ -38,7 +38,7 @@ const Burbank = () => {
             className={`text-left ${textInView ? 'animate-slide-up-bounce' : 'opacity-0'}`}
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Burbank
+            Burbank's Leading 
               <br />
               Neurology Expert
             </h2>

@@ -26,10 +26,10 @@ export default function AppointmentSection() {
           {/* Left Content */}
           <motion.div className="text-left" variants={fadeInLeft}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-4 md:mb-6 leading-tight">
-              We’re here to help you <br /> achieve health
+            Ready to take the next step in your  <br /> neurological care?
             </h1>
             <p className="text-[#687076] max-w-md mb-6 md:mb-8">
-              Share your knowledge, ask questions, or schedule your appointment today.
+            Have questions or ready to schedule? Reach out today.
             </p>
 
             {/* Contact Info */}
