@@ -81,9 +81,9 @@ const WhatSets = () => {
             }`}
             style={sectionInView ? { animationDelay: "100ms" } : {}}
           >
-            Our strength lies in a strategic, flexible model that bridges
-            healthcare professionals, startups, and global education exactly
-            where it's needed most.
+            Our strength lies in delivering expert neurological care with compassion,
+            advanced diagnostics, and personalized treatment plans tailored to each
+            patient's unique needs.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ const WhatSets = () => {
           {features.map((item, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl shadow-md border border-gray-100 p-6 h-full flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1 ${
+              className={`bg-white rounded-xl shadow-md border border-gray-100 p-6 h-full flex flex-col items-start justify-center text-left transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1 ${
                 sectionInView ? "animate-pop-in" : "opacity-0"
               }`}
               style={
@@ -101,11 +101,18 @@ const WhatSets = () => {
                   : {}
               }
             >
-              <div className="flex flex-col items-center gap-3 mb-4">
-                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-blue-500 text-lg">
-                  ✨
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-50">
+                  <img
+                    src="/images/staricon.svg"
+                    alt=""
+                    className="w-4 h-4 object-contain"
+                  />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3
+                  className="text-[15px] leading-[28px] font-medium text-[#11181C]"
+                  style={{ letterSpacing: '0.5%' }}
+                >
                   {item.title}
                 </h3>
               </div>

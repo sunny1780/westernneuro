@@ -29,7 +29,7 @@ export default function AppointmentSection() {
               We’re here to help you <br /> achieve health
             </h1>
             <p className="text-[#687076] max-w-md mb-6 md:mb-8">
-            Join our expert neurological care team. Share your knowledge, ask questions, or schedule your appointment today.
+              Share your knowledge, ask questions, or schedule your appointment today.
             </p>
 
             {/* Contact Info */}
@@ -140,7 +140,7 @@ export default function AppointmentSection() {
                 <label className="block text-sm font-medium mb-1 text-left">
                   Procedure of Interest
                 </label>
-                <select className="w-full border rounded-lg pl-4 pr-12 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
+                <select className="w-full border rounded-lg pl-4 pr-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
                   <option>Epilepsy</option>
                   <option>Consultation</option>
                   <option>Treatment</option>
@@ -163,7 +163,7 @@ export default function AppointmentSection() {
                   <label className="block text-sm font-medium mb-1 text-left">
                     Time <span className="text-red-500">*</span>
                   </label>
-                  <select className="w-full border rounded-lg pl-4 pr-12 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
+                <select className="w-full border rounded-lg pl-4 pr-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
                     <option>9 AM</option>
                     <option>10 AM</option>
                     <option>11 AM</option>

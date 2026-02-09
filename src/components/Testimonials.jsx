@@ -107,14 +107,13 @@
      return (
        <div
          className="max-w-full overflow-hidden"
-         style={{
-           '--speed': speed,
-           '--numItems': numItems,
-           '--item-width': 'min(350px, 85vw)',
-           '--item-gap': itemGap,
-           '--direction': direction,
-           maskImage: 'linear-gradient(to right, transparent, black 2rem, black calc(100% - 2rem), transparent)'
-         }}
+        style={{
+          '--speed': speed,
+          '--numItems': numItems,
+          '--item-width': 'min(350px, 85vw)',
+          '--item-gap': itemGap,
+          '--direction': direction
+        }}
        >
          <div
            className="w-max flex"
@@ -181,7 +180,7 @@
  
    return (
      <div className="py-12 md:py-16 bg-gray-50 relative">
-       <div className="container mx-auto px-4 sm:px-6">
+      <div className="w-full max-w-none mx-0 px-0">
          {/* Header */}
          <div className="text-center mb-8 md:mb-12">
            {/* <p className="text-teal-500 text-sm font-medium mb-2">

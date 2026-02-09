@@ -28,7 +28,7 @@ export default function StayInformed() {
     <section className="bg-white py-16 md:py-24 px-4 sm:px-6 overflow-hidden">
       <div className="mx-auto flex flex-col max-w-6xl w-full gap-20">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <h2
             className="text-left"
             style={{
@@ -46,13 +46,13 @@ export default function StayInformed() {
           </h2>
           <Link
             to="/blogs"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium text-white bg-[#1893FF] hover:bg-[#0f80dd] transition flex-shrink-0 self-start sm:self-center"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium text-white bg-[#1893FF] hover:bg-[#0f80dd] transition flex-shrink-0"
           >
             Learn More
             <img
-              src="/images/arowicon.png"
+              src="/images/srow.svg"
               alt=""
-              className="w-4 h-4 object-contain rotate-[-90deg]"
+              className="w-4 h-4 object-contain"
             />
           </Link>
         </div>

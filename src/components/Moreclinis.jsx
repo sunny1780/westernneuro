@@ -76,7 +76,10 @@ const Moreclinis = () => {
               className={`mt-16 ${rightInView ? 'animate-slide-up-bounce' : 'opacity-0'}`}
               style={rightInView ? { animationDelay: '200ms' } : {}}
             >
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight text-left">
+              <h2
+                className="text-[48px] font-medium text-[#11181C] mb-6 leading-[1] text-left"
+                style={{ letterSpacing: '0.5%' }}
+              >
                 More Than a Clinic — We're Your Health Partner
               </h2>
             </div>
@@ -86,15 +89,23 @@ const Moreclinis = () => {
               className={`${rightInView ? 'animate-slide-up-bounce' : 'opacity-0'}`}
               style={rightInView ? { animationDelay: '350ms' } : {}}
             >
-              <p className="text-gray-600 mb-4 text-left">
+              <p
+                className="text-[18px] leading-[28px] font-normal text-[#687076] mb-4 text-left"
+                style={{ letterSpacing: '0.5%' }}
+              >
                 Located in the heart of Burbank, Western Neurological Associates has
-                been serving the community for over 12 years.
+                been serving the community for over 12 years with comprehensive
+                neurological and sleep disorder care.
               </p>
-              <p className="text-gray-600 mb-8 text-left">
-                Our Medical Director, Dr. Fawaz Faisal is triple board certified in
-                Neurology, Clinical Neurophysiology, and Sleep medicine. He has
-                established Western Neurological Associates as one of the leading
-                neurology practices in the valley.
+              <p
+                className="text-[18px] leading-[28px] font-normal text-[#687076] mb-8 text-left"
+                style={{ letterSpacing: '0.5%' }}
+              >
+                Along with his extensive expertise, Dr. Faisal strives to provide
+                quality care with compassion and individualized attention to every
+                patient. We believe that providing patients with a full
+                understanding of their condition and thorough education about their
+                care is an essential part of our practice.
               </p>
             </div>
 
