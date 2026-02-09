@@ -15,13 +15,15 @@ const WestLogos = () => {
     { src: '/images/one.png', alt: 'American Board of Psychiatry and Neurology' },
     { src: '/images/two.png', alt: 'American Board of Sleep Medicine' },
     { src: '/images/three.png', alt: 'American Board of Clinical Neurophysiology' },
+    { src: '/images/thee.png', alt: 'Amercan Board of Neurology'},
+
   ];
 
   return (
     <section className="bg-white py-12 md:py-16 px-4 sm:px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-3 gap-6"
+          className="grid grid-cols-2 md:grid-cols-4 gap-6"
           variants={staggerContainer}
           initial="initial"
           whileInView="animate"
