@@ -7,6 +7,7 @@ import Associations from '../components/Associations';
 import Moreclinis from '../components/Moreclinis';
 import TestimonialsMarquee from '../components/Testimonials';
 import WhatSets from '../components/WhatSets';
+import Allservices from '../components/Allservices';
 // import InformedCards from '../components/InformedCards';
 // import StayInformedSection from '../components/StayInformedSection';
 import AppointmentSection from '../components/AppointmentSection';
@@ -21,6 +22,7 @@ function Home() {
       <Burbank />
       <Moreclinis />
       <AffiliateInsurance />
+      <Allservices />
       <WhatSets />
       <Associations />
       <TestimonialsMarquee />

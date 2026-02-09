@@ -37,13 +37,10 @@ const Westernhero = () => {
           >
             <motion.h1
               variants={headingPop}
-              className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#053759] leading-tight mb-6"
+              className="text-[96px] font-medium text-[#053759] leading-[1] mb-6"
+              style={{ letterSpacing: '0.5%' }}
             >
-              Leading Burbank's
-              <br />
-              Neurological Excellence
-              <br />
-              Since 2010
+              Western Neurological Associates
             </motion.h1>
             <motion.p
               variants={fadeInLeft}

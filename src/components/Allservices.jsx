@@ -70,52 +70,60 @@ const ServiceCard = ({ service, index }) => {
       }`}
       style={isVisible ? { animationDelay: `${index * 60}ms` } : {}}
     >
-            {/* Image */}
-            <div className="w-[298px] h-[152px] rounded-[17.59px] overflow-hidden bg-gray-100 flex-shrink-0 min-w-0">
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
+      {/* Image */}
+      <div className="w-[298px] h-[152px] rounded-[17.59px] overflow-hidden bg-gray-100 flex-shrink-0 min-w-0">
+        <img
+          src={service.image}
+          alt={service.title}
+          className="w-full h-full object-cover"
+        />
+      </div>
 
-            {/* Title + Description - responsive layout */}
-            <div className="flex-1 min-w-0 flex flex-col lg:flex-row gap-3 lg:gap-6 items-start lg:items-center w-full">
-              <div className="w-full lg:max-w-[300px] lg:flex-shrink-0">
-                <h3
-                  className="text-[36px] leading-[40px] font-normal text-[#006699]"
-                  style={{ letterSpacing: '0.5%' }}
-                >
-                  {service.title}
-                </h3>
-              </div>
-              <div className="w-full lg:max-w-[462px] min-w-0">
-                <p
-                  className="text-sm sm:text-base leading-relaxed break-words"
-                  style={{ color: '#687076' }}
-                >
-                  {service.description}
-                </p>
-              </div>
-            </div>
+      {/* Title + Description - responsive layout */}
+      <div className="flex-1 min-w-0 flex flex-col lg:flex-row gap-3 lg:gap-6 items-start lg:items-center w-full">
+        <div className="w-full lg:max-w-[300px] lg:flex-shrink-0">
+          <h3
+            className="text-[36px] leading-[40px] font-normal text-[#006699]"
+            style={{ letterSpacing: '0.5%' }}
+          >
+            {service.title}
+          </h3>
+        </div>
+        <div className="w-full lg:max-w-[462px] min-w-0">
+          <p
+            className="text-sm sm:text-base leading-relaxed break-words"
+            style={{ color: '#687076' }}
+          >
+            {service.description}
+          </p>
+        </div>
+      </div>
 
-            {/* Button - vertically centered */}
-            <Link
-              to={service.link}
-              className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#00BFFF] hover:bg-[#00a3e0] text-white flex items-center justify-center transition"
-              style={{ borderRadius: '12px' }}
-              aria-label={`Learn more about ${service.title}`}
-            >
-              <ArrowIcon />
-            </Link>
+      {/* Button - vertically centered */}
+      <Link
+        to={service.link}
+        className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#00BFFF] hover:bg-[#00a3e0] text-white flex items-center justify-center transition"
+        style={{ borderRadius: '12px' }}
+        aria-label={`Learn more about ${service.title}`}
+      >
+        <ArrowIcon />
+      </Link>
     </div>
   );
 };
 
-const Servicesall = () => {
+const Allservices = () => {
   return (
     <section className="bg-white py-12 md:py-16 px-4 sm:px-6 overflow-x-hidden">
-      <div className="max-w-6xl mx-auto w-full space-y-0 text-left">
+      <div className="max-w-6xl mx-auto w-full space-y-8 text-left">
+        <div className="text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+            Our Services
+          </h2>
+          <p className="text-sm sm:text-base text-[#687076] mt-2">
+            Our physicians provide Comprehensive Care
+          </p>
+        </div>
         {services.map((service, index) => (
           <ServiceCard key={service.title} service={service} index={index} />
         ))}
@@ -124,4 +132,4 @@ const Servicesall = () => {
   );
 };
 
-export default Servicesall;
+export default Allservices;
