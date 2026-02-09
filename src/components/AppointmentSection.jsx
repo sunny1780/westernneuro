@@ -140,11 +140,28 @@ export default function AppointmentSection() {
                 <label className="block text-sm font-medium mb-1 text-left">
                   Procedure of Interest
                 </label>
-                <select className="w-full border rounded-lg pl-4 pr-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
-                  <option>Epilepsy</option>
-                  <option>Consultation</option>
-                  <option>Treatment</option>
-                </select>
+                <div className="relative">
+                  <select className="w-full border rounded-lg pl-4 pr-12 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left appearance-none">
+                    <option>Epilepsy</option>
+                    <option>Consultation</option>
+                    <option>Treatment</option>
+                  </select>
+                  <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-500">
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </span>
+                </div>
               </div>
 
               {/* Date & Time */}
@@ -163,11 +180,28 @@ export default function AppointmentSection() {
                   <label className="block text-sm font-medium mb-1 text-left">
                     Time <span className="text-red-500">*</span>
                   </label>
-                <select className="w-full border rounded-lg pl-4 pr-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
-                    <option>9 AM</option>
-                    <option>10 AM</option>
-                    <option>11 AM</option>
-                  </select>
+                  <div className="relative">
+                    <select className="w-full border rounded-lg pl-4 pr-12 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left appearance-none">
+                      <option>9 AM</option>
+                      <option>10 AM</option>
+                      <option>11 AM</option>
+                    </select>
+                    <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-500">
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </span>
+                  </div>
                 </div>
               </div>
 
