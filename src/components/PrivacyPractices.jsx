@@ -15,7 +15,7 @@ const fadeInUp = {
 
 export default function PrivacyPractices() {
   return (
-    <section className="px-4 sm:px-6 md:px-16 py-12 md:py-20 text-left overflow-hidden">
+    <section className="px-4 sm:px-6 md:px-16 py-8 md:py-12 text-left overflow-hidden">
       <motion.div
         variants={staggerContainer}
         initial="initial"

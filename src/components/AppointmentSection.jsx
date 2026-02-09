@@ -40,7 +40,7 @@ export default function AppointmentSection() {
     alt="Phone"
     className="w-5 h-5 flex-shrink-0"
   />
-  <span className="text-gray-800 font-medium">818.845.2255</span>
+  <span className="text-[#053759] font-medium">818.845.2255</span>
 </div>
 
 <div className="flex items-center gap-3">
@@ -49,7 +49,7 @@ export default function AppointmentSection() {
     alt="Printer"
     className="w-5 h-5 flex-shrink-0"
   />
-  <span className="text-gray-800 font-medium">818.845.2255</span>
+  <span className="text-[#053759] font-medium">818.845.2255</span>
 </div>
 
               <div className="flex items-start gap-3">
@@ -58,7 +58,7 @@ export default function AppointmentSection() {
     alt="clock"
     className="w-5 h-5 flex-shrink-0"
   />
-                <div className="text-gray-800 font-medium">
+                <div className="text-[#053759] font-medium">
                   <p>Mon - Fri: 9:00am - 4:00pm</p>
                   <p>Sat & Sun: Closed</p>
                 </div>
@@ -69,7 +69,7 @@ export default function AppointmentSection() {
     alt="Printer"
     className="w-5 h-5 flex-shrink-0"
   />
-                <span className="text-gray-800 font-medium">
+                <span className="text-[#053759] font-medium">
                   1218 W Olive Ave. Burbank, CA 91506
                 </span>
               </div>

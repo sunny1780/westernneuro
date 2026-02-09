@@ -14,15 +14,17 @@ import HospitalAffiliations from '../components/HospitalAffiliations';
 function PatientInformation() {
   return (
     <AnimatedPage>
-      <AnimatedSection><PatientInfo /></AnimatedSection>
-      <AnimatedSection delay={80}><HospitalAffiliations /></AnimatedSection>
-      <AnimatedSection delay={120}><FirstAppointment /></AnimatedSection>
-      <AnimatedSection delay={80}><AffiliateInsurance /></AnimatedSection>
-
-      <AnimatedSection delay={80}><SleepStudyInformation /></AnimatedSection>
-      <AnimatedSection delay={120}><InsurancePaymentInfo /></AnimatedSection>
-      <AnimatedSection delay={80}><PrivacyPractices /></AnimatedSection>
-      <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
+      <div className="px-4 sm:px-6 md:px-10 lg:px-14 xl:px-20 2xl:px-24">
+        <AnimatedSection><PatientInfo /></AnimatedSection>
+        <AnimatedSection delay={80}><HospitalAffiliations /></AnimatedSection>
+        <AnimatedSection delay={120}><FirstAppointment /></AnimatedSection>
+      
+        <AnimatedSection delay={80}><SleepStudyInformation /></AnimatedSection>
+        <AnimatedSection delay={120}><InsurancePaymentInfo /></AnimatedSection>
+        <AnimatedSection delay={80}><PrivacyPractices /></AnimatedSection>
+          <AnimatedSection delay={80}><AffiliateInsurance /></AnimatedSection>
+        <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
+      </div>
       <AnimatedSection><Footer /></AnimatedSection>
     </AnimatedPage>
   );

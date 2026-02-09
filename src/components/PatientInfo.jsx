@@ -33,7 +33,9 @@ const PatientInfo = () => {
           variants={fadeInLeft}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#053759] leading-tight mb-4 md:mb-6"
         >
-          Patient Resources & Information
+          <span className="block">Patient</span>
+          <span className="block">Resources &</span>
+          <span className="block">Information</span>
         </motion.h1>
         <motion.p
           variants={fadeInLeft}

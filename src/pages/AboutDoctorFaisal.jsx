@@ -12,13 +12,14 @@ import AnimatedSection from "../components/AnimatedSection";
 function AboutDoctorFaisal() {
   return (
     <AnimatedPage>
-      <AnimatedSection><AboutDoctorFaisalHero doctorImage="/images/Drfaisal.png" /></AnimatedSection>
-      <AnimatedSection delay={80}><AboutDrFawazFaisalBio imageSrc="/images/Doc.png" /></AnimatedSection>
-      <AnimatedSection delay={120}><EducationTraining /></AnimatedSection>
-      <AnimatedSection delay={80}><Associations /></AnimatedSection>
-    
-      <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
-      <AnimatedSection><Footer /></AnimatedSection>
+      <div className="px-4 sm:px-6 md:px-10 lg:px-14">
+        <AnimatedSection><AboutDoctorFaisalHero doctorImage="/images/Drfaisal.png" /></AnimatedSection>
+        <AnimatedSection delay={80}><AboutDrFawazFaisalBio imageSrc="/images/Doc.png" /></AnimatedSection>
+        <AnimatedSection delay={120}><EducationTraining /></AnimatedSection>
+        <AnimatedSection delay={80}><Associations /></AnimatedSection>
+        <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
+        <AnimatedSection><Footer /></AnimatedSection>
+      </div>
     </AnimatedPage>
   );
 }

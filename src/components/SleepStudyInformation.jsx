@@ -14,7 +14,7 @@ const cardPop = {
   animate: { opacity: 1, y: 0, scale: 1, transition: springBounce },
 };
 
-const documents = [{ title: "Required Documents" }];
+const documents = [{ title: "Patient instructions for sleep study" }];
 
 const listItems = [
   "Patient's insurance card and identification",
@@ -70,7 +70,7 @@ export default function SleepStudyInformation() {
                 whileTap={{ scale: 0.98 }}
                 transition={springBounce}
               >
-                Patient Instructions for Sleep Study
+                Download
                 <Download size={16} />
               </motion.button>
             </motion.div>
