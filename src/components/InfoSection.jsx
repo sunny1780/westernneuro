@@ -129,20 +129,20 @@ const InfoSection = ({
         >
           <div className="space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold text-[#333333]">
-              {b1.title1}
-            </h2>
+            {b1.title1}
+          </h2>
             <p className="text-base md:text-lg leading-relaxed text-[#687076]">
-              {b1.desc1}
-            </p>
+            {b1.desc1}
+          </p>
           </div>
           <div className="space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold text-[#333333]">
-              {b1.title2}
+            {b1.title2}
             </h2>
             <p className="text-base md:text-lg leading-relaxed text-[#687076]">
-              {b1.desc2}
-            </p>
-          </div>
+            {b1.desc2}
+          </p>
+        </div>
         </div>
       ) : (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-start">
@@ -179,7 +179,7 @@ const InfoSection = ({
               <p className="text-[#687076] mb-6">{b1.desc1}</p>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">{b1.title2}</h3>
               <p className="text-[#687076]">{b1.desc2}</p>
-            </div>
+      </div>
             <div
               ref={imageRightRef}
               className={`flex justify-center md:justify-end w-full max-w-full ${
@@ -187,13 +187,13 @@ const InfoSection = ({
               }`}
               style={imgDim}
             >
-              {image1 && (
+          {image1 && (
                 <img src={image1} alt={b1.title1} className="w-full h-full object-cover" style={{ borderRadius: '17.59px' }} />
               )}
             </div>
           </>
-        )}
-      </div>
+          )}
+        </div>
       )}
 
       {/* Content Block - replaces block2 and extra when provided */}
@@ -214,7 +214,7 @@ const InfoSection = ({
             <div key={idx} className="space-y-4">
               <h3 className="text-xl md:text-2xl font-bold text-[#11181C]">
                 {sec.title}
-              </h3>
+          </h3>
               <ul className="list-disc list-inside space-y-2 text-base md:text-lg text-[#687076] leading-relaxed pl-2">
                 {sec.items && sec.items.map((item, i) => (
                   <li key={i}>{item}</li>
@@ -356,7 +356,7 @@ const InfoSection = ({
           </div>
             </>
           )}
-        </div>
+      </div>
       )}
 
       {/* Text Section */}
@@ -371,7 +371,7 @@ const InfoSection = ({
             {section.title && (
               <h2 className="text-2xl md:text-3xl font-bold text-[#333333]">
                 {section.title}
-              </h2>
+        </h2>
             )}
             {section.desc && (
               <p className="text-base md:text-lg text-[#687076] leading-relaxed">
@@ -383,11 +383,11 @@ const InfoSection = ({
       </div>
 
       {extraContent.list && extraContent.list.items && extraContent.list.items.length > 0 && (
-        <div className="space-y-6">
+      <div className="space-y-6">
           {extraContent.list.title && (
-            <h3 className="text-xl font-semibold text-gray-900">
+        <h3 className="text-xl font-semibold text-gray-900">
               {extraContent.list.title}
-            </h3>
+        </h3>
           )}
 
           <ol className="list-decimal list-inside space-y-4 text-[#687076]">
@@ -397,13 +397,13 @@ const InfoSection = ({
                   <span className="font-semibold text-gray-900">{item.title}</span>
                 )}
                 {item.desc && (
-                  <p className="mt-2">
+            <p className="mt-2">
                     {item.desc}
-                  </p>
+            </p>
                 )}
-              </li>
+          </li>
             ))}
-          </ol>
+        </ol>
         </div>
       )}
       </>

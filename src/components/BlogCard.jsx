@@ -3,83 +3,85 @@ import { Link } from "react-router-dom";
 
 const blogs = [
   {
-    title: "ADHD Uncovered: A Comprehensive Guide to Symptoms, Causes, and Effective Treatment",
-    description: "If you or your child have recently been diagnosed with ADHD, or if you suspect ADHD may be present, it’s completely normal to feel worried, confused, or overwhelmed.",
-    image: "/images/blog/1.png",
+    title: "ADHD Uncovered: A Comprehensive Guide",
+    description: "Learn about ADHD symptoms, causes, and effective treatments for children and adults. Discover how proper support can help individuals thrive.",
+    image: "/images/Blog1.jpg",
   },
   {
-    title: "Anxiety Disorders: Symptoms, Causes & Treatment",
-    description: "Autism Spectrum Disorder (ASD) is one of the most complex and often misunderstood neurodevelopmental conditions affecting children and adults today.",
-    image: "/images/blog/2.png",
+    title: "Unraveling Autism: Understanding ASD",
+    description: "A comprehensive guide to understanding, diagnosing, and treating Autism Spectrum Disorder for children and adults.",
+    image: "/images/Blog2.jpg",
   },
   {
-    title: "Stay Informed About Your Neurological Health",
-    description: "Almost everyone experiences worry at some point about health, finances, work, or relationships. Feeling anxious from time to time is a normal and even healthy response to life’s uncertainties.",
-    image: "/images/blog/3.png",
+    title: "Anxiety: Understanding & Treatment",
+    description: "Learn about anxiety disorders, their symptoms, causes, and effective treatment options including therapy and lifestyle changes.",
+    image: "/images/Blog3.jpg",
   },
-  {
-    title: "Stay Informed About Your Neurological Health",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    image: "/images/blghero.png",
-  },
-  {
-    title: "Stay Informed About Your Neurological Health",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    image: "/images/blog.png",
-  },
-  {
-    title: "Stay Informed About Your Neurological Health",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    image: "/images/blghero.png",
-  },
-  {
-    title: "Stay Informed About Your Neurological Health",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    image: "/images/blog.png",
-  },
-  {
-    title: "Stay Informed About Your Neurological Health",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    image: "/images/blghero.png",
-  },
-  {
-    title: "Stay Informed About Your Neurological Health",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    image: "/images/blog.png",
-  },
+  // {
+  //   title: "Stay Informed About Your Neurological Health",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+  //   image: "/images/blghero.png",
+  // },
+  // {
+  //   title: "Stay Informed About Your Neurological Health",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+  //   image: "/images/blog.png",
+  // },
+  // {
+  //   title: "Stay Informed About Your Neurological Health",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+  //   image: "/images/blghero.png",
+  // },
+  // {
+  //   title: "Stay Informed About Your Neurological Health",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+  //   image: "/images/blog.png",
+  // },
+  // {
+  //   title: "Stay Informed About Your Neurological Health",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+  //   image: "/images/blghero.png",
+  // },
+  // {
+  //   title: "Stay Informed About Your Neurological Health",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+  //   image: "/images/blog.png",
+  // },
 ];
 
 export default function BlogCard() {
   return (
     <div className="min-h-screen p-4 sm:p-6 md:p-8">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:gap-8 md:grid-cols-3">
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="rounded-2xl bg-white shadow-lg transition hover:shadow-xl overflow-hidden border border-gray-100"
+            className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col"
           >
-            <div className="aspect-[16/10] w-full overflow-hidden bg-gray-100">
+            <div className="aspect-[4/3] bg-gray-100 flex items-center justify-center overflow-hidden">
               <img
                 src={blog.image}
                 alt={blog.title}
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-4 sm:p-5">
-              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+            <div className="p-6 flex flex-col flex-1">
+              <h3 className="text-lg font-semibold text-[#11181C] mb-3 text-left">
                 {blog.title}
               </h3>
-              <p className="mb-4 text-sm text-gray-500">
+              <p className="text-base text-[#687076] leading-relaxed mb-6 text-left flex-1">
                 {blog.description}
               </p>
               <Link
                 to="/blogs"
-                className="flex items-center justify-center gap-2 w-full rounded-xl bg-[#1299ED] hover:bg-[#0d7bc7] text-white py-3 px-4 font-medium transition"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium text-white bg-[#1893FF] hover:bg-[#0f80dd] transition w-full"
               >
                 Learn More
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+                <img
+                  src="/images/arowicon.png"
+                  alt=""
+                  className="w-4 h-4 object-contain rotate-[-90deg]"
+                />
               </Link>
             </div>
           </div>
