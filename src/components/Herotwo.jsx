@@ -13,7 +13,7 @@ const Herotwo = () => {
             As Seen On:
           </span>
           <img
-            src="/images/logos.png"
+            src="/images/alllogos.png"
             alt="Media logos - ABC, KTLA, CNBC, NBC, MTV"
             className="h-8 md:h-10 w-auto object-contain"
           />
@@ -22,7 +22,7 @@ const Herotwo = () => {
         {/* Right: button */}
         <div className="w-full md:w-auto flex justify-start md:justify-end">
           <a
-            href="/"
+            href="https://www.youtube.com/user/westernneuro"
             className="inline-flex items-center justify-center bg-[#1299ED] hover:bg-[#0f80dd] text-white font-medium px-6 md:px-8 py-2.5 rounded-xl text-sm md:text-base transition whitespace-nowrap"
           >
             View All Interviews

@@ -98,7 +98,8 @@ const Burbank = () => {
       <img
         src={logo.src}
         alt={logo.alt}
-        className="max-h-20 w-auto object-contain transition-transform duration-300 hover:scale-125"
+        className="max-h-40 w-auto object-contain transition-transform duration-300 hover:scale-125 shadow-none filter-none"
+        style={{ boxShadow: 'none' }}
       />
     </div>
   ))}
