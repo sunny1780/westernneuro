@@ -11,11 +11,6 @@ const fadeInUp = {
   transition: springSmooth,
 };
 
-const namePop = {
-  initial: { opacity: 0, y: 40, scale: 0.9 },
-  animate: { opacity: 1, y: 0, scale: 1, transition: springBounce },
-};
-
 const staggerContainer = {
   animate: {
     transition: {
@@ -54,18 +49,23 @@ const AboutDoctorFaisalHero = ({ doctorImage = "/images/Drfaisal.png" }) => {
         initial="initial"
         animate="animate"
       >
-        <motion.h1
-          variants={fadeInUp}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#053759] leading-tight"
-        >
-          Meet
-        </motion.h1>
-        <motion.h1
-          variants={namePop}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#053759] mb-4 md:mb-5 leading-tight"
-        >
-          Dr. Fawaz Faisal
-        </motion.h1>
+       <motion.h1
+  variants={fadeInUp}
+  className="text-[96px] font-bold text-[#053759] leading-tight"
+>
+  Meet
+</motion.h1>
+<motion.h1
+  variants={{
+    initial: { opacity: 0, y: 40, scale: 0.9 },
+    animate: { opacity: 1, y: 0, scale: 1, transition: springBounce },
+  }}
+  className="text-[72px] md:text-[96px] font-bold text-[#053759] mb-4 md:mb-5 leading-tight whitespace-nowrap"
+>
+  Dr. Fawaz Faisal
+</motion.h1>
+
+   
         <motion.p
           variants={fadeInUp}
           className="text-[#687076] text-base sm:text-lg md:text-xl mb-6 md:mb-8"
