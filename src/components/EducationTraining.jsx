@@ -26,7 +26,8 @@ const EducationTraining = () => {
       >
         <motion.h2
           variants={slideInLeft}
-          className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6"
+          className="text-[48px] leading-[1] font-medium text-[#11181C] mb-4 md:mb-6"
+          style={{ letterSpacing: '0.5%' }}
         >
           Education & Training
         </motion.h2>
@@ -40,7 +41,10 @@ const EducationTraining = () => {
         <motion.div className="space-y-8 md:space-y-10" variants={staggerContainer}>
           {/* Education */}
           <motion.div variants={fadeInUp}>
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
+            <h3
+              className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+              style={{ letterSpacing: '0.5%' }}
+            >
               Education
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-1.5">
@@ -50,7 +54,10 @@ const EducationTraining = () => {
 
           {/* Training */}
           <motion.div variants={fadeInUp}>
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
+            <h3
+              className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+              style={{ letterSpacing: '0.5%' }}
+            >
               Training
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-1.5">
@@ -63,7 +70,10 @@ const EducationTraining = () => {
 
           {/* Board Certification */}
           <motion.div variants={fadeInUp}>
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
+            <h3
+              className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+              style={{ letterSpacing: '0.5%' }}
+            >
               Board Certification
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-1.5">
@@ -75,7 +85,10 @@ const EducationTraining = () => {
 
           {/* Academic & Administrative Appointment */}
           <motion.div variants={fadeInUp}>
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
+            <h3
+              className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+              style={{ letterSpacing: '0.5%' }}
+            >
               Academic & Administrative Appointment
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-1.5">
@@ -86,7 +99,10 @@ const EducationTraining = () => {
 
           {/* Hospital Appointments */}
           <motion.div variants={fadeInUp}>
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">
+            <h3
+              className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+              style={{ letterSpacing: '0.5%' }}
+            >
               Hospital Appointments
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-1.5">
@@ -105,12 +121,12 @@ const EducationTraining = () => {
           <motion.div variants={fadeInUp} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
           <button
             type="button"
-            className="inline-flex items-center gap-2 bg-[#007bff] text-white font-medium px-5 py-2.5 rounded-lg hover:bg-[#0069d9] transition"
+            className="inline-flex items-center gap-3 bg-[#1893FF] hover:bg-[#0f80dd] text-white font-semibold px-6 py-3 rounded-md transition"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
             Download Resume
+            <span className="inline-flex items-center justify-center w-8 h-8">
+              <img src="/images/Dicon.png" alt="" className="w-4 h-4 object-contain" />
+            </span>
           </button>
           </motion.div>
           <motion.div variants={fadeInUp} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
@@ -118,12 +134,12 @@ const EducationTraining = () => {
             href="https://www.linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border-2 border-[#0077b5] text-[#0077b5] font-medium px-5 py-2.5 rounded-lg hover:bg-[#0077b5]/5 transition"
+            className="inline-flex items-center gap-3 border border-[#94C6F1] text-[#1E5FBF] hover:bg-[#F3F8FF] font-semibold px-6 py-3 rounded-md transition"
           >
-            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
             LinkedIn
+            <span className="inline-flex items-center justify-center w-8 h-8">
+              <img src="/images/Licon.png" alt="" className="w-4 h-4 object-contain" />
+            </span>
           </a>
           </motion.div>
         </motion.div>

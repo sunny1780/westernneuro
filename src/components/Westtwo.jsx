@@ -50,7 +50,8 @@ const Westtwo = () => {
           <motion.div className="text-left" variants={staggerContainer}>
             <motion.h2
               variants={fadeInRight}
-              className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight"
+              className="text-[48px] font-medium text-[#11181C] leading-[1] mb-6"
+              style={{ letterSpacing: '0.5%' }}
             >
               Your Trusted Burbank Neurology & Sleep Center Since 2010
             </motion.h2>

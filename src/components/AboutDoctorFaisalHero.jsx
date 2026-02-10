@@ -82,7 +82,7 @@ const AboutDoctorFaisalHero = ({ doctorImage = "/images/Drfaisal.png" }) => {
           >
             <Link
               to="/services"
-              className="inline-block bg-[#007BFF] text-white font-medium px-5 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-[#0069d9] transition mb-8 md:mb-10"
+              className="inline-block bg-[#1299ED] text-white font-medium px-5 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-[#0f80dd] transition mb-8 md:mb-10"
             >
               Explore Services
             </Link>
@@ -98,22 +98,38 @@ const AboutDoctorFaisalHero = ({ doctorImage = "/images/Drfaisal.png" }) => {
             variants={statVariants}
             className="text-center lg:text-left"
           >
-            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#053759]">
+            <p
+              className="text-[48px] leading-[1] font-medium text-[#053759]"
+              style={{ letterSpacing: '0.5%' }}
+            >
               200+
             </p>
-            <p className="text-sm sm:text-base text-[#053759] mt-1">
-              Successful Patient Outcomes
+            <p
+              className="text-[18px] leading-[28px] font-normal text-[#053759] mt-1"
+              style={{ letterSpacing: '0.5%' }}
+            >
+              Successful Patient
+              <br />
+              Outcomes
             </p>
           </motion.div>
           <motion.div
             variants={statVariants}
             className="text-center lg:text-left"
           >
-            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#053759]">
+            <p
+              className="text-[48px] leading-[1] font-medium text-[#053759]"
+              style={{ letterSpacing: '0.5%' }}
+            >
               70K+
             </p>
-            <p className="text-sm sm:text-base text-[#053759] mt-1">
-              Safe Prescriptions Managed
+            <p
+              className="text-[18px] leading-[28px] font-normal text-[#053759] mt-1"
+              style={{ letterSpacing: '0.5%' }}
+            >
+              Safe Prescriptions
+              <br />
+              Managed
             </p>
           </motion.div>
         </motion.div>
