@@ -25,7 +25,7 @@ const cards = [
 
 export default function StayInformed() {
   return (
-    <section className="bg-white py-16 md:py-24 px-4 sm:px-6 overflow-hidden">
+    <section className="bg-gradient-to-b from-white to-[#E9F5FF] py-16 md:py-24 px-4 sm:px-6 overflow-hidden">
       <div className="mx-auto flex flex-col max-w-6xl w-full gap-20">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">

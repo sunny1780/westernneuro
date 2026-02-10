@@ -7,28 +7,30 @@ const HospitalAffiliations = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 mb-2">
           Hospital Affiliations
         </h2>
-        <p className="text-sm sm:text-base text-gray-600 mb-8 max-w-2xl mx-auto">
+        <p
+          className="text-[16px] leading-[24px] font-normal text-[#5A666E] mb-8 max-w-2xl mx-auto"
+          style={{ letterSpacing: '0.5%' }}
+        >
           Our physicians maintain active privileges at:
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 justify-items-center">
-          {/* Providence St. Joseph Hospital */}
-          <div className="bg-white rounded-2xl shadow-[0_6px_18px_rgba(0,0,0,0.08)] p-3 flex items-center justify-center min-h-[145px] w-full sm:w-[280px] md:w-[320px] border border-gray-100">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-0">
+          {/* Left image */}
+          <div className="flex items-center justify-center w-full">
             <img
-              src="/images/providence.png"
-              alt="Providence St. Joseph Hospital"
-              className="h-28 md:h-32 w-auto object-contain"
+              src="/images/left.png"
+              alt="Hospital affiliation logo"
+              className="h-32 md:h-40 w-auto object-contain"
             />
           </div>
 
-          {/* UCLA Health */}
-          <div className="bg-white rounded-2xl shadow-[0_6px_18px_rgba(0,0,0,0.08)] p-3 flex items-center justify-center min-h-[145px] w-full sm:w-[280px] md:w-[320px] border border-gray-100">
-            <div className="flex items-center gap-3">
-              <div className="bg-[#2774AE] text-white px-7 py-3.5 rounded font-bold text-3xl font-sans">
-                UCLA
-              </div>
-              <p className="text-3xl font-normal text-gray-900">Health</p>
-            </div>
+          {/* Right image */}
+          <div className="flex items-center justify-center w-full">
+            <img
+              src="/images/right.png"
+              alt="Hospital affiliation logo"
+              className="h-32 md:h-40 w-auto object-contain"
+            />
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import { Download } from "lucide-react";
 import { motion } from "framer-motion";
 
 const springBounce = { type: "spring", stiffness: 280, damping: 20 };
@@ -33,18 +32,33 @@ export default function FirstAppointment() {
         {/* Heading */}
         <motion.h1
           variants={fadeInUp}
-          className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2"
+          className="text-[48px] leading-[1] font-medium text-[#11181C] mb-8"
+          style={{ letterSpacing: '0.5%' }}
         >
           Your First Appointment
         </motion.h1>
-        <motion.h2 variants={fadeInUp} className="text-lg mb-4 font-semibold">
+        <motion.h2
+          variants={fadeInUp}
+          className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-4"
+          style={{ letterSpacing: '0.5%' }}
+        >
           What to Expect & How to Prepare
         </motion.h2>
 
-        <motion.p variants={fadeInUp} className="max-w-3xl mb-12">
+        <motion.p
+          variants={fadeInUp}
+          className="text-[16px] leading-[24px] font-normal text-[#5A666E] max-w-3xl mb-8"
+          style={{ letterSpacing: '0.5%' }}
+        >
           Please arrive 15 minutes early to complete the necessary paperwork. To save time, download and complete these forms in advance and bring them to your appointment.
         </motion.p>
-
+        <motion.h2
+          variants={fadeInUp}
+          className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-4"
+          style={{ letterSpacing: '0.5%' }}
+        >
+          Required Documents:
+        </motion.h2>
         {/* Cards */}
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 md:mb-16"
@@ -61,37 +75,52 @@ export default function FirstAppointment() {
               <h3 className="text-lg font-semibold mb-6">{doc.title}</h3>
 
               <motion.button
-                className="flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-lg w-fit"
+                className="inline-flex items-center gap-3 bg-[#1893FF] hover:bg-[#0f80dd] text-white font-semibold px-6 py-3 rounded-md transition w-fit"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 transition={springBounce}
               >
                 Download
-                <Download size={16} />
+                <span className="inline-flex items-center justify-center w-8 h-8">
+                  <img src="/images/Dicon.png" alt="" className="w-5 h-5 object-contain" />
+                </span>
               </motion.button>
             </motion.div>
           ))}
         </motion.div>
 
         {/* Bottom Section */}
-        <motion.h3 variants={fadeInUp} className="text-xl font-semibold mb-2">
+        <motion.h3
+          variants={fadeInUp}
+          className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+          style={{ letterSpacing: '0.5%' }}
+        >
           What to Bring
         </motion.h3>
-        <motion.p variants={fadeInUp} className="mb-4">
+        <motion.p
+          variants={fadeInUp}
+          className="text-[20px] leading-[28px] font-semibold text-[#11181C] mb-4"
+          style={{ letterSpacing: '0.5%' }}
+        >
           Please bring the following items to your first visit:
         </motion.p>
 
         <motion.ul
-          className="list-disc list-inside space-y-2 max-w-2xl"
+          className="list-disc list-inside pl-4 space-y-2 max-w-2xl"
           variants={staggerContainer}
         >
           {[
-            "Patient's insurance card and photo identification",
-            "List of current medications, including dose and frequency.",
-            "Recent test results, x-rays, or relevant medical records",
-            "Referral documentation (if required by insurance)",
+            "Patient’s insurance card",
+            "List of current prescriptions and/or over-the-counter medication, including dose and frequency",
+            "Information about patient’s medical and surgical history",
+            "Recent test results, x-rays, or relevant records",
           ].map((item, index) => (
-            <motion.li key={index} variants={fadeInUp}>
+            <motion.li
+              key={index}
+              variants={fadeInUp}
+              className="text-[16px] leading-[24px] font-normal text-[#5A666E]"
+              style={{ letterSpacing: '0.5%' }}
+            >
               {item}
             </motion.li>
           ))}

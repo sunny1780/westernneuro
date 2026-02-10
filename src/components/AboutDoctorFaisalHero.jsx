@@ -121,7 +121,7 @@ const AboutDoctorFaisalHero = ({ doctorImage = "/images/Drfaisal.png" }) => {
               className="text-[48px] leading-[1] font-medium text-[#053759]"
               style={{ letterSpacing: '0.5%' }}
             >
-              70K+
+              5K+
             </p>
             <p
               className="text-[18px] leading-[28px] font-normal text-[#053759] mt-1"

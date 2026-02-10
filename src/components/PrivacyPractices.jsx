@@ -29,7 +29,11 @@ export default function PrivacyPractices() {
           Privacy Practices
         </motion.h1>
 
-        <motion.p variants={fadeInUp} className="max-w-5xl leading-relaxed">
+        <motion.p
+          variants={fadeInUp}
+          className="text-[16px] leading-[24px] font-normal text-[#5A666E] max-w-5xl"
+          style={{ letterSpacing: '0.5%' }}
+        >
           Western Neurological Associates is a provider for Medicare and most major
           insurance plans, and provides insurance billing. You are responsible for
           co-payments or charges that are not covered by your insurance. If you

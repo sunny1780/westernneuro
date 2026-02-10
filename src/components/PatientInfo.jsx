@@ -39,7 +39,8 @@ const PatientInfo = () => {
         </motion.h1>
         <motion.p
           variants={fadeInLeft}
-          className="text-gray-500 text-base md:text-lg max-w-lg leading-relaxed"
+          className="text-[16px] leading-[24px] font-normal text-[#5A666E] max-w-lg"
+          style={{ letterSpacing: '0.5%' }}
         >
          Everything You Need for Your Visit to Western Neurological Associates
         </motion.p>

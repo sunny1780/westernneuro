@@ -1,4 +1,3 @@
-import { Download } from "lucide-react";
 import { motion } from "framer-motion";
 
 const springBounce = { type: "spring", stiffness: 280, damping: 20 };
@@ -27,7 +26,7 @@ const listItems = [
 
 export default function SleepStudyInformation() {
   return (
-    <div className="min-h-screen px-4 sm:px-6 md:px-16 py-12 md:py-16 text-left overflow-hidden">
+    <div className="min-h-screen px-4 sm:px-6 md:px-16 py-4 md:py-16 text-left overflow-hidden">
       <motion.div
         variants={staggerContainer}
         initial="initial"
@@ -37,15 +36,24 @@ export default function SleepStudyInformation() {
         {/* Heading */}
         <motion.h1
           variants={fadeInUp}
-          className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2"
+          className="text-[48px] leading-[1] font-medium text-[#11181C] mb-4"
+          style={{ letterSpacing: '0.5%' }}
         >
           Sleep Study Information
         </motion.h1>
-        <motion.h2 variants={fadeInUp} className="text-lg mb-4 font-semibold">
+        <motion.h2
+          variants={fadeInUp}
+          className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-4"
+          style={{ letterSpacing: '0.5%' }}
+        >
           Preparing for Your Sleep Study
         </motion.h2>
 
-        <motion.p variants={fadeInUp} className="max-w-3xl mb-12">
+        <motion.p
+          variants={fadeInUp}
+          className="text-[16px] leading-[24px] font-normal text-[#5A666E] max-w-3xl mb-12"
+          style={{ letterSpacing: '0.5%' }}
+        >
           Preparing for Your Sleep Study If you've been scheduled for a sleep study at our facility, proper preparation is essential for accurate results. Please review the instructions below and download the complete patient guide to ensure you're fully prepared for your appointment.
         </motion.p>
 
@@ -65,13 +73,15 @@ export default function SleepStudyInformation() {
               <h3 className="text-lg font-semibold mb-6">{doc.title}</h3>
 
               <motion.button
-                className="flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-lg w-fit"
+                className="inline-flex items-center gap-3 bg-[#1893FF] hover:bg-[#0f80dd] text-white font-semibold px-6 py-3 rounded-md transition w-fit"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 transition={springBounce}
               >
                 Download
-                <Download size={16} />
+                <span className="inline-flex items-center justify-center w-8 h-8">
+                  <img src="/images/Dicon.png" alt="" className="w-5 h-5 object-contain" />
+                </span>
               </motion.button>
             </motion.div>
           ))}
@@ -81,7 +91,11 @@ export default function SleepStudyInformation() {
         <motion.h3 variants={fadeInUp} className="text-xl font-semibold mb-2">
           What to Bring to Your Sleep Study
         </motion.h3>
-        <motion.p variants={fadeInUp} className="mb-4">
+        <motion.p
+          variants={fadeInUp}
+          className="text-[16px] leading-[24px] font-normal text-[#5A666E] mb-4"
+          style={{ letterSpacing: '0.5%' }}
+        >
           Also, please bring the following:
         </motion.p>
 
@@ -90,7 +104,12 @@ export default function SleepStudyInformation() {
           variants={staggerContainer}
         >
           {listItems.map((item, index) => (
-            <motion.li key={index} variants={fadeInUp}>
+            <motion.li
+              key={index}
+              variants={fadeInUp}
+              className="text-[16px] leading-[24px] font-normal text-[#5A666E]"
+              style={{ letterSpacing: '0.5%' }}
+            >
               {item}
             </motion.li>
           ))}

@@ -29,7 +29,7 @@ const EducationTraining = () => {
           className="text-[48px] leading-[1] font-medium text-[#11181C] mb-4 md:mb-6"
           style={{ letterSpacing: '0.5%' }}
         >
-          Education & Training
+          Medical Qualifications & Experience
         </motion.h2>
         <motion.p
           variants={fadeInUp}
@@ -48,48 +48,46 @@ const EducationTraining = () => {
               Education
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-1.5">
-              <li>University of Damascus, Damascus, Syria, 1986</li>
+              <li>University of Damascus, Damascus, Syria — 1986</li>
             </ul>
           </motion.div>
 
-          {/* Training */}
+          {/* Clinical / Postgraduate Training */}
           <motion.div variants={fadeInUp}>
             <h3
               className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
               style={{ letterSpacing: '0.5%' }}
             >
-              Training
+              Clinical / Postgraduate Training
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-1.5">
-              <li>Stanford University Hospital, Neurology</li>
-              <li>UCLA School of Medicine: Fellowship training in Sleep Disorders</li>
-              <li>UCLA School Of Medicine, Clinical Neurophysiology</li>
-              <li>UCLA School of Medicine, special training in neuromuscular disorders, EMG/NCS</li>
+              <li>Stanford University Hospital — Neurology</li>
+              <li>UCLA School of Medicine — Fellowship Training in Sleep Disorders</li>
             </ul>
           </motion.div>
 
-          {/* Board Certification */}
+          {/* Board Certifications */}
           <motion.div variants={fadeInUp}>
             <h3
               className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
               style={{ letterSpacing: '0.5%' }}
             >
-              Board Certification
+              Board Certifications
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-1.5">
-              <li>Board of Psychiatry and Neurology: certified in Neurology</li>
+              <li>Board of Psychiatry and Neurology — Certified in Neurology</li>
               <li>Board of Sleep Medicine</li>
               <li>Board of Clinical Neurophysiology</li>
             </ul>
           </motion.div>
 
-          {/* Academic & Administrative Appointment */}
+          {/* Academic & Administrative Appointments */}
           <motion.div variants={fadeInUp}>
             <h3
               className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
               style={{ letterSpacing: '0.5%' }}
             >
-              Academic & Administrative Appointment
+              Academic & Administrative Appointments
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-1.5">
               <li>Assistant Clinical Professor, UCLA</li>
@@ -97,16 +95,16 @@ const EducationTraining = () => {
             </ul>
           </motion.div>
 
-          {/* Hospital Appointments */}
+          {/* Hospital Affiliations */}
           <motion.div variants={fadeInUp}>
             <h3
               className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
               style={{ letterSpacing: '0.5%' }}
             >
-              Hospital Appointments
+              Hospital Affiliations
             </h3>
             <ul className="list-disc list-inside text-gray-600 space-y-1.5">
-              <li>Providence Saint Joseph, Burbank</li>
+              <li>Providence Saint Joseph Hospital, Burbank</li>
               <li>UCLA Medical Center</li>
               <li>Cedars-Sinai Medical Center</li>
             </ul>
