@@ -41,7 +41,7 @@ const PatientInfo = () => {
           variants={fadeInLeft}
           className="text-gray-500 text-base md:text-lg max-w-lg leading-relaxed"
         >
-          Everything You Need for Your Visit
+         Everything You Need for Your Visit to Western Neurological Associates
         </motion.p>
       </motion.div>
 

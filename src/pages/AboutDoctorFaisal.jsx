@@ -18,8 +18,8 @@ function AboutDoctorFaisal() {
         <AnimatedSection delay={120}><EducationTraining /></AnimatedSection>
         <AnimatedSection delay={80}><Associations /></AnimatedSection>
         <AnimatedSection delay={120}><AppointmentSection /></AnimatedSection>
-        <AnimatedSection><Footer /></AnimatedSection>
       </div>
+      <AnimatedSection><Footer /></AnimatedSection>
     </AnimatedPage>
   );
 }

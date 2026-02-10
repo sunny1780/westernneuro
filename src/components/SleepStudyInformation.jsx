@@ -46,7 +46,7 @@ export default function SleepStudyInformation() {
         </motion.h2>
 
         <motion.p variants={fadeInUp} className="max-w-3xl mb-12">
-          Preparing for Your Sleep Study — If you've been scheduled for a sleep study at our facility, proper preparation is essential for accurate results. Please review the instructions below and download the complete patient guide to ensure you're fully prepared for your appointment.
+          Preparing for Your Sleep Study If you've been scheduled for a sleep study at our facility, proper preparation is essential for accurate results. Please review the instructions below and download the complete patient guide to ensure you're fully prepared for your appointment.
         </motion.p>
 
         {/* Cards */}

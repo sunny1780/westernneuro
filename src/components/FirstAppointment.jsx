@@ -38,7 +38,7 @@ export default function FirstAppointment() {
           Your First Appointment
         </motion.h1>
         <motion.h2 variants={fadeInUp} className="text-lg mb-4 font-semibold">
-          Preparing for Your Visit
+          What to Expect & How to Prepare
         </motion.h2>
 
         <motion.p variants={fadeInUp} className="max-w-3xl mb-12">

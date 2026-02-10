@@ -63,7 +63,7 @@ const AboutDoctorFaisalHero = ({ doctorImage = "/images/Drfaisal.png" }) => {
           }}
           className="text-[32px] xs:text-[40px] sm:text-[52px] md:text-[72px] lg:text-[96px] font-bold text-[#053759] mb-3 sm:mb-4 md:mb-5 leading-[1.1] break-words sm:whitespace-nowrap"
         >
-          Dr. Fawaz Faisal
+          
         </motion.h1>
 
    
