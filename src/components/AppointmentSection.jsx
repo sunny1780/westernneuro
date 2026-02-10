@@ -26,7 +26,7 @@ export default function AppointmentSection() {
           {/* Left Content */}
           <motion.div className="text-left" variants={fadeInLeft}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-4 md:mb-6 leading-tight">
-            Ready to take the next step in your  <br /> neurological care?
+            Ready for Expert   <br /> neurological care?
             </h1>
             <p className="text-[#687076] max-w-md mb-6 md:mb-8">
             Have questions or ready to schedule? Reach out today.
