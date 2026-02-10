@@ -59,7 +59,8 @@ export default function AppointmentSection() {
     className="w-5 h-5 flex-shrink-0"
   />
                 <div className="text-[#053759] font-medium">
-                  <p>Mon - Fri: 9:00am - 4:00pm</p>
+                  <p>Mon - Thu: 9:00am - 5:00pm</p>
+                <p>Fri: 9AM to 4PM</p>  
                   <p>Sat & Sun: Closed</p>
                 </div>
               </div>

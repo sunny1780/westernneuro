@@ -52,7 +52,7 @@ const Westtwo = () => {
               variants={fadeInRight}
               className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight"
             >
-              Leading Burbank's Neurological Excellence Since 2010
+              Your Trusted Burbank Neurology & Sleep Center Since 2010
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-gray-600 mb-4">
               Established in the heart of Burbank over 12 years ago, Western Neurological Associates has become the valley's premier destination for comprehensive neurological and sleep disorder treatment. Under the expert leadership of Dr. Fawaz Faisal, our practice combines cutting-edge diagnostic technology with a deeply personal approach to patient care.

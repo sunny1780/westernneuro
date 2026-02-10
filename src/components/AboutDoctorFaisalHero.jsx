@@ -49,21 +49,22 @@ const AboutDoctorFaisalHero = ({ doctorImage = "/images/Drfaisal.png" }) => {
         initial="initial"
         animate="animate"
       >
-       <motion.h1
-  variants={fadeInUp}
-  className="text-[96px] font-bold text-[#053759] leading-tight"
->
-  Meet
-</motion.h1>
-<motion.h1
-  variants={{
-    initial: { opacity: 0, y: 40, scale: 0.9 },
-    animate: { opacity: 1, y: 0, scale: 1, transition: springBounce },
-  }}
-  className="text-[72px] md:text-[96px] font-bold text-[#053759] mb-4 md:mb-5 leading-tight whitespace-nowrap"
->
-  Dr. Fawaz Faisal
-</motion.h1>
+        <motion.h1
+          variants={fadeInUp}
+          className="text-[clamp(28px,6.5vw,96px)] font-bold text-[#053759] leading-[1.05]"
+        >
+          <span className="block">Your Trusted Burbank</span>
+          <span className="block">Neurologist</span>
+        </motion.h1>
+        <motion.h1
+          variants={{
+            initial: { opacity: 0, y: 40, scale: 0.9 },
+            animate: { opacity: 1, y: 0, scale: 1, transition: springBounce },
+          }}
+          className="text-[32px] xs:text-[40px] sm:text-[52px] md:text-[72px] lg:text-[96px] font-bold text-[#053759] mb-3 sm:mb-4 md:mb-5 leading-[1.1] break-words sm:whitespace-nowrap"
+        >
+          Dr. Fawaz Faisal
+        </motion.h1>
 
    
         <motion.p

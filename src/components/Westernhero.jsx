@@ -46,7 +46,7 @@ const Westernhero = () => {
               variants={fadeInLeft}
               className="text-gray-500 text-base md:text-lg max-w-lg leading-relaxed"
             >
-              Where Advanced Medicine Meets Compassionate Care
+              Triple Board-Certified Neurologist Serving Burbank Since 2010
             </motion.p>
           </motion.div>
 

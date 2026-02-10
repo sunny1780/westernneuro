@@ -28,7 +28,7 @@ const Moreclinis = () => {
   const [rightRef, rightInView] = useInView();
 
   return (
-    <section id="moreclinis" className="bg-white py-12 md:py-20 px-4 sm:px-6 md:px-16 overflow-hidden">
+    <section id="moreclinis" className="bg-white py-10 sm:py-12 md:py-20 px-4 sm:px-6 md:px-16 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-center">
           {/* Left - Large Image */}
@@ -48,7 +48,7 @@ const Moreclinis = () => {
           {/* Right - Content */}
           <div ref={rightRef} className="text-left">
             {/* Two images - cli1 smaller, cli2 bigger */}
-            <div className="grid grid-cols-[1fr_1.4fr] gap-4 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-[1fr_1.4fr] gap-4 mb-6">
               <div
                 className={`rounded-xl overflow-hidden ${rightInView ? 'animate-pop-in' : 'opacity-0'}`}
                 style={rightInView ? { animationDelay: '0ms' } : {}}
@@ -56,7 +56,7 @@ const Moreclinis = () => {
                 <img
                   src="/images/cli1.png"
                   alt="Clinic waiting room"
-                  className="w-full h-32 md:h-40 object-cover transition-transform duration-300 hover:scale-105"
+                  className="w-full h-36 sm:h-32 md:h-40 object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <div
@@ -66,18 +66,18 @@ const Moreclinis = () => {
                 <img
                   src="/images/cli2.png"
                   alt="Clinic examination room"
-                  className="w-full h-40 md:h-52 object-cover transition-transform duration-300 hover:scale-105"
+                  className="w-full h-44 sm:h-40 md:h-52 object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
             </div>
 
             {/* Heading */}
             <div
-              className={`mt-16 ${rightInView ? 'animate-slide-up-bounce' : 'opacity-0'}`}
+              className={`mt-8 sm:mt-10 md:mt-16 ${rightInView ? 'animate-slide-up-bounce' : 'opacity-0'}`}
               style={rightInView ? { animationDelay: '200ms' } : {}}
             >
               <h2
-                className="text-[48px] font-medium text-[#11181C] mb-6 leading-[1] text-left"
+                className="text-[28px] sm:text-[34px] md:text-[42px] lg:text-[48px] font-medium text-[#11181C] mb-4 sm:mb-5 md:mb-6 leading-[1.1] text-left"
                 style={{ letterSpacing: '0.5%' }}
               >
                 More Than a Clinic — We're Your Health Partner
@@ -90,7 +90,7 @@ const Moreclinis = () => {
               style={rightInView ? { animationDelay: '350ms' } : {}}
             >
               <p
-                className="text-[18px] leading-[28px] font-normal text-[#687076] mb-4 text-left"
+                className="text-[16px] sm:text-[17px] md:text-[18px] leading-[26px] sm:leading-[28px] font-normal text-[#687076] mb-4 text-left"
                 style={{ letterSpacing: '0.5%' }}
               >
                 Located in the heart of Burbank, Western Neurological Associates has
@@ -98,7 +98,7 @@ const Moreclinis = () => {
                 neurological and sleep disorder care.
               </p>
               <p
-                className="text-[18px] leading-[28px] font-normal text-[#687076] mb-8 text-left"
+                className="text-[16px] sm:text-[17px] md:text-[18px] leading-[26px] sm:leading-[28px] font-normal text-[#687076] mb-6 sm:mb-8 text-left"
                 style={{ letterSpacing: '0.5%' }}
               >
                 Western Neurological Associates, located in the heart of Burbank, has been serving the community for over 12 years with comprehensive neurological and sleep disorder care.
@@ -113,7 +113,7 @@ const Moreclinis = () => {
             >
               <a
                 href="/about"
-                className="inline-block bg-[#1299ED] hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:-translate-y-0.5"
+                className="inline-block bg-[#1299ED] hover:bg-blue-700 text-white font-medium px-5 sm:px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:-translate-y-0.5"
               >
                 Learn More
               </a>

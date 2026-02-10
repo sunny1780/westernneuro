@@ -38,19 +38,19 @@ const Burbank = () => {
             className={`text-left ${textInView ? 'animate-slide-up-bounce' : 'opacity-0'}`}
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Burbank's Leading 
+            Burbank's 
               <br />
               Neurology Expert
             </h2>
             <p className="text-gray-600 mb-4">
-              Located in the heart of Burbank, Western Neurological Associates has been serving the community for over 12 years with comprehensive neurological and sleep disorder care.
+      Our Medical Director, Dr. Fawaz Faisal, is triple board-certified in Neurology, Clinical Neurophysiology, and Sleep Medicine.
             </p>
             <p className="text-gray-600 mb-4">
-              Our Medical Director, Dr. Fawaz Faisal, is triple board-certified in Neurology, Clinical Neurophysiology, and Sleep Medicine. He has established Western Neurological Associates as one of the leading neurology practices in the valley.
+            He has established Western Neurological Associates as one of the leading neurology practices in the valley.
             </p>
-            <p className="text-gray-600 mb-8">
+            {/* <p className="text-gray-600 mb-8">
               Along with his extensive expertise, Dr. Faisal strives to provide quality care with compassion and individualized attention to every patient. We believe that providing patients with a full understanding of their condition and thorough education about their care is an essential part of our practice.
-            </p>
+            </p> */}
             <a
               href="/about/doctor-faisal"
               className="inline-block bg-[#1299ED] hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:-translate-y-0.5"

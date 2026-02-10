@@ -53,28 +53,13 @@ const AboutDrFawazFaisalBio = ({ imageSrc = "/images/dr-faisal-hero.png" }) => {
 
             <motion.div className="space-y-5 text-gray-700 leading-relaxed" variants={staggerContainer}>
               <motion.p variants={fadeInUp}>
-                Dr. Fawaz Faisal is a distinguished triple board-certified
-                neurologist dedicated to providing exceptional neurological care
-                in Burbank. With certifications in Neurology, Sleep Medicine,
-                and Clinical Neurophysiology, he brings a comprehensive
-                expertise to the diagnosis and treatment of complex neurological
-                conditions.
+               Facing a neurological condition can be overwhelming. Dr. Fawaz Faisal combines triple board certification with over 20 years of experience to provide expert, compassionate care you can trust.With certifications in Neurology, Sleep Medicine, and Clinical Neurophysiology, he brings comprehensive expertise to the diagnosis and treatment of complex neurological conditions.
               </motion.p>
               <motion.p variants={fadeInUp}>
-                As an Assistant Clinical Professor at UCLA and a practicing
-                physician at Providence Saint Joseph Hospital, UCLA Medical
-                Center, and Cedars-Sinai Medical Center, Dr. Faisal bridges
-                academic excellence with compassionate patient care. He is
-                committed to staying at the forefront of neurological research
-                and innovative treatments to offer his patients the best
-                possible outcomes.
+               As an Assistant Clinical Professor at UCLA and a practicing physician at Providence Saint Joseph Hospital, UCLA Medical Center, and Cedars-Sinai Medical Center, Dr. Faisal bridges academic excellence with compassionate patient care. He is committed to staying at the forefront of neurological research and innovative treatments to offer his patients the best possible outcomes.
               </motion.p>
               <motion.p variants={fadeInUp}>
-                His approach to patient care combines rigorous scientific
-                training with a genuine dedication to patient wellbeing. Dr.
-                Faisal believes in thoroughly explaining conditions and
-                treatment options to his patients and involving them in their
-                care decisions every step of the way.
+               Dr. Faisal's approach to patient care combines rigorous scientific training with genuine dedication to patient well-being. He believes in thoroughly explaining conditions and treatment options to his patients, involving them in care decisions every step of the way.
               </motion.p>
             </motion.div>
           </motion.div>
