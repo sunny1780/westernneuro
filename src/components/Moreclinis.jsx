@@ -34,7 +34,7 @@ const Moreclinis = () => {
           {/* Left - Large Image */}
           <div
             ref={leftRef}
-            className={`rounded-2xl overflow-hidden ${leftInView ? 'animate-slide-in-left-bounce' : 'opacity-0'}`}
+            className={`rounded-2xl overflow-hidden pt-60 ${leftInView ? 'animate-slide-in-left-bounce' : 'opacity-0'}`}
           >
             <div className="group">
               <img
@@ -48,7 +48,7 @@ const Moreclinis = () => {
           {/* Right - Content */}
           <div ref={rightRef} className="text-left">
             {/* Two images - cli1 smaller, cli2 bigger */}
-            <div className="grid grid-cols-1 sm:grid-cols-[1fr_1.4fr] gap-4 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-[1fr_1.4fr] items-end gap-4 mb-6">
               <div
                 className={`rounded-xl overflow-hidden ${rightInView ? 'animate-pop-in' : 'opacity-0'}`}
                 style={rightInView ? { animationDelay: '0ms' } : {}}

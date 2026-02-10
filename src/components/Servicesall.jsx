@@ -20,7 +20,7 @@ const services = [
     title: 'Neuromuscular Disorders',
     description:
       'Specialized care for neuromuscular disorders using advanced EMG and nerve conduction studies for accurate diagnosis and targeted treatment.',
-    image: '/images/services/disorder1.png',
+    image: '/images/services/disorder3.jpg',
     link: '/services/neuromuscular-disorders',
   },
   {

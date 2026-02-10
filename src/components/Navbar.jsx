@@ -14,8 +14,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="w-full z-[9999] font-sans relative"
-      style={{ background: "#0000000D" }}
+      className="w-full z-[9999] font-sans sticky top-0 bg-white"
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 py-3 md:py-4">
         {/* Left: Logo + nav links */}

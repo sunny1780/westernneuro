@@ -46,19 +46,23 @@ const AffiliateInsurance = () => {
       <div className="max-w-6xl mx-auto text-center">
         {/* Main heading */}
         <h2
-          className={`text-3xl md:text-4xl font-bold text-gray-900 mb-4 ${
+          className={`text-[48px] font-medium text-[#11181C] leading-[1] mb-4 ${
             sectionInView ? 'animate-slide-up-bounce' : 'opacity-0'
           }`}
+          style={{ letterSpacing: '0.5%' }}
         >
           Affiliate Insurance
         </h2>
 
         {/* Subheading */}
         <p
-          className={`text-base md:text-lg text-gray-700 mb-12 max-w-2xl mx-auto ${
+          className={`text-[18px] leading-[28px] font-normal text-[#687076] mb-12 max-w-2xl mx-auto ${
             sectionInView ? 'animate-slide-up-bounce' : 'opacity-0'
           }`}
-          style={sectionInView ? { animationDelay: '100ms' } : {}}
+          style={{
+            ...(sectionInView ? { animationDelay: '100ms' } : {}),
+            letterSpacing: '0.5%',
+          }}
         >
           Our physicians are affiliated with these local hospitals
         </p>
