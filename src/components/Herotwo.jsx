@@ -9,7 +9,10 @@ const Herotwo = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
         {/* Left: label + logos */}
         <div className="flex flex-col md:flex-row items-center md:items-center gap-3 md:gap-6 w-full">
-          <span className="text-lg md:text-xl font-semibold text-[#0A8DDB] whitespace-nowrap">
+          <span
+            className="text-[36px] leading-[40px] font-bold text-[#0A8DDB] whitespace-nowrap"
+            style={{ letterSpacing: '0.5%' }}
+          >
             As Seen On:
           </span>
           <img

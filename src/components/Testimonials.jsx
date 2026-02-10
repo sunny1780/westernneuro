@@ -86,11 +86,13 @@
    React.useEffect(() => {
      const styleSheet = document.createElement("style");
      styleSheet.innerText = `
-       @keyframes marquee-move {
-         to {
-           transform: translateX(calc(-100cqw - var(--item-gap)));
-         }
-       }
+      @keyframes marquee-move {
+        to {
+          transform: translateX(
+            calc((var(--item-width) + var(--item-gap)) * var(--numItems) * -1)
+          );
+        }
+      }
      `;
      document.head.appendChild(styleSheet);
      
@@ -115,13 +117,13 @@
           '--direction': direction
         }}
        >
-         <div
-           className="w-max flex"
-           style={{
-             '--track-width': `calc(var(--item-width) * ${numItems})`,
-             '--track-gap': `calc(var(--item-gap) * ${numItems})`
-           }}
-         >
+        <div
+          className="w-max flex"
+          style={{
+            animation: `marquee-move var(--speed) linear infinite`,
+            animationDirection: direction === 'reverse' ? 'reverse' : 'normal'
+          }}
+        >
            {[...testimonials, ...testimonials].map((testimonial, index) => (
              <div
                key={index}
@@ -129,11 +131,10 @@
                role="button"
                tabIndex={0}
                onKeyDown={(e) => e.key === 'Enter' && onCardClick(testimonial)}
-               className="group flex-shrink-0 bg-white rounded-2xl p-6 shadow-lg border border-gray-200 cursor-pointer hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
+              className="group flex-shrink-0 bg-white rounded-2xl p-6 shadow-lg border border-gray-200 cursor-pointer hover:shadow-xl hover:scale-[1.02] transition-all duration-200 text-left"
                style={{
                  width: 'min(350px, 85vw)',
-                 marginRight: 'var(--item-gap)',
-                 animation: `marquee-move var(--speed) linear infinite ${direction}`
+                marginRight: 'var(--item-gap)'
                }}
              >
                {/* Stars */}
@@ -144,7 +145,10 @@
                </div>
  
                {/* Testimonial Text */}
-               <p className="text-gray-700 text-sm mb-6 leading-relaxed line-clamp-4">
+               <p
+                 className="text-gray-700 text-sm mb-6 leading-[150%] line-clamp-4 text-left"
+                 style={{ fontFamily: 'Roboto, sans-serif', letterSpacing: '0' }}
+               >
                  "{testimonial.text}"
                </p>
  
@@ -186,14 +190,18 @@
            {/* <p className="text-teal-500 text-sm font-medium mb-2">
              What Clients Say
            </p> */}
-           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-             
-What Our Patients Say
-
-           </h2>
-           <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base px-2">
-           Hear from our valued patients about their experiences with our compassionate care and expert neurological treatment.
-           </p>
+          <h2
+            className="text-[48px] font-bold text-[#11181C] leading-[1] mb-4"
+            style={{ letterSpacing: '0.5%', fontFamily: 'Manrope, sans-serif' }}
+          >
+            What Our Patients Say
+          </h2>
+          <p
+            className="text-[18px] leading-[28px] font-normal text-[#687076] max-w-2xl mx-auto px-2"
+            style={{ letterSpacing: '0.5%' }}
+          >
+            Hear from our valued patients about their experiences with our compassionate care and expert neurological treatment.
+          </p>
          </div>
  
          {/* Marquee Rows */}

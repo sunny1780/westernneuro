@@ -117,10 +117,16 @@ const Allservices = () => {
     <section className="bg-white py-12 md:py-16 px-4 sm:px-6 overflow-x-hidden">
       <div className="max-w-6xl mx-auto w-full space-y-8 text-left">
         <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+          <h2
+            className="text-[48px] font-medium text-[#11181C] leading-[1]"
+            style={{ letterSpacing: '0.5%' }}
+          >
             Our Services
           </h2>
-          <p className="text-sm sm:text-base text-[#687076] mt-2">
+          <p
+            className="text-[18px] leading-[28px] font-normal text-[#687076] mt-2"
+            style={{ letterSpacing: '0.5%' }}
+          >
             Our physicians provide Comprehensive Care
           </p>
         </div>
