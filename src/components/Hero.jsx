@@ -25,7 +25,7 @@ const Hero = () => {
           <span>Neurological Care</span>
         </h1>
         <p className="text-gray-200 text-base md:text-lg max-w-2xl mx-auto mb-8">
-        Led by triple board–certified neurologist Dr. Fawaz Faisal, delivering expert diagnosis and personalized treatment with over 12 years of clinical excellence.
+Expert neurological care led by triple board-certified neurologist Dr. Fawaz Faisal, providing expert diagnosis and personalized treatment backed by over 12 years of clinical experience.
         </p>
         <a
           href="/services"

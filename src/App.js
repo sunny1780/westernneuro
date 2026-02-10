@@ -48,9 +48,6 @@ function App() {
           <Route path="/blog1" element={<Blog1 />} />
           <Route path="/blog2" element={<Blog2 />} />
           <Route path="/blog3" element={<Blog3 />} />
-
-
-
         </Routes>
       </BrowserRouter>
     </div>
