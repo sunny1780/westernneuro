@@ -64,7 +64,7 @@ const AffiliateInsurance = () => {
             letterSpacing: '0.5%',
           }}
         >
-          Our physicians are affiliated with these local hospitals
+          At Western Neuro, we accept most insurance plans. Here is a list of some of the plans that we accept. Please contact our office if you do not see your insurance provider listed!
         </p>
 
         {/* 12 logos in 3 rows (4 per row) */}

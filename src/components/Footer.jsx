@@ -36,17 +36,17 @@ const Footer = () => {
       className="rounded-t-[3rem] font-sans"
       style={{ backgroundColor: '#e7f5ff' }}
     >
-      <div className="w-full px-6 sm:px-10 md:px-12 lg:px-0 py-12 md:py-16 overflow-x-hidden text-left">
+      <div className="w-full px-4 sm:px-6 md:px-10 lg:px-12 py-12 md:py-16 overflow-x-hidden text-left">
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-[2.2fr_0.9fr_0.9fr] gap-12 md:gap-16 items-start">
           {/* Left Column - Logo, Contact, Social */}
           <div className="space-y-6">
-            <div>
+            <Link to="/" aria-label="Go to home">
               <img
                 src="/images/logo.png"
                 alt="Western Neurological Associates"
                 className="h-16 md:h-20 w-auto object-contain"
               />
-            </div>
+            </Link>
             <div>
             
             </div>

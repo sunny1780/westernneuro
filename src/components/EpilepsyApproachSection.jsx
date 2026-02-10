@@ -2,8 +2,13 @@ import React from "react";
 
 const EpilepsyApproachSection = () => {
   return (
-    <section className="bg-white px-4 sm:px-6 md:px-12 lg:px-16 py-16 md:py-20 text-left">
-      <div className="max-w-6xl mx-auto space-y-10 md:space-y-12">
+    <section className="relative bg-white px-4 sm:px-6 md:px-12 lg:px-16 py-16 md:py-20 text-left overflow-hidden">
+      <img
+        src="/images/Neuro1.png"
+        alt=""
+        className="pointer-events-none select-none absolute left-0 top-0 w-[260px] sm:w-[320px] md:w-[420px] z-0"
+      />
+      <div className="relative z-10 max-w-6xl mx-auto space-y-10 md:space-y-12">
         {/* Image */}
         <div className="rounded-[24px] overflow-hidden bg-black/5">
           <img

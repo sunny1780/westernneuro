@@ -29,7 +29,7 @@ const rightHeights = ['h-[140px] md:h-[170px]', 'h-[220px] md:h-[260px]', 'h-[14
 export default function FacilityTourGallery() {
   return (
     <section className="bg-white py-8 md:py-12 px-4 sm:px-6 md:px-8 overflow-hidden">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <motion.div
           className="grid grid-cols-2 gap-3 md:gap-4"
           variants={staggerContainer}
