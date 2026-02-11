@@ -14,10 +14,10 @@ const cardPop = {
 };
 
 const documents = [
-  { title: "Welcome letter" },
-  { title: "New patient registration form" },
-  { title: "Medical history" },
-  { title: "Privacy Practices acknowledgment form" },
+  { title: "Welcome letter", file: "/images/welcomeletter.pdf" },
+  { title: "New patient registration form", file: "/images/patientregistration.pdf" },
+  { title: "Medical history", file: "/images/medicalhistory.pdf" },
+  { title: "Privacy Practices acknowledgment form", file: "/images/privacypractices.pdf" },
 ];
 
 export default function FirstAppointment() {
@@ -74,17 +74,35 @@ export default function FirstAppointment() {
             >
               <h3 className="text-lg font-semibold mb-6">{doc.title}</h3>
 
-              <motion.button
-                className="inline-flex items-center gap-3 bg-[#1893FF] hover:bg-[#0f80dd] text-white font-semibold px-6 py-3 rounded-md transition w-fit"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.98 }}
-                transition={springBounce}
-              >
-                Download
-                <span className="inline-flex items-center justify-center w-8 h-8">
-                  <img src="/images/Dicon.png" alt="" className="w-5 h-5 object-contain" />
-                </span>
-              </motion.button>
+              {doc.file ? (
+                <motion.a
+                  href={doc.file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-[#1893FF] hover:bg-[#0f80dd] text-white font-semibold px-6 py-3 rounded-md transition w-fit"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.98 }}
+                  transition={springBounce}
+                >
+                  Download
+                  <span className="inline-flex items-center justify-center w-8 h-8">
+                    <img src="/images/Dicon.png" alt="" className="w-5 h-5 object-contain" />
+                  </span>
+                </motion.a>
+              ) : (
+                <motion.button
+                  type="button"
+                  className="inline-flex items-center gap-3 bg-[#1893FF] hover:bg-[#0f80dd] text-white font-semibold px-6 py-3 rounded-md transition w-fit"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.98 }}
+                  transition={springBounce}
+                >
+                  Download
+                  <span className="inline-flex items-center justify-center w-8 h-8">
+                    <img src="/images/Dicon.png" alt="" className="w-5 h-5 object-contain" />
+                  </span>
+                </motion.button>
+              )}
             </motion.div>
           ))}
         </motion.div>

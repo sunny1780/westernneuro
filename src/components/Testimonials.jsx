@@ -21,7 +21,7 @@
    },
    {
      id: 2,
-     rating: 5,
+     rating: 4,
      text: "Very positive sleep study experience. Clean, comfortable facility. TJ was professional, reassuring, and made the entire process smooth and stress-free.",
      name: "Sean Nielsen",
     //  position: "Position, Company name",
@@ -37,7 +37,7 @@
    },
    {
      id: 4,
-     rating: 5,
+     rating: 4,
      text: "My husband’s appointment went great. Antonio was friendly and professional. Staff were helpful and kind. Overall a pleasant experience.",
      name: "Kathryn Nelson",
     //  position: "Position, Company name",
@@ -56,7 +56,7 @@
    },
    {
      id: 6,
-     rating: 5,
+     rating: 4,
      text: "This office is staffed with kind, smart, fearless providers. I feel blessed being referred here. Quality is impeccable. Thank you always.",
      name: "David G",
     //  position: "Position, Company name",
@@ -72,7 +72,7 @@
    },
    {
      id: 8,
-     rating: 5,
+     rating: 4,
      text: "From the moment I walked in, I knew I was in good hands. Dr. Elaine Chen was thorough, kind, never rushed.",
      name: "Joanne Schaeffer",
     //  position: "Position, Company name",

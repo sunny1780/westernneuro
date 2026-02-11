@@ -1,13 +1,37 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const serviceImages = [
-  '/images/services/1.jpg',
-  '/images/services/2.jpg',
-  '/images/services/3.jpg',
-  '/images/services/disorder1.png',
-  '/images/services/head1.jpg',
-  '/images/services/eeg1.png',
-  // '/images/services/eeg2.png',
+const serviceCards = [
+  {
+    image: '/images/services/1.jpg',
+    hoverText: 'Seizure warning signs and next steps.',
+    blogLink: '/blog1',
+  },
+  {
+    image: '/images/services/2.jpg',
+    hoverText: 'How migraine triggers affect daily life.',
+    blogLink: '/blog2',
+  },
+  {
+    image: '/images/services/3.jpg',
+    hoverText: 'When persistent headaches need evaluation.',
+    blogLink: '/blog3',
+  },
+  {
+    image: '/images/services/disorder1.png',
+    hoverText: 'Neuromuscular symptoms worth checking early.',
+    blogLink: '/blog1',
+  },
+  {
+    image: '/images/services/head1.jpg',
+    hoverText: 'Simple habits that reduce severe headaches.',
+    blogLink: '/blog2',
+  },
+  {
+    image: '/images/services/eeg1.png',
+    hoverText: 'What to expect during EEG testing.',
+    blogLink: '/blog3',
+  },
 ];
 
 const imageSizes = [
@@ -67,17 +91,24 @@ const OurServicesHero = () => {
             className="flex items-end gap-4 md:gap-6 w-max"
             style={{ animation: 'services-marquee 18s linear infinite' }}
           >
-            {[...serviceImages, ...serviceImages].map((src, i) => (
-              <div
-                key={i}
-                className={`rounded-xl overflow-hidden bg-gray-800 ${imageSizes[i % serviceImages.length] || 'h-[80px] md:h-[92px]'} w-[140px] md:w-[160px]`}
+            {[...serviceCards, ...serviceCards].map((card, i) => (
+              <Link
+                key={`${card.image}-${i}`}
+                to={card.blogLink}
+                className={`group relative block rounded-xl overflow-hidden bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#053759] ${imageSizes[i % serviceCards.length] || 'h-[80px] md:h-[92px]'} w-[140px] md:w-[160px]`}
+                aria-label={`Read blog: ${card.hoverText}`}
               >
                 <img
-                  src={src}
+                  src={card.image}
                   alt={`Service ${i + 1}`}
                   className="w-full h-full object-cover"
                 />
-              </div>
+                <div className="absolute inset-0 bg-black/60 text-white text-[11px] md:text-xs px-2 md:px-3 py-2 flex items-end opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
+                  <span className="block w-full whitespace-nowrap overflow-hidden text-ellipsis">
+                    {card.hoverText}
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
