@@ -25,7 +25,7 @@ const imageVariants = {
 
 const WestThree = () => {
   return (
-    <section className="bg-white py-12 md:py-20 px-4 sm:px-6 md:px-16 overflow-hidden">
+    <section className="bg-white py-12 md:py-20 px-4 sm:px-6 md:px-16 overflow-visible">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start"
@@ -149,7 +149,7 @@ const WestThree = () => {
 
           {/* Right - Drfaisal Image (name, blue bg, overlay all in image) */}
           <motion.div
-            className="flex justify-center lg:justify-end pt-12 lg:pt-60"
+            className="flex justify-center lg:justify-end pt-8 sticky top-10 self-start"
             variants={imageVariants}
           >
             <motion.img
