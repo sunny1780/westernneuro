@@ -17,21 +17,21 @@ const cards = [
     description:
       "If you or your child have recently been diagnosed with ADHD, or if you suspect ADHD may be present, it’s completely normal to feel worried, confused, or overwhelmed.",
     image: "/images/blog/1.png",
-    to: "/blogs",
+    to: "/blog",
   },
   {
     title: "Anxiety Disorders: Symptoms, Causes & Treatment",
     description:
       "Autism Spectrum Disorder (ASD) is one of the most complex and often misunderstood neurodevelopmental conditions affecting children and adults today.",
     image: "/images/blog/2.png",
-    to: "/blogs",
+    to: "/blog",
   },
   {
     title: "Stay Informed About Your Neurological Health",
     description:
       "Almost everyone experiences worry at some point about health, finances, work, or relationships. Feeling anxious from time to time is a normal and even healthy response to life’s uncertainties. ",
     image: "/images/blog/3.png",
-    to: "/blogs",
+    to: "/blog",
   },
 ];
 
@@ -57,7 +57,7 @@ const StayInformedSection = () => {
             transition={{ ...spring, delay: 0.1 }}
           >
             <Link
-              to="/blogs"
+              to="/blog"
               className="inline-flex items-center justify-center gap-2 bg-[#1299ED] hover:bg-[#0d7bc7] text-white font-medium px-5 py-2.5 rounded-xl transition flex-shrink-0 w-fit"
             >
               Learn More

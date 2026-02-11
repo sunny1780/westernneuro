@@ -94,7 +94,7 @@ const Footer = () => {
             <h4 className="font-bold text-base mb-4">Quick Links</h4>
             <ul className="space-y-5 text-left">
               <li>
-                <Link to="/" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
+                <Link to="/about" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
                   About
                 </Link>
               </li>
@@ -104,12 +104,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
+                <Link to="/patient-information" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
                   Resources
                 </Link>
               </li>
               <li>
-                <Link to="/blogs" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
+                <Link to="/blog" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
                   Blog
                 </Link>
               </li>
@@ -126,27 +126,27 @@ const Footer = () => {
             <h4 className="font-bold text-base mb-4">Services</h4>
             <ul className="space-y-5 text-left">
               <li>
-                <Link to="/services" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
+                <Link to="/services/epilepsy" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
                   Epilepsy
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
+                <Link to="/services/headaches" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
                   Headaches
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
+                <Link to="/services/neuromuscular-disorders" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
                   Neuromuscular disorders
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
+                <Link to="/services/sleep-disorders" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
                   Sleep Disorders
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
+                <Link to="/services/eeg-testing" className="text-[#0A8DDB] hover:text-blue-900 text-sm font-semibold">
                   EEG (Electroencephalogram)
                 </Link>
               </li>

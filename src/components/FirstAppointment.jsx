@@ -22,7 +22,7 @@ const documents = [
 
 export default function FirstAppointment() {
   return (
-    <div className="min-h-screen px-4 sm:px-6 md:px-16 py-12 md:py-16 text-left overflow-hidden">
+    <div className="px-4 sm:px-6 md:px-16 py-6 md:py-10 text-left overflow-hidden">
       <motion.div
         variants={staggerContainer}
         initial="initial"

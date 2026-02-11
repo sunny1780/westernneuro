@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 
 import Navbar from './components/Navbar';
@@ -33,7 +33,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/patient-information" element={<PatientInformation />} />
-          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blog" element={<Blogs />} />
+          <Route path="/blogs" element={<Navigate to="/blog" replace />} />
           <Route path="/book-appointment" element={<BookAppointment />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/epilepsy" element={<Service1 />} />

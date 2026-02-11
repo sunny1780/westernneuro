@@ -21,10 +21,10 @@ const imageVariants = {
 
 const PatientInfo = () => {
   return (
-    <section className="min-h-screen flex flex-col lg:flex-row overflow-hidden">
+    <section className="flex flex-col lg:flex-row overflow-hidden py-6 md:py-10">
       {/* Left: Title + description */}
       <motion.div
-        className="flex-1 flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-16 py-12 md:py-16 lg:py-24 text-left"
+        className="flex-1 flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-16 py-6 md:py-8 lg:py-12 text-left"
         variants={staggerContainer}
         initial="initial"
         animate="animate"

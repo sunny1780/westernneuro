@@ -119,7 +119,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/blogs" className="hover:text-gray-900">
+              <Link to="/blog" className="hover:text-gray-900">
                 Blog
               </Link>
             </li>
@@ -188,7 +188,7 @@ const Navbar = () => {
               <Link to="/services/eeg-testing" onClick={() => setMobileMenuOpen(false)} className="block py-2 pl-2">EEG Testing</Link>
             </li>
             <li><Link to="/patient-information" onClick={() => setMobileMenuOpen(false)} className="block py-2">Patient Information</Link></li>
-            <li><Link to="/blogs" onClick={() => setMobileMenuOpen(false)} className="block py-2">Blogs</Link></li>
+            <li><Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="block py-2">Blog</Link></li>
             <li className="pt-2 border-t border-gray-200">
               <a
                 href="tel:8188452255"

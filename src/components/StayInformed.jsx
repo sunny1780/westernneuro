@@ -45,7 +45,7 @@ export default function StayInformed() {
             About Your Neuro Care
           </h2>
           <Link
-            to="/blogs"
+            to="/blog"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium text-white bg-[#1893FF] hover:bg-[#0f80dd] transition flex-shrink-0"
           >
             Learn More

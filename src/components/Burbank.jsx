@@ -81,14 +81,14 @@ const Burbank = () => {
   className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-6 md:mt-12"
 >
   {[
-    { src: '/images/one.png', alt: 'American Board of Psychiatry and Neurology' },
+    { src: '/images/three.png', alt: 'American Board of Psychiatry and Neurology' },
     { src: '/images/two.png', alt: 'American Board of Sleep Medicine' },
-    { src: '/images/three.png', alt: 'American Board of Clinical Neurophysiology' },
+    { src: '/images/one.png', alt: 'American Board of Clinical Neurophysiology' },
     { src: '/images/thee.png', alt: 'American Board of Clinical Neurophysiology' },
   ].map((logo, i) => (
     <div
       key={i}
-      className={`bg-white rounded-xl shadow-md p-4 flex items-center justify-center min-h-[120px] ${
+      className={`bg-white rounded-xl shadow-md p-4 flex items-center justify-center min-h-[140px] ${
         logosInView ? 'animate-pop-in' : 'opacity-0'
       }`}
       style={{
@@ -98,7 +98,7 @@ const Burbank = () => {
       <img
         src={logo.src}
         alt={logo.alt}
-        className="max-h-40 w-auto object-contain transition-transform duration-300 hover:scale-125 shadow-none filter-none"
+        className="max-h-48 w-auto object-contain shadow-none filter-none"
         style={{ boxShadow: 'none' }}
       />
     </div>

@@ -42,7 +42,7 @@ const AffiliateInsurance = () => {
   const [sectionRef, sectionInView] = useInView();
 
   return (
-    <section ref={sectionRef} className="bg-white py-12 md:py-16 px-4 sm:px-6 overflow-hidden">
+    <section ref={sectionRef} className="bg-white py-6 md:py-10 px-4 sm:px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto text-center">
         {/* Main heading */}
         <h2
