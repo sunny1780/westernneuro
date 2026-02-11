@@ -80,27 +80,27 @@ export default function FirstAppointment() {
                   href={doc.file}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 bg-[#1893FF] hover:bg-[#0f80dd] text-white font-semibold px-6 py-3 rounded-md transition w-fit"
+                  className="inline-flex items-center gap-2 bg-[#1893FF] hover:bg-[#0f80dd] text-white font-semibold px-4 py-2 rounded-md transition w-fit"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                   transition={springBounce}
                 >
                   Download
-                  <span className="inline-flex items-center justify-center w-8 h-8">
-                  <img src="/images/Dicon.svg" alt="" className="w-5 h-5 object-contain" />
+                  <span className="inline-flex items-center justify-center w-6 h-6">
+                  <img src="/images/Dicon.svg" alt="" className="w-4 h-4 object-contain" />
                   </span>
                 </motion.a>
               ) : (
                 <motion.button
                   type="button"
-                  className="inline-flex items-center gap-3 bg-[#1893FF] hover:bg-[#0f80dd] text-white font-semibold px-6 py-3 rounded-md transition w-fit"
+                  className="inline-flex items-center gap-2 bg-[#1893FF] hover:bg-[#0f80dd] text-white font-semibold px-4 py-2 rounded-md transition w-fit"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                   transition={springBounce}
                 >
                   Download
-                  <span className="inline-flex items-center justify-center w-8 h-8">
-                  <img src="/images/Dicon.svg" alt="" className="w-5 h-5 object-contain" />
+                  <span className="inline-flex items-center justify-center w-6 h-6">
+                  <img src="/images/Dicon.svg" alt="" className="w-4 h-4 object-contain" />
                   </span>
                 </motion.button>
               )}
