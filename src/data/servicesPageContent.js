@@ -16,36 +16,37 @@ export const epilepsyContent = {
     image2: "/images/services/3.jpg",
     block1ImageOnly: true,
     block1ImageStyle: { width: '100%', maxWidth: '1280px', aspectRatio: '1280/520', borderRadius: '17.59px' },
+    hideBlock2: true,
     block1: {
       title1: "Understanding Epilepsy",
       desc1: "Epilepsy is a chronic neurological condition characterized by recurrent seizures that are caused by abnormal cerebral nerve cell activity. There is a distinction between a patient who has one seizure and a patient who has epilepsy.",
       title2: "Types of Epilepsy",
       desc2: "Epilepsy can be classified as either idiopathic or symptomatic. Idiopathic epilepsy has no known cause, and the person has no other signs of neurological disease or mental deficiency. Symptomatic epilepsy results from a known condition such as stroke, head injury, poisoning, Lennox-Gastaut syndrome, or cerebral palsy.",
     },
-    contentBlock: {
-      mainTitle: "Our Diagnostic and Treatment Approach for Epilepsy",
-      intro: "Dr. Faisal offers comprehensive epilepsy care using advanced diagnostic tools combined with individualized neurological evaluation. Each patient's care plan is developed based on seizure type, frequency, triggers, lifestyle factors, and overall health.",
-      sections: [
-        {
-          title: "Diagnostic Evaluation Includes:",
-          items: [
-            "Advanced EEG testing and expert interpretation",
-            "Detailed seizure history and neurological examination",
-            "Identification of seizure patterns, triggers, and risk factors",
-          ],
-        },
-        {
-          title: "Treatment Strategies May Include:",
-          items: [
-            "Personalized anti-seizure medication selection and adjustment",
-            "Ongoing medication monitoring to minimize side effects",
-            "Trigger identification and lifestyle modification guidance",
-            "Patient and family education for safety and seizure preparedness",
-            "Long-term follow-up and care optimization",
-          ],
-        },
-      ],
-    },
+    // contentBlock: {
+    //   mainTitle: "Our Diagnostic and Treatment Approach for Epilepsy",
+    //   intro: "Dr. Faisal offers comprehensive epilepsy care using advanced diagnostic tools combined with individualized neurological evaluation. Each patient's care plan is developed based on seizure type, frequency, triggers, lifestyle factors, and overall health.",
+    //   sections: [
+    //     {
+    //       title: "Diagnostic Evaluation Includes:",
+    //       items: [
+    //         "Advanced EEG testing and expert interpretation",
+    //         "Detailed seizure history and neurological examination",
+    //         "Identification of seizure patterns, triggers, and risk factors",
+    //       ],
+    //     },
+    //     {
+    //       title: "Treatment Strategies May Include:",
+    //       items: [
+    //         "Personalized anti-seizure medication selection and adjustment",
+    //         "Ongoing medication monitoring to minimize side effects",
+    //         "Trigger identification and lifestyle modification guidance",
+    //         "Patient and family education for safety and seizure preparedness",
+    //         "Long-term follow-up and care optimization",
+    //       ],
+    //     },
+    //   ],
+    // },
     animate: true,
   },
 };

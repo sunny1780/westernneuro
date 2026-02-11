@@ -92,7 +92,13 @@ const EEGTwo = () => {
         </div>
 
         {/* Our EEG Diagnostic and Interpretation Approach */}
-        <div className="pt-8 md:pt-12 space-y-6">
+        <div className="relative pt-8 md:pt-12 space-y-6">
+          <img
+            src="/images/Neuro1.png"
+            alt=""
+            className="pointer-events-none select-none absolute left-0 top-0 w-[260px] sm:w-[320px] md:w-[420px] z-0"
+          />
+          <div className="relative z-10 space-y-6">
           <h2 className="text-2xl md:text-3xl font-bold text-[#11181C]">
             Our EEG Diagnostic and Interpretation Approach
           </h2>
@@ -122,6 +128,7 @@ const EEGTwo = () => {
           >
             Schedule Appointment
           </Link>
+          </div>
         </div>
       </div>
     </section>

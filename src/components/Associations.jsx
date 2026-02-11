@@ -6,7 +6,7 @@ const defaultAssociations = [
     abbr: "ABPN",
     year: "1934",
     className: "bg-[#1e3a5f] text-white",
-    image: "/images/one.png",
+    image: "/images/three.png",
   },
   {
     title: "American Board of Sleep Medicine",
@@ -18,7 +18,7 @@ const defaultAssociations = [
     title: "American Board of Clinical Neurophysiology",
     abbr: "ABCN",
     className: "text-[#7c3aed]",
-    image: "/images/three.png",
+    image: "/images/one.png",
   },
   {
     title: "Additional Association",
@@ -88,7 +88,7 @@ const Associations = ({ associations = defaultAssociations }) => {
           {associations.map((item, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl shadow-md p-4 flex items-center justify-center min-h-[120px] transition-all duration-300 hover:shadow-xl hover:scale-[1.03] hover:-translate-y-1 ${
+              className={`bg-white rounded-xl shadow-md p-4 flex items-center justify-center min-h-[180px] ${
                 sectionInView ? "animate-pop-in" : "opacity-0"
               }`}
               style={
@@ -101,7 +101,7 @@ const Associations = ({ associations = defaultAssociations }) => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="max-h-40 w-auto max-w-full object-contain transition-transform duration-300 hover:scale-125"
+                  className="max-h-60 w-auto max-w-full object-contain shadow-none filter-none"
                   onError={() => handleImageError(index)}
                 />
               ) : index === 0 ? (

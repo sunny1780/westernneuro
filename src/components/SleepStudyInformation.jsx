@@ -86,7 +86,7 @@ export default function SleepStudyInformation() {
                 >
                   Download
                   <span className="inline-flex items-center justify-center w-8 h-8">
-                    <img src="/images/Dicon.png" alt="" className="w-5 h-5 object-contain" />
+                  <img src="/images/Dicon.svg" alt="" className="w-5 h-5 object-contain" />
                   </span>
                 </motion.a>
               ) : (
@@ -99,7 +99,7 @@ export default function SleepStudyInformation() {
                 >
                   Download
                   <span className="inline-flex items-center justify-center w-8 h-8">
-                    <img src="/images/Dicon.png" alt="" className="w-5 h-5 object-contain" />
+                  <img src="/images/Dicon.svg" alt="" className="w-5 h-5 object-contain" />
                   </span>
                 </motion.button>
               )}

@@ -41,7 +41,7 @@ const WestThree = () => {
               className="text-[48px] leading-[1] font-medium text-[#11181C] mb-6"
               style={{ letterSpacing: '0.5%' }}
             >
-              Education & Training
+              Medical Qualifications & Experience
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-gray-500 mb-8">
             Dr. Fawaz Faisal's extensive training from Stanford University and UCLA ensures expert, comprehensive neurological care.
@@ -128,7 +128,7 @@ const WestThree = () => {
               >
                 Download Resume
                 <span className="inline-flex items-center justify-center w-8 h-8">
-                  <img src="/images/Dicon.png" alt="" className="w-5 h-5 object-contain" />
+                  <img src="/images/Dicon.svg" alt="" className="w-5 h-5 object-contain" />
                 </span>
               </motion.a>
               <motion.a
@@ -141,7 +141,7 @@ const WestThree = () => {
               >
                 LinkedIn
                 <span className="inline-flex items-center justify-center w-8 h-8">
-                  <img src="/images/Licon.png" alt="" className="w-5 h-5 object-contain" />
+                  <img src="/images/Licon.svg" alt="" className="w-5 h-5 object-contain" />
                 </span>
               </motion.a>
             </motion.div>

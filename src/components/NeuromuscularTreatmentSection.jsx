@@ -25,8 +25,13 @@ const NeuromuscularTreatmentSection = ({
   return (
     <section
       ref={sectionRef}
-      className="px-4 sm:px-6 md:px-16 py-12 md:py-16 text-left overflow-x-hidden"
+      className="relative px-4 sm:px-6 md:px-16 py-12 md:py-16 text-left overflow-x-hidden"
     >
+      <img
+        src="/images/Neuro1.png"
+        alt=""
+        className="pointer-events-none select-none absolute left-0 top-0 w-[260px] sm:w-[320px] md:w-[420px] z-0"
+      />
       <div
         className={`max-w-6xl mx-auto flex flex-col gap-8 md:gap-12 ${
           inView ? "animate-slide-up-bounce" : "opacity-0"

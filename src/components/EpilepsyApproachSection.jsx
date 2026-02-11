@@ -3,24 +3,25 @@ import React from "react";
 const EpilepsyApproachSection = () => {
   return (
     <section className="relative bg-white px-4 sm:px-6 md:px-12 lg:px-16 py-16 md:py-20 text-left overflow-hidden">
-      <img
-        src="/images/Neuro1.png"
-        alt=""
-        className="pointer-events-none select-none absolute left-0 top-0 w-[260px] sm:w-[320px] md:w-[420px] z-0"
-      />
+      
       <div className="relative z-10 max-w-6xl mx-auto space-y-10 md:space-y-12">
         {/* Image */}
-        <div className="rounded-[24px] overflow-hidden bg-black/5">
+        <div className="rounded-[24px] overflow-hidden bg-black/5 h-[360px] md:h-[400px]">
           <img
-            src="/images/services/3.jpg"
+            src="/images/services/2.jpg"
             alt="Epilepsy diagnostic visualization"
             className="w-full h-full object-cover"
           />
         </div>
 
         {/* Text content */}
-        <div className="max-w-5xl space-y-6 text-[#111827]">
-          <header className="space-y-2">
+        <div className="relative max-w-5xl space-y-6 text-[#111827]">
+          <img
+            src="/images/Neuro1.png"
+            alt=""
+            className="pointer-events-none select-none absolute left-0 top-[120px] w-[260px] sm:w-[320px] md:w-[420px] z-0"
+          />
+          <header className="relative z-10 space-y-2">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
               Our Diagnostic and Treatment Approach for Epilepsy
             </h2>
@@ -32,7 +33,7 @@ const EpilepsyApproachSection = () => {
             </p>
           </header>
 
-          <div className="space-y-8 md:space-y-8">
+          <div className="relative z-10 space-y-8 md:space-y-8">
             <section className="space-y-3">
               <h3 className="text-lg md:text-xl font-semibold">
                 Diagnostic Evaluation Includes:

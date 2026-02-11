@@ -123,7 +123,7 @@ const EducationTraining = () => {
           >
             Download Resume
             <span className="inline-flex items-center justify-center w-8 h-8">
-              <img src="/images/Dicon.png" alt="" className="w-4 h-4 object-contain" />
+              <img src="/images/Dicon.svg" alt="" className="w-4 h-4 object-contain" />
             </span>
           </button>
           </motion.div>
@@ -136,7 +136,7 @@ const EducationTraining = () => {
           >
             LinkedIn
             <span className="inline-flex items-center justify-center w-8 h-8">
-              <img src="/images/Licon.png" alt="" className="w-4 h-4 object-contain" />
+              <img src="/images/Licon.svg" alt="" className="w-4 h-4 object-contain" />
             </span>
           </a>
           </motion.div>

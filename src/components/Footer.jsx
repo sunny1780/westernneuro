@@ -40,7 +40,11 @@ const Footer = () => {
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-[2.2fr_0.9fr_0.9fr] gap-12 md:gap-16 items-start">
           {/* Left Column - Logo, Contact, Social */}
           <div className="space-y-6">
-            <Link to="/" aria-label="Go to home">
+            <Link
+              to="/"
+              aria-label="Go to home"
+              onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
+            >
               <img
                 src="/images/logo.png"
                 alt="Western Neurological Associates"
