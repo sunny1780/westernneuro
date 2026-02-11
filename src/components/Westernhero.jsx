@@ -37,7 +37,7 @@ const Westernhero = () => {
           >
             <motion.h1
               variants={headingPop}
-              className="text-[96px] font-medium text-[#053759] leading-[1] mb-6"
+              className="text-[48px] sm:text-[64px] md:text-[72px] lg:text-[84px] xl:text-[96px] font-medium text-[#053759] leading-[1] mb-6 break-words"
               style={{ letterSpacing: '0.5%' }}
             >
               Western Neurological Associates
