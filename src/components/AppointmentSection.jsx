@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const springBounce = { type: "spring", stiffness: 260, damping: 20 };
 const staggerContainer = {
@@ -14,6 +15,34 @@ const fadeInRight = {
 };
 
 export default function AppointmentSection() {
+    const [selectedDate, setSelectedDate] = useState("");
+    const [selectedTime, setSelectedTime] = useState("");
+    const todayStr = new Date().toISOString().split("T")[0];
+    const now = new Date();
+    const nowMinutes = now.getHours() * 60 + now.getMinutes();
+    const timeOptions = [
+      { label: "9 AM", value: "09:00" },
+      { label: "10 AM", value: "10:00" },
+      { label: "11 AM", value: "11:00" },
+      { label: "12 PM", value: "12:00" },
+      { label: "1 PM", value: "13:00" },
+      { label: "2 PM", value: "14:00" },
+      { label: "3 PM", value: "15:00" },
+      { label: "4 PM", value: "16:00" },
+      { label: "5 PM", value: "17:00" },
+    ];
+    const isToday = selectedDate === todayStr;
+    const parseMinutes = (value) => {
+      const [hours, minutes] = value.split(":").map(Number);
+      return hours * 60 + minutes;
+    };
+    useEffect(() => {
+      if (!selectedDate || !selectedTime) return;
+      if (selectedDate === todayStr && parseMinutes(selectedTime) <= nowMinutes) {
+        setSelectedTime("");
+      }
+    }, [selectedDate, selectedTime, todayStr, nowMinutes]);
+
     return (
       <div className="min-h-screen bg-white px-4 sm:px-6 md:px-16 py-12 md:py-20 overflow-x-hidden">
         <motion.div
@@ -40,7 +69,7 @@ export default function AppointmentSection() {
     alt="Phone"
     className="w-5 h-5 flex-shrink-0"
   />
-  <span className="text-[#053759] font-medium">818.845.2255</span>
+  <span className="text-[#053759] font-medium">818.845.2828</span>
 </div>
 
 <div className="flex items-center gap-3">
@@ -59,9 +88,9 @@ export default function AppointmentSection() {
     className="w-5 h-5 flex-shrink-0"
   />
                 <div className="text-[#053759] font-medium">
-                  <p>Mon - Thu: 9:00am - 5:00pm</p>
-                <p>Fri: 9AM to 4PM</p>  
-                  <p>Sat & Sun: Closed</p>
+                  <p>Mon - Thu: 9AM to 5PM</p>
+                  <p>Fri: 9AM to 4PM</p>
+                  <p>Sat &amp; Sun: Closed</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -144,8 +173,11 @@ export default function AppointmentSection() {
                 <div className="relative">
                   <select className="w-full border rounded-lg pl-4 pr-12 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left appearance-none">
                     <option>Epilepsy</option>
+                    <option>Headaches &amp; Migraines</option>
+                    <option>Neuromuscular Disorders</option>
+                    <option>Sleep Disorders</option>
+                    <option>EEG Testing</option>
                     <option>Consultation</option>
-                    <option>Treatment</option>
                   </select>
                   <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-500">
                     <svg
@@ -173,6 +205,9 @@ export default function AppointmentSection() {
                   </label>
                   <input
                     type="date"
+                    min={todayStr}
+                    value={selectedDate}
+                    onChange={(event) => setSelectedDate(event.target.value)}
                     className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-left"
                   />
                 </div>
@@ -182,10 +217,24 @@ export default function AppointmentSection() {
                     Time <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
-                    <select className="w-full border rounded-lg pl-4 pr-12 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left appearance-none">
-                      <option>9 AM</option>
-                      <option>10 AM</option>
-                      <option>11 AM</option>
+                    <select
+                      className="w-full border rounded-lg pl-4 pr-12 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-left appearance-none"
+                      value={selectedTime}
+                      onChange={(event) => setSelectedTime(event.target.value)}
+                      disabled={!selectedDate}
+                    >
+                      <option value="" disabled>
+                        Select Time
+                      </option>
+                      {timeOptions.map((option) => {
+                        const optionMinutes = parseMinutes(option.value);
+                        const isPast = isToday && optionMinutes <= nowMinutes;
+                        return (
+                          <option key={option.value} value={option.value} disabled={isPast}>
+                            {option.label}
+                          </option>
+                        );
+                      })}
                     </select>
                     <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-500">
                       <svg

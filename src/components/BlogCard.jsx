@@ -51,7 +51,7 @@ const blogs = [
 
 export default function BlogCard() {
   return (
-    <div className="min-h-screen p-4 sm:p-6 md:p-8">
+    <div className="min-h-screen px-4 sm:px-6 md:px-16 py-12 md:py-16">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:gap-8 md:grid-cols-3">
         {blogs.map((blog, index) => (
           <div

@@ -102,7 +102,7 @@ const ServiceCard = ({ service, index }) => {
       {/* Button - vertically centered */}
       <Link
         to={service.link}
-        className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#00BFFF] hover:bg-[#00a3e0] text-white flex items-center justify-center transition"
+        className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#1299ED] hover:bg-[#0f80dd] text-white flex items-center justify-center transition"
         style={{ borderRadius: '12px' }}
         aria-label={`Learn more about ${service.title}`}
       >

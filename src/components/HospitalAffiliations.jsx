@@ -14,9 +14,9 @@ const HospitalAffiliations = () => {
           Our physicians maintain active privileges at:
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-0">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-0">
           {/* Left image */}
-          <div className="flex items-center justify-center w-full">
+          <div className="flex items-center justify-center">
             <img
               src="/images/left.png"
               alt="Hospital affiliation logo"
@@ -25,7 +25,7 @@ const HospitalAffiliations = () => {
           </div>
 
           {/* Right image */}
-          <div className="flex items-center justify-center w-full">
+          <div className="flex items-center justify-center">
             <img
               src="/images/right.png"
               alt="Hospital affiliation logo"
