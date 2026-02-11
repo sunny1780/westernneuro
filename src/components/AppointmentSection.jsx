@@ -63,44 +63,56 @@ export default function AppointmentSection() {
 
             {/* Contact Info */}
             <div className="space-y-4 text-blue-600">
-            <div className="flex items-center gap-3">
-  <img
-    src="/images/icon/PhoneCall.png"
-    alt="Phone"
-    className="w-5 h-5 flex-shrink-0"
-  />
-  <span className="text-[#053759] font-medium">818.845.2828</span>
-</div>
+            <div className="flex items-center gap-3 relative group">
+              <img
+                src="/images/ph.svg"
+                alt="Phone"
+                className="w-5 h-5 flex-shrink-0"
+              />
+              <span className="text-[#053759] font-medium">818.845.2828</span>
+              <span className="pointer-events-none absolute left-0 top-0 -translate-y-full whitespace-nowrap rounded-md bg-[#11181C] text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition">
+                Contact Number
+              </span>
+            </div>
 
-<div className="flex items-center gap-3">
+<div className="flex items-center gap-3 relative group">
   <img
-    src="/images/icon/CashRegister.png"
-    alt="Printer"
+    src="/images/tl.svg"
+    alt="Fax"
     className="w-5 h-5 flex-shrink-0"
   />
   <span className="text-[#053759] font-medium">818.845.2255</span>
+  <span className="pointer-events-none absolute left-0 top-0 -translate-y-full whitespace-nowrap rounded-md bg-[#11181C] text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition">
+    Fax Number
+  </span>
 </div>
 
-              <div className="flex items-start gap-3">
-              <img
-    src="/images/icon/ClockCountdown.png"
-    alt="clock"
-    className="w-5 h-5 flex-shrink-0"
-  />
+              <div className="flex items-start gap-3 relative group">
+                <img
+                  src="/images/time.svg"
+                  alt="Hours"
+                  className="w-5 h-5 flex-shrink-0"
+                />
                 <div className="text-[#053759] font-medium">
                   <p>Mon - Thu: 9AM to 5PM</p>
                   <p>Fri: 9AM to 4PM</p>
                   <p>Sat &amp; Sun: Closed</p>
                 </div>
+                <span className="pointer-events-none absolute left-0 top-0 -translate-y-full whitespace-nowrap rounded-md bg-[#11181C] text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition">
+                 Working Hours
+                </span>
               </div>
-              <div className="flex items-start gap-3">
-              <img
-    src="/images/icon/MapPinLine.png"
-    alt="Printer"
-    className="w-5 h-5 flex-shrink-0"
-  />
+              <div className="flex items-start gap-3 relative group">
+                <img
+                  src="/images/lc.svg"
+                  alt="Location"
+                  className="w-5 h-5 flex-shrink-0"
+                />
                 <span className="text-[#053759] font-medium">
                   1218 W Olive Ave. Burbank, CA 91506
+                </span>
+                <span className="pointer-events-none absolute left-0 top-0 -translate-y-full whitespace-nowrap rounded-md bg-[#11181C] text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition">
+                  Location
                 </span>
               </div>
             </div>
