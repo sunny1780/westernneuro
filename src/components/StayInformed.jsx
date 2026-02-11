@@ -83,11 +83,6 @@ export default function StayInformed() {
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium text-white bg-[#1893FF] hover:bg-[#0f80dd] transition w-full text-center"
                 >
                   Learn More
-                  <img
-                    src="/images/arowicon.png"
-                    alt=""
-                    className="w-4 h-4 object-contain rotate-[-90deg]"
-                  />
                 </Link>
               </div>
             </div>

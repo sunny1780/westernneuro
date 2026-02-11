@@ -134,7 +134,7 @@ const Navbar = () => {
             aria-label="Call 818.845.2255"
           >
             <img
-              src="/images/icon/Phone.png"
+              src="/images/phone.svg"
               alt="Phone"
               className="w-4 h-4 flex-shrink-0"
             />
