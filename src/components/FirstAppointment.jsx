@@ -24,6 +24,7 @@ export default function FirstAppointment() {
   return (
     <div className="px-4 sm:px-6 md:px-16 py-6 md:py-10 text-left overflow-hidden">
       <motion.div
+        className="max-w-6xl mx-auto"
         variants={staggerContainer}
         initial="initial"
         whileInView="animate"

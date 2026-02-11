@@ -21,10 +21,11 @@ const imageVariants = {
 
 const PatientInfo = () => {
   return (
-    <section className="flex flex-col lg:flex-row overflow-hidden py-6 md:py-10">
+    <section className="overflow-hidden py-6 md:py-10 px-4 sm:px-6 md:px-16">
+      <div className="max-w-6xl mx-auto w-full flex flex-col lg:flex-row">
       {/* Left: Title + description */}
       <motion.div
-        className="flex-1 flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-16 py-6 md:py-8 lg:py-12 text-left"
+        className="flex-1 flex flex-col justify-center py-6 md:py-8 lg:py-12 text-left"
         variants={staggerContainer}
         initial="initial"
         animate="animate"
@@ -69,6 +70,7 @@ const PatientInfo = () => {
           />
         </motion.div>
       </motion.div>
+      </div>
     </section>
   );
 };
