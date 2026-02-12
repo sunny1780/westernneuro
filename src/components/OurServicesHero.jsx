@@ -4,32 +4,32 @@ import { Link } from 'react-router-dom';
 const serviceCards = [
   {
     image: '/images/services/1.jpg',
-    hoverText: 'Seizure warning signs and next steps.',
+    serviceName: 'Epilepsy',
     blogLink: '/blog1',
   },
   {
     image: '/images/services/2.jpg',
-    hoverText: 'How migraine triggers affect daily life.',
+    serviceName: 'Headaches & Migraines',
     blogLink: '/blog2',
   },
   {
     image: '/images/services/3.jpg',
-    hoverText: 'When persistent headaches need evaluation.',
+    serviceName: 'Sleep Disorders',
     blogLink: '/blog3',
   },
   {
     image: '/images/services/disorder1.png',
-    hoverText: 'Neuromuscular symptoms worth checking early.',
+    serviceName: 'Neuromuscular Disorders',
     blogLink: '/blog1',
   },
   {
     image: '/images/services/head1.jpg',
-    hoverText: 'Simple habits that reduce severe headaches.',
+    serviceName: 'Headaches & Migraines',
     blogLink: '/blog2',
   },
   {
     image: '/images/services/eeg1.png',
-    hoverText: 'What to expect during EEG testing.',
+    serviceName: 'EEG Testing',
     blogLink: '/blog3',
   },
 ];
@@ -96,7 +96,7 @@ const OurServicesHero = () => {
                 key={`${card.image}-${i}`}
                 to={card.blogLink}
                 className={`group relative block rounded-xl overflow-hidden bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#053759] ${imageSizes[i % serviceCards.length] || 'h-[80px] md:h-[92px]'} w-[140px] md:w-[160px]`}
-                aria-label={`Read blog: ${card.hoverText}`}
+                aria-label={`View service: ${card.serviceName}`}
               >
                 <img
                   src={card.image}
@@ -105,7 +105,7 @@ const OurServicesHero = () => {
                 />
                 <div className="absolute inset-0 bg-black/60 text-white text-[11px] md:text-xs px-2 md:px-3 py-2 flex items-end opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
                   <span className="block w-full whitespace-nowrap overflow-hidden text-ellipsis">
-                    {card.hoverText}
+                    {card.serviceName}
                   </span>
                 </div>
               </Link>

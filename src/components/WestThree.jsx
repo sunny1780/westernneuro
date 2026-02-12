@@ -137,7 +137,7 @@ const WestThree = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 transition={springBounce}
-                className="inline-flex items-center gap-3 border border-[#94C6F1] text-[#1E5FBF] hover:bg-[#F3F8FF] font-semibold px-6 py-3 rounded-md transition"
+                className="inline-flex items-center gap-3 border border-[#94C6F1] text-[#0A8DDB] hover:bg-[#F3F8FF] font-semibold px-6 py-3 rounded-md transition"
               >
                 LinkedIn
                 <span className="inline-flex items-center justify-center w-8 h-8">
