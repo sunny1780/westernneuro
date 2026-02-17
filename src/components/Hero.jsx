@@ -38,6 +38,36 @@ const Hero = () => {
 
     const setupVideo = async (video) => {
       if (!video) return;
+      let hlsInstance = null;
+
+      const restartFromStart = () => {
+        if (!video) return;
+
+        if (hlsInstance) {
+          hlsInstance.stopLoad();
+          hlsInstance.startLoad(0);
+          video.currentTime = 0;
+          video.play().catch(() => {});
+          return;
+        }
+
+        video.src = HERO_VIDEO_URL;
+        video.load();
+        video.currentTime = 0;
+        video.play().catch(() => {});
+      };
+
+      const onEnded = () => restartFromStart();
+      const nearEndWatcher = window.setInterval(() => {
+        if (!video.duration || !Number.isFinite(video.duration)) return;
+        if (video.currentTime >= video.duration - 0.15) restartFromStart();
+      }, 400);
+
+      video.addEventListener('ended', onEnded);
+      cleanupFns.push(() => {
+        video.removeEventListener('ended', onEnded);
+        window.clearInterval(nearEndWatcher);
+      });
 
       const supportsNativeHls =
         video.canPlayType('application/vnd.apple.mpegurl') ||
@@ -55,13 +85,18 @@ const Hero = () => {
         if (isCancelled || !video || !Hls || !Hls.isSupported()) return;
 
         const hls = new Hls();
+        hlsInstance = hls;
         hls.loadSource(HERO_VIDEO_URL);
         hls.attachMedia(video);
         hls.on(Hls.Events.MANIFEST_PARSED, () => {
           video.play().catch(() => {});
         });
+        hls.on(Hls.Events.BUFFER_EOS, restartFromStart);
 
-        cleanupFns.push(() => hls.destroy());
+        cleanupFns.push(() => {
+          hls.off(Hls.Events.BUFFER_EOS, restartFromStart);
+          hls.destroy();
+        });
       } catch (error) {
         // Keep silent and allow graceful fallback to poster/black background.
       }
@@ -87,7 +122,7 @@ const Hero = () => {
             muted
             playsInline
             ref={mobileVideoRef}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-black/25" />
         </div>
@@ -118,7 +153,7 @@ const Hero = () => {
           muted
           playsInline
           ref={desktopVideoRef}
-          className="absolute inset-0 w-full h-full object-cover opacity-70"
+          className="absolute inset-0 w-full h-full object-cover object-top opacity-70"
         />
         <div className="absolute inset-0 bg-black/50" />
 
