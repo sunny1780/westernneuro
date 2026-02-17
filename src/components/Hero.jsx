@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 const HERO_VIDEO_URL =
-  'https://customer-leo8lubv91ct4vwd.cloudflarestream.com/2c61732cfa203dba59d6552980536a41/manifest/video.m3u8';
+  'https://customer-leo8lubv91ct4vwd.cloudflarestream.com/5cd4689d774604f99f61cd9f40ca6e1f/manifest/video.m3u8';
 
 const HLS_SCRIPT_ID = 'hls-js-cdn-script';
 
@@ -82,7 +82,8 @@ const Hero = () => {
 
       try {
         const Hls = await loadHlsLibrary();
-        if (isCancelled || !video || !Hls || !Hls.isSupported()) return;
+        if (isCancelled || !video) return;
+        if (!Hls || !Hls.isSupported()) return;
 
         const hls = new Hls();
         hlsInstance = hls;
@@ -97,9 +98,7 @@ const Hero = () => {
           hls.off(Hls.Events.BUFFER_EOS, restartFromStart);
           hls.destroy();
         });
-      } catch (error) {
-        // Keep silent and allow graceful fallback to poster/black background.
-      }
+      } catch {}
     };
 
     setupVideo(mobileVideoRef.current);
@@ -122,9 +121,8 @@ const Hero = () => {
             muted
             playsInline
             ref={mobileVideoRef}
-            className="absolute inset-0 w-full h-full object-cover object-top"
+            className="absolute inset-0 w-full h-full object-cover object-top opacity-60"
           />
-          <div className="absolute inset-0 bg-black/25" />
         </div>
 
         <div className="px-5 py-10 text-center">
@@ -153,9 +151,8 @@ const Hero = () => {
           muted
           playsInline
           ref={desktopVideoRef}
-          className="absolute inset-0 w-full h-full object-cover object-top opacity-70"
+          className="absolute inset-0 w-full h-full object-cover object-top opacity-60"
         />
-        <div className="absolute inset-0 bg-black/50" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight uppercase tracking-tight">
