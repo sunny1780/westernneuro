@@ -25,7 +25,8 @@ export default function FacilityTourHero() {
       >
         <motion.h1
           variants={headingPop}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#053759] mb-6 md:mb-8"
+          className="text-[40px] sm:text-[56px] md:text-[72px] lg:text-[84px] xl:text-[96px] font-medium text-[#053759] leading-[1] text-center mb-6 md:mb-8 break-words"
+          style={{ letterSpacing: '0.5%' }}
         >
           Facility Tour
         </motion.h1>

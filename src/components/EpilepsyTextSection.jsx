@@ -5,7 +5,7 @@ const EpilepsyTextSection = () => {
     <section className="bg-white px-4 sm:px-6 md:px-12 lg:px-16 py-16 md:py-20 text-left">
       <div className="max-w-5xl mx-auto space-y-6 md:space-y-8 text-[#111827]">
         <header className="space-y-3">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
+          <h2 className="text-[48px] font-medium text-[#11181C] leading-[1]" style={{ letterSpacing: '0.5%' }}>
             Comprehensive Seizure Disorder Diagnosis and Treatment
           </h2>
           <h3 className="text-lg md:text-xl font-semibold text-[#111827]">

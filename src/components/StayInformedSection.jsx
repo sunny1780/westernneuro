@@ -47,7 +47,7 @@ const StayInformedSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={spring}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-[48px] font-medium text-[#11181C] leading-[1]" style={{ letterSpacing: '0.5%' }}>
             Stay Informed About Your Neuro Care
           </h2>
           <motion.div

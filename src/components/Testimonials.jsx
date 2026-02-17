@@ -191,8 +191,8 @@
              What Clients Say
            </p> */}
           <h2
-            className="text-[48px] font-bold text-[#11181C] leading-[1] mb-4"
-            style={{ letterSpacing: '0.5%', fontFamily: 'Manrope, sans-serif' }}
+            className="text-[48px] font-medium text-[#11181C] leading-[1] mb-4"
+            style={{ letterSpacing: '0.5%' }}
           >
             Trusted by Our Patients
           </h2>

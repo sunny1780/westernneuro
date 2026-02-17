@@ -17,7 +17,7 @@ const BlogsSection = () => {
   
             {/* Content */}
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold text-[#053759] mb-4 md:mb-6">
+              <h2 className="text-[48px] font-medium text-[#11181C] leading-[1] mb-4 md:mb-6" style={{ letterSpacing: '0.5%' }}>
               Neurological Health Insights & Education 
               </h2>
               <p className=" max-w-xl leading-relaxed">

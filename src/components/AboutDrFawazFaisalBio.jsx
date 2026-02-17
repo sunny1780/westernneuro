@@ -46,7 +46,8 @@ const AboutDrFawazFaisalBio = ({ imageSrc = "/images/dr-faisal-hero.png" }) => {
           <motion.div className="text-left" variants={staggerContainer}>
             <motion.h2
               variants={fadeInRight}
-              className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 md:mb-8"
+              className="text-[48px] font-medium text-[#11181C] leading-[1] mb-6 md:mb-8"
+              style={{ letterSpacing: '0.5%' }}
             >
               About Dr. Fawaz Faisal
             </motion.h2>

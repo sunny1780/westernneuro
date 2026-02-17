@@ -37,7 +37,7 @@ const Burbank = () => {
             ref={textRef}
             className={`text-left ${textInView ? 'animate-slide-up-bounce' : 'opacity-0'}`}
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-[48px] font-medium text-[#11181C] leading-[1] mb-6" style={{ letterSpacing: '0.5%' }}>
             Burbank's 
               <br />
               Neurology Expert

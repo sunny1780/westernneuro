@@ -64,9 +64,10 @@ function InformedCards() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <h2
-          className={`text-3xl md:text-4xl font-bold text-gray-900 text-center mb-3 ${
+          className={`text-[48px] font-medium text-[#11181C] leading-[1] text-center mb-3 ${
             sectionInView ? 'animate-slide-up-bounce' : 'opacity-0'
           }`}
+          style={{ letterSpacing: '0.5%' }}
         >
           Stay Informed About Your Neuro Care
         </h2>

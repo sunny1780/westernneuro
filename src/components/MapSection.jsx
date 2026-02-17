@@ -13,7 +13,7 @@ const MapSection = ({
     <section className={`py-16 md:py-20 px-4 md:px-6 ${className}`}>
       <div className="max-w-7xl mx-auto">
         {title && (
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2 text-left">
+          <h2 className="text-[48px] font-medium text-[#11181C] leading-[1] mb-2 text-left" style={{ letterSpacing: '0.5%' }}>
             {title}
           </h2>
         )}

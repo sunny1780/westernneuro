@@ -30,15 +30,8 @@ export default function StayInformed() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <h2
-            className="text-left"
-            style={{
-              fontFamily: 'Inter, sans-serif',
-              fontWeight: 500,
-              fontSize: 'clamp(32px, 5vw, 48px)',
-              lineHeight: '100%',
-              letterSpacing: '0.5%',
-              color: '#11181C',
-            }}
+            className="text-[48px] font-medium text-[#11181C] leading-[1] text-left"
+            style={{ letterSpacing: '0.5%' }}
           >
             Stay Informed
             <br />
