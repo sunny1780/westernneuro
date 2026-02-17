@@ -118,13 +118,13 @@ const Allservices = () => {
       <div className="max-w-6xl mx-auto w-full space-y-8 text-left">
         <div className="text-center">
           <h2
-            className="text-[48px] font-medium text-[#11181C] leading-[1]"
+            className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-[#11181C] leading-[1]"
             style={{ letterSpacing: '0.5%' }}
           >
             Our Services
           </h2>
           <p
-            className="text-[18px] leading-[28px] font-normal text-[#687076] mt-2"
+            className="text-sm sm:text-base md:text-[18px] leading-[22px] sm:leading-[26px] md:leading-[28px] font-normal text-[#687076] mt-2"
             style={{ letterSpacing: '0.5%' }}
           >
             Our physicians provide Comprehensive Care

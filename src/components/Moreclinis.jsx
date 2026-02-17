@@ -77,7 +77,7 @@ const Moreclinis = () => {
               style={rightInView ? { animationDelay: '200ms' } : {}}
             >
               <h2
-                className="text-[48px] font-medium text-[#11181C] leading-[1] mb-4 text-left"
+                className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-[#11181C] leading-[1] mb-4 text-left"
                 style={{ letterSpacing: '0.5%' }}
               >
                 More Than a Clinic — We're Your Health Partner

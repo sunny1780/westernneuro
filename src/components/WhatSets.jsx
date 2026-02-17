@@ -69,7 +69,7 @@ const WhatSets = () => {
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2
-            className={`text-[48px] font-medium text-[#11181C] leading-[1] mb-4 ${
+            className={`text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-[#11181C] leading-[1] mb-4 ${
               sectionInView ? "animate-slide-up-bounce" : "opacity-0"
             }`}
             style={{ letterSpacing: '0.5%' }}
@@ -77,7 +77,7 @@ const WhatSets = () => {
             What Sets Us Apart
           </h2>
           <p
-            className={`text-base md:text-lg text-gray-700 ${
+            className={`text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed ${
               sectionInView ? "animate-slide-up-bounce" : "opacity-0"
             }`}
             style={sectionInView ? { animationDelay: "100ms" } : {}}

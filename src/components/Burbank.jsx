@@ -37,11 +37,11 @@ const Burbank = () => {
             ref={textRef}
             className={`text-left ${textInView ? 'animate-slide-up-bounce' : 'opacity-0'}`}
           >
-            <h2 className="text-[48px] font-medium text-[#11181C] leading-[1] mb-6" style={{ letterSpacing: '0.5%' }}>
-            Burbank's 
-              <br />
-              Neurology Expert
-            </h2>
+            <h2 className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-[#11181C] leading-[1] mb-6" style={{ letterSpacing: '0.5%' }}>
+            Burbank's
+            <br />
+            Neurology Expert
+          </h2>
             <p className="text-gray-600 mb-4">
               Our Medical Director, Dr. Fawaz Faisal, is triple board-certified in Neurology, Clinical Neurophysiology, and Sleep Medicine.
             </p>
