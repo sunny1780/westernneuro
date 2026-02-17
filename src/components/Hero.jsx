@@ -25,7 +25,7 @@ const Hero = () => {
           <span>Neurological Associates</span>
         </h1>
         <p className="text-gray-200 text-base md:text-lg max-w-2xl mx-auto mb-8">
-        Neurology and Sleep Specialists Providing Comprehensive, Patient-Centered Care
+        Neurology and Sleep Specialist Providing Comprehensive, Patient-Centered Care
         </p>
         <a
           href="/services"
