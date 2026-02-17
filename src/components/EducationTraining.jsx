@@ -26,7 +26,7 @@ const EducationTraining = () => {
       >
         <motion.h2
           variants={slideInLeft}
-          className="text-[48px] leading-[1] font-medium text-[#11181C] mb-4 md:mb-6"
+          className="text-[32px] sm:text-[40px] md:text-[48px] leading-[1] font-medium text-[#11181C] mb-4 md:mb-6 break-words"
           style={{ letterSpacing: '0.5%' }}
         >
           Medical Qualifications & Experience
@@ -42,13 +42,13 @@ const EducationTraining = () => {
           {/* Left column */}
           <motion.div className="space-y-6" variants={staggerContainer}>
             <motion.div variants={fadeInUp}>
-              <h3 className="text-lg font-semibold text-[#11181C] mb-2">Education</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-[#11181C] mb-2">Education</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-1.5">
                 <li>University of Damascus, Damascus, Syria, 1986</li>
               </ul>
             </motion.div>
             <motion.div variants={fadeInUp}>
-              <h3 className="text-lg font-semibold text-[#11181C] mb-2">Training</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-[#11181C] mb-2">Training</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-1.5">
                 <li>Stanford University Hospital, Neurology</li>
                 <li>UCLA School of Medicine: Fellowship training in Sleep Disorders</li>
@@ -57,7 +57,7 @@ const EducationTraining = () => {
               </ul>
             </motion.div>
             <motion.div variants={fadeInUp}>
-              <h3 className="text-lg font-semibold text-[#11181C] mb-2">Hospital Appointments</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-[#11181C] mb-2">Hospital Appointments</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-1.5">
                 <li>Providence Saint Joseph, Burbank</li>
                 <li>UCLA Medical Center</li>
@@ -69,7 +69,7 @@ const EducationTraining = () => {
           {/* Right column */}
           <motion.div className="space-y-6" variants={staggerContainer}>
             <motion.div variants={fadeInUp}>
-              <h3 className="text-lg font-semibold text-[#11181C] mb-2">Board Certification</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-[#11181C] mb-2">Board Certification</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-1.5">
                 <li>Board of Psychiatry and Neurology: certified in Neurology</li>
                 <li>Board of Sleep Medicine</li>
@@ -77,7 +77,7 @@ const EducationTraining = () => {
               </ul>
             </motion.div>
             <motion.div variants={fadeInUp}>
-              <h3 className="text-lg font-semibold text-[#11181C] mb-2">Academic & Administrative Appointment</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-[#11181C] mb-2">Academic & Administrative Appointment</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-1.5">
                 <li>Assistant Clinical Professor, UCLA</li>
                 <li>Providence Saint Joseph Hospital, Burbank, California</li>

@@ -33,14 +33,14 @@ export default function FirstAppointment() {
         {/* Heading */}
         <motion.h1
           variants={fadeInUp}
-          className="text-[48px] leading-[1] font-medium text-[#11181C] mb-8"
+          className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] leading-[1] font-medium text-[#11181C] mb-8"
           style={{ letterSpacing: '0.5%' }}
         >
           Your First Appointment
         </motion.h1>
         <motion.h2
           variants={fadeInUp}
-          className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-4"
+          className="text-[22px] sm:text-[26px] md:text-[30px] leading-[28px] sm:leading-[32px] md:leading-[36px] font-semibold text-[#11181C] mb-4"
           style={{ letterSpacing: '0.5%' }}
         >
           What to Expect & How to Prepare
@@ -48,14 +48,14 @@ export default function FirstAppointment() {
 
         <motion.p
           variants={fadeInUp}
-          className="text-[16px] leading-[24px] font-normal text-[#5A666E] max-w-3xl mb-8"
+          className="text-sm sm:text-base md:text-[16px] leading-[22px] sm:leading-[24px] font-normal text-[#5A666E] max-w-3xl mb-8"
           style={{ letterSpacing: '0.5%' }}
         >
           Please arrive 15 minutes early to complete the necessary paperwork. To save time, download and complete these forms in advance and bring them to your appointment.
         </motion.p>
         <motion.h2
           variants={fadeInUp}
-          className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-4"
+          className="text-[22px] sm:text-[26px] md:text-[30px] leading-[28px] sm:leading-[32px] md:leading-[36px] font-semibold text-[#11181C] mb-4"
           style={{ letterSpacing: '0.5%' }}
         >
           Required Documents:
@@ -73,7 +73,7 @@ export default function FirstAppointment() {
               whileHover={{ y: -4, boxShadow: "0 12px 40px rgba(14, 165, 233, 0.2)" }}
               transition={springBounce}
             >
-              <h3 className="text-lg font-semibold mb-6">{doc.title}</h3>
+              <h3 className="text-base sm:text-lg font-semibold mb-6">{doc.title}</h3>
 
               {doc.file ? (
                 <motion.a
@@ -111,14 +111,14 @@ export default function FirstAppointment() {
         {/* Bottom Section */}
         <motion.h3
           variants={fadeInUp}
-          className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+          className="text-[22px] sm:text-[26px] md:text-[30px] leading-[28px] sm:leading-[32px] md:leading-[36px] font-semibold text-[#11181C] mb-2"
           style={{ letterSpacing: '0.5%' }}
         >
           What to Bring
         </motion.h3>
         <motion.p
           variants={fadeInUp}
-          className="text-[20px] leading-[28px] font-semibold text-[#11181C] mb-4"
+          className="text-base sm:text-lg md:text-[20px] leading-[24px] sm:leading-[26px] md:leading-[28px] font-semibold text-[#11181C] mb-4"
           style={{ letterSpacing: '0.5%' }}
         >
           Please bring the following items to your first visit:
@@ -137,7 +137,7 @@ export default function FirstAppointment() {
             <motion.li
               key={index}
               variants={fadeInUp}
-              className="text-[16px] leading-[24px] font-normal text-[#5A666E]"
+              className="text-sm sm:text-base leading-[20px] sm:leading-[24px] font-normal text-[#5A666E]"
               style={{ letterSpacing: '0.5%' }}
             >
               {item}

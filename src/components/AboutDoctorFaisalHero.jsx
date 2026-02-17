@@ -51,7 +51,8 @@ const AboutDoctorFaisalHero = ({ doctorImage = "/images/Drfaisal.png" }) => {
       >
         <motion.h1
           variants={fadeInUp}
-          className="text-[clamp(28px,6.5vw,96px)] font-bold text-[#053759] leading-[1.05]"
+          className="text-[40px] sm:text-[56px] md:text-[72px] lg:text-[84px] xl:text-[96px] font-medium text-[#053759] leading-[1] break-words"
+          style={{ letterSpacing: '0.5%' }}
         >
           <span className="block">Your Trusted Burbank</span>
           <span className="block">Neurologist</span>

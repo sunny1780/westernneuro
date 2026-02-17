@@ -448,7 +448,7 @@ const Blog3 = () => {
 
           {/* FAQs */}
           <section className="mb-10">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-left">Frequently Asked Questions</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-left">Frequently Asked Questions</h2>
             
             <div className="space-y-6">
               <div className="bg-gray-50 p-6 rounded-lg">

@@ -27,17 +27,23 @@ const EpilepsyDetailSection = ({ animate = true }) => {
       <img
         src="/images/Neuro2.png"
         alt=""
-        className="pointer-events-none select-none absolute right-0 top-44 w-[360px] sm:w-[320px] md:w-[420px]  z-0"
+        className="pointer-events-none select-none absolute right-0 top-32 sm:top-44 w-[200px] sm:w-[280px] md:w-[360px] lg:w-[420px] z-0 opacity-60 sm:opacity-100"
       />
       <div
         className={`relative max-w-6xl mx-auto space-y-6 md:space-y-8 text-left ${
           inView ? "animate-slide-up-bounce" : "opacity-0"
         }`}
       >
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#11181C] leading-tight">
+        <h2
+          className="text-[22px] sm:text-[26px] md:text-[30px] font-semibold text-[#11181C] leading-[28px] sm:leading-[32px] md:leading-[36px]"
+          style={{ letterSpacing: '0.5%', fontFamily: 'Inter, sans-serif' }}
+        >
           Comprehensive Seizure Disorder Diagnosis and Treatment
         </h2>
-        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#11181C]">
+        <h3
+          className="text-[17px] sm:text-[20px] font-bold text-[#11181C] leading-[24px] sm:leading-[28px]"
+          style={{ letterSpacing: '0.5%', fontFamily: 'Inter, sans-serif' }}
+        >
           Expert Evaluation and Personalized Care for Epilepsy
         </h3>
         <p className="text-base md:text-lg leading-relaxed text-[#687076]">
@@ -54,7 +60,10 @@ const EpilepsyDetailSection = ({ animate = true }) => {
           accurate diagnosis and tailored management are essential to achieving
           long-term seizure control and preserving quality of life.
         </p>
-        <h3 className="text-xl sm:text-2xl font-bold text-[#11181C] pt-2">
+        <h3
+          className="text-[17px] sm:text-[20px] font-bold text-[#11181C] leading-[24px] sm:leading-[28px] pt-2"
+          style={{ letterSpacing: '0.5%', fontFamily: 'Inter, sans-serif' }}
+        >
           Key Clinical Features of Epilepsy
         </h3>
         <p className="text-base md:text-lg leading-relaxed text-[#687076]">
@@ -80,14 +89,20 @@ const EpilepsyDetailSection = ({ animate = true }) => {
         </p>
 
         {/* Types and Causes of Epilepsy */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#11181C] leading-tight pt-8 md:pt-12">
+        <h2
+          className="text-[22px] sm:text-[26px] md:text-[30px] font-semibold text-[#11181C] leading-[28px] sm:leading-[32px] md:leading-[36px] pt-8 md:pt-12"
+          style={{ letterSpacing: '0.5%', fontFamily: 'Inter, sans-serif' }}
+        >
           Types and Causes of Epilepsy
         </h2>
         <p className="text-base md:text-lg leading-relaxed text-[#687076]">
           Understanding the underlying cause of epilepsy is fundamental to selecting the most effective treatment strategy and determining long-term prognosis.
         </p>
 
-        <h3 className="text-xl sm:text-2xl font-bold text-[#11181C] pt-4">
+        <h3
+          className="text-[17px] sm:text-[20px] font-bold text-[#11181C] leading-[24px] sm:leading-[28px] pt-4"
+          style={{ letterSpacing: '0.5%', fontFamily: 'Inter, sans-serif' }}
+        >
           Idiopathic (Genetic) Epilepsy
         </h3>
         <p className="text-base md:text-lg leading-relaxed text-[#687076]">
@@ -102,7 +117,10 @@ const EpilepsyDetailSection = ({ animate = true }) => {
           This form of epilepsy frequently responds well to appropriately chosen anti-seizure medications, and many patients achieve excellent long-term seizure control with minimal impact on daily life.
         </p>
 
-        <h3 className="text-xl sm:text-2xl font-bold text-[#11181C] pt-6">
+        <h3
+          className="text-[17px] sm:text-[20px] font-bold text-[#11181C] leading-[24px] sm:leading-[28px] pt-6"
+          style={{ letterSpacing: '0.5%', fontFamily: 'Inter, sans-serif' }}
+        >
           Symptomatic (Structural or Secondary) Epilepsy
         </h3>
         <p className="text-base md:text-lg leading-relaxed text-[#687076]">

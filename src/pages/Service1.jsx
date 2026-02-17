@@ -15,6 +15,7 @@ function Service1() {
 
   return (
     <AnimatedPage>
+      <div style={{ fontFamily: 'Inter, sans-serif' }}>
       <AnimatedSection>
         <ServiceSection
           title={serviceSection.title}
@@ -34,6 +35,7 @@ function Service1() {
       <AnimatedSection delay={180}><StayInformed /></AnimatedSection>
       <AnimatedSection delay={200}><AppointmentSection /></AnimatedSection>
       <AnimatedSection><Footer /></AnimatedSection>
+      </div>
     </AnimatedPage>
   );
 }

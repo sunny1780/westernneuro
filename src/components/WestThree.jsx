@@ -38,7 +38,7 @@ const WestThree = () => {
           <motion.div className="text-left" variants={staggerContainer}>
             <motion.h2
               variants={fadeInLeft}
-              className="text-[48px] leading-[1] font-medium text-[#11181C] mb-6"
+              className="text-[32px] sm:text-[40px] md:text-[48px] leading-[1] font-medium text-[#11181C] mb-6 break-words"
               style={{ letterSpacing: '0.5%' }}
             >
               Medical Qualifications & Experience
@@ -50,7 +50,7 @@ const WestThree = () => {
             <motion.div className="space-y-6 mb-8" variants={staggerContainer}>
               <motion.div variants={fadeInUp}>
                 <h3
-                  className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+                  className="text-[20px] sm:text-[24px] md:text-[30px] leading-[1.2] font-semibold text-[#11181C] mb-2"
                   style={{ letterSpacing: '0.5%' }}
                 >
                   Education
@@ -62,7 +62,7 @@ const WestThree = () => {
 
               <motion.div variants={fadeInUp}>
                 <h3
-                  className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+                  className="text-[20px] sm:text-[24px] md:text-[30px] leading-[1.2] font-semibold text-[#11181C] mb-2"
                   style={{ letterSpacing: '0.5%' }}
                 >
                   Training
@@ -77,7 +77,7 @@ const WestThree = () => {
 
               <motion.div variants={fadeInUp}>
                 <h3
-                  className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+                  className="text-[20px] sm:text-[24px] md:text-[30px] leading-[1.2] font-semibold text-[#11181C] mb-2"
                   style={{ letterSpacing: '0.5%' }}
                 >
                   Board Certification
@@ -91,7 +91,7 @@ const WestThree = () => {
 
               <motion.div variants={fadeInUp}>
                 <h3
-                  className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+                  className="text-[20px] sm:text-[24px] md:text-[30px] leading-[1.2] font-semibold text-[#11181C] mb-2 break-words"
                   style={{ letterSpacing: '0.5%' }}
                 >
                   Academic & Administrative Appointment
@@ -104,7 +104,7 @@ const WestThree = () => {
 
               <motion.div variants={fadeInUp}>
                 <h3
-                  className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-2"
+                  className="text-[20px] sm:text-[24px] md:text-[30px] leading-[1.2] font-semibold text-[#11181C] mb-2"
                   style={{ letterSpacing: '0.5%' }}
                 >
                   Hospital Appointments

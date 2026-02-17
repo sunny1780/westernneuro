@@ -4,7 +4,7 @@ const HospitalAffiliations = () => {
   return (
     <section className="bg-white py-6 md:py-10 px-4 sm:px-4 md:px-12 lg:px-16">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-[48px] font-medium text-[#11181C] leading-[1] mb-2" style={{ letterSpacing: '0.5%' }}>
+        <h2 className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-[#11181C] leading-[1] mb-2" style={{ letterSpacing: '0.5%' }}>
           Hospital Affiliations
         </h2>
         <p

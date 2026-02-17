@@ -66,7 +66,7 @@ const Associations = ({ associations = defaultAssociations }) => {
     >
       <div className="max-w-5xl mx-auto text-center">
         <h2
-          className={`text-[48px] font-medium text-[#11181C] leading-[1] mb-4 ${
+          className={`text-[32px] sm:text-[40px] md:text-[48px] font-medium text-[#11181C] leading-[1] mb-4 break-words ${
             sectionInView ? "animate-slide-up-bounce" : "opacity-0"
           }`}
           style={{ letterSpacing: '0.5%' }}

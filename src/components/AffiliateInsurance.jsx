@@ -46,7 +46,7 @@ const AffiliateInsurance = () => {
       <div className="max-w-6xl mx-auto text-center">
         {/* Main heading */}
         <h2
-          className={`text-[48px] font-medium text-[#11181C] leading-[1] mb-4 ${
+          className={`text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] font-medium text-[#11181C] leading-[1] mb-4 ${
             sectionInView ? 'animate-slide-up-bounce' : 'opacity-0'
           }`}
           style={{ letterSpacing: '0.5%' }}

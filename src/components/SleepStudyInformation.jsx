@@ -39,14 +39,14 @@ export default function SleepStudyInformation() {
         {/* Heading */}
         <motion.h1
           variants={fadeInUp}
-          className="text-[48px] leading-[1] font-medium text-[#11181C] mb-4"
+          className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] leading-[1] font-medium text-[#11181C] mb-4"
           style={{ letterSpacing: '0.5%' }}
         >
           Sleep Study Information
         </motion.h1>
         <motion.h2
           variants={fadeInUp}
-          className="text-[30px] leading-[36px] font-semibold text-[#11181C] mb-4"
+          className="text-[22px] sm:text-[26px] md:text-[30px] leading-[28px] sm:leading-[32px] md:leading-[36px] font-semibold text-[#11181C] mb-4"
           style={{ letterSpacing: '0.5%' }}
         >
           Preparing for Your Sleep Study
@@ -73,7 +73,7 @@ export default function SleepStudyInformation() {
               whileHover={{ y: -4, boxShadow: "0 12px 40px rgba(14, 165, 233, 0.2)" }}
               transition={springBounce}
             >
-              <h3 className="text-lg font-semibold mb-6">{doc.title}</h3>
+              <h3 className="text-base sm:text-lg font-semibold mb-6">{doc.title}</h3>
 
               {doc.file ? (
                 <motion.a
@@ -109,7 +109,7 @@ export default function SleepStudyInformation() {
         </motion.div>
 
         {/* Bottom Section */}
-        <motion.h3 variants={fadeInUp} className="text-xl font-semibold mb-2">
+        <motion.h3 variants={fadeInUp} className="text-lg sm:text-xl font-semibold mb-2">
           What to Bring to Your Sleep Study
         </motion.h3>
         <motion.p

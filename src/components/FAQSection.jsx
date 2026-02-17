@@ -53,7 +53,7 @@ const FAQSection = () => {
       <div className="max-w-5xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-[48px] font-medium text-[#11181C] leading-[1]" style={{ letterSpacing: '0.5%' }}>
+          <h2 className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-[#11181C] leading-[1]" style={{ letterSpacing: '0.5%' }}>
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-sm md:text-base">

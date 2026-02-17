@@ -35,15 +35,8 @@ export default function NeuromuscularFaqs() {
       <div className="mx-auto flex flex-col max-w-6xl w-full gap-20">
         <div>
           <h2
-            className="text-center mb-2"
-            style={{
-              fontFamily: 'Inter, sans-serif',
-              fontWeight: 500,
-              fontSize: '48px',
-              lineHeight: '100%',
-              letterSpacing: '0.5%',
-              color: '#11181C',
-            }}
+            className="text-center mb-2 text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium leading-[1] text-[#11181C]"
+            style={{ letterSpacing: '0.5%', fontFamily: 'Inter, sans-serif' }}
           >
             Frequently Asked Questions
           </h2>

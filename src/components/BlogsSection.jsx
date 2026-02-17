@@ -17,12 +17,15 @@ const BlogsSection = () => {
   
             {/* Content */}
             <div className="order-1 lg:order-2">
-              <h2 className="text-[48px] font-medium text-[#11181C] leading-[1] mb-4 md:mb-6" style={{ letterSpacing: '0.5%' }}>
-              Neurological Health Insights & Education 
-              </h2>
-              <p className=" max-w-xl leading-relaxed">
+              <h2
+              className="text-[30px] sm:text-[44px] md:text-[54px] lg:text-[70px] xl:text-[70px] font-medium text-[#053759] leading-[1] mb-4 md:mb-6"
+              style={{ letterSpacing: '0.5%', fontFamily: 'Inter, sans-serif' }}
+            >
+              Neurological Health Insights & Education
+            </h2>
+              <p className="max-w-xl leading-relaxed text-[#687076]">
               Expert Articles on Brain Health, Sleep, and Neurological Wellness
-              </p>
+            </p>
             </div>
   
           </div>

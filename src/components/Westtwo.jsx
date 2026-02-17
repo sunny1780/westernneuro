@@ -50,7 +50,7 @@ const Westtwo = () => {
           <motion.div className="text-left" variants={staggerContainer}>
             <motion.h2
               variants={fadeInRight}
-              className="text-[48px] font-medium text-[#11181C] leading-[1] mb-6"
+              className="text-[32px] sm:text-[40px] md:text-[48px] font-medium text-[#11181C] leading-[1] mb-6 break-words"
               style={{ letterSpacing: '0.5%' }}
             >
               Expert Neurology & Sleep Care

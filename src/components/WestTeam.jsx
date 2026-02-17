@@ -40,7 +40,7 @@ const WestTeam = () => {
           {/* Header */}
           <motion.h2
             variants={fadeInUp}
-            className="text-[48px] font-medium text-[#11181C] leading-[1] text-center mb-4"
+            className="text-[32px] sm:text-[40px] md:text-[48px] font-medium text-[#11181C] leading-[1] text-center mb-4 break-words"
             style={{ letterSpacing: '0.5%' }}
           >
             Meet Our Expert Team

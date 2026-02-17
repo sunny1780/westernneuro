@@ -191,7 +191,7 @@
              What Clients Say
            </p> */}
           <h2
-            className="text-[48px] font-medium text-[#11181C] leading-[1] mb-4"
+            className="text-[32px] sm:text-[40px] md:text-[48px] font-medium text-[#11181C] leading-[1] mb-4 break-words"
             style={{ letterSpacing: '0.5%' }}
           >
             Trusted by Our Patients
