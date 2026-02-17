@@ -54,7 +54,7 @@ const HeadachesDetailSection = ({ animate = true }) => {
           <li>Sleep quality and energy levels</li>
           <li>Daily routines, family responsibilities, and social activities</li>
         </ul>
-        <h3 className="text-xl sm:text-2xl font-bold text-[#11181C] pt-6">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#11181C] leading-tight pt-6">
           Types of Headaches We Diagnose and Treat
         </h3>
         <p className="text-base md:text-lg leading-relaxed text-[#687076]">

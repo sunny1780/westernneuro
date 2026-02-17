@@ -35,12 +35,7 @@ export default function PrivacyPractices() {
           className="text-[16px] leading-[24px] font-normal text-[#5A666E] max-w-5xl"
           style={{ letterSpacing: '0.5%' }}
         >
-          Western Neurological Associates is a provider for Medicare and most major
-          insurance plans, and provides insurance billing. You are responsible for
-          co-payments or charges that are not covered by your insurance. If you
-          have questions regarding billing or which insurance plans we accept,
-          please contact us. Questions regarding insurance coverage and benefits
-          should be directed to your employer or insurance company.
+          Our Notice of Privacy Practices describes how medical information about you may be used and disclosed and how you can get access to this information. It is given to all new patients and a copy is available upon request.
         </motion.p>
       </motion.div>
     </section>

@@ -108,8 +108,8 @@ export default function SleepStudyInformation() {
           ))}
         </motion.div>
 
-        {/* Bottom Section */}
-        <motion.h3 variants={fadeInUp} className="text-lg sm:text-xl font-semibold mb-2">
+        {/* Bottom Section - commented out for now */}
+        {/* <motion.h3 variants={fadeInUp} className="text-lg sm:text-xl font-semibold mb-2">
           What to Bring to Your Sleep Study
         </motion.h3>
         <motion.p
@@ -134,7 +134,7 @@ export default function SleepStudyInformation() {
               {item}
             </motion.li>
           ))}
-        </motion.ul>
+        </motion.ul> */}
       </motion.div>
     </div>
   );

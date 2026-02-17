@@ -55,8 +55,8 @@ export default function FirstAppointment() {
         </motion.p>
         <motion.h2
           variants={fadeInUp}
-          className="text-[22px] sm:text-[26px] md:text-[30px] leading-[28px] sm:leading-[32px] md:leading-[36px] font-semibold text-[#11181C] mb-4"
-          style={{ letterSpacing: '0.5%' }}
+          className="text-[17px] sm:text-[18px] md:text-[20px] leading-[24px] sm:leading-[26px] md:leading-[28px] font-semibold text-[#11181C] mb-4"
+          style={{ letterSpacing: '0.5%', fontFamily: 'Inter, sans-serif' }}
         >
           Required Documents:
         </motion.h2>

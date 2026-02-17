@@ -54,8 +54,13 @@ export default function AppointmentSection() {
         >
           {/* Left Content */}
           <motion.div className="text-left" variants={fadeInLeft}>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-4 md:mb-6 leading-tight">
-            Ready for Expert   <br /> neurological care?
+            <h1
+              className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-[#11181C] leading-[1] mb-4 md:mb-6"
+              style={{ letterSpacing: '0.5%', fontFamily: 'Inter, sans-serif' }}
+            >
+              Ready for Expert
+              <br />
+              neurological care?
             </h1>
             <p className="text-[#687076] max-w-md mb-6 md:mb-8">
             Have questions or ready to schedule? Reach out today.
