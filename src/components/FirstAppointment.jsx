@@ -125,7 +125,7 @@ export default function FirstAppointment() {
         </motion.p>
 
         <motion.ul
-          className="list-disc list-inside pl-4 space-y-2 max-w-2xl"
+          className="list-disc list-outside pl-6 ml-4 space-y-2 max-w-2xl"
           variants={staggerContainer}
         >
           {[
