@@ -11,7 +11,7 @@ const Hero = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-70"
       >
-        <source src="/images/0202.mp4" type="video/mp4" />
+        <source src="https://customer-leo8lubv91ct4vwd.cloudflarestream.com/6358bb5d5dbe880f74576ccb6908eadb/manifest/video.m3u8" type="application/x-mpegURL" />
       </video>
 
       {/* Dark overlay for text readability */}
