@@ -101,8 +101,7 @@ const Moreclinis = () => {
                 className="text-[16px] sm:text-[17px] md:text-[18px] leading-[26px] sm:leading-[28px] font-normal text-[#687076] mb-6 sm:mb-8 text-left"
                 style={{ letterSpacing: '0.5%' }}
               >
-                Western Neurological Associates, located in the heart of Burbank, has been serving the community for over 12 years with comprehensive neurological and sleep disorder care.
-                With his extensive expertise, Dr. Faisal strives to provide quality care with compassion and individualized attention to every patient. We believe that providing patients with a full understanding of their condition and thorough education about their care is an essential part of our practice.
+                Along with his extensive expertise, Dr. Faisal strives to provide quality care with compassion and individualized attention to every patient. We believe that providing patients with a full understanding of their condition and thorough education about their care is an essential part of our practice.
               </p>
             </div>
 
