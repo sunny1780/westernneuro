@@ -129,16 +129,16 @@ const Navbar = () => {
         {/* Right: phone + CTA + mobile menu btn */}
         <div className="flex items-center gap-4 md:gap-6">
           <a
-            href="tel:8188452255"
+            href="tel:8188452828"
             className="hidden sm:flex items-center gap-2 text-sm font-medium text-gray-800 hover:text-[#1893FF] transition"
-            aria-label="Call 818.845.2255"
+            aria-label="Call 818.845.2828"
           >
             <img
               src="/images/phone.svg"
               alt="Phone"
               className="w-4 h-4 flex-shrink-0"
             />
-            <span>818.845.2255</span>
+            <span>818.845.2828</span>
           </a>
 
           <Link
@@ -191,16 +191,16 @@ const Navbar = () => {
             <li><Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="block py-2">Blog</Link></li>
             <li className="pt-2 border-t border-gray-200">
               <a
-                href="tel:8188452255"
+                href="tel:8188452828"
                 className="flex items-center gap-2"
-                aria-label="Call 818.845.2255"
+                aria-label="Call 818.845.2828"
               >
                 <img
                   src="/images/icon/Phone.png"
                   alt="Phone"
                   className="w-4 h-4 flex-shrink-0"
                 />
-                <span>818.845.2255</span>
+                <span>818.845.2828</span>
               </a>
             </li>
 

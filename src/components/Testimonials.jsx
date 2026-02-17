@@ -218,7 +218,7 @@
            onClick={() => setSelectedTestimonial(null)}
          >
            <div
-             className="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 md:p-8"
+             className="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 text-left"
              onClick={(e) => e.stopPropagation()}
            >
              <button
@@ -235,7 +235,7 @@
                  <StarIcon key={i} />
                ))}
              </div>
-             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6 text-left">
                "{selectedTestimonial.text}"
              </p>
              <div className="flex items-center gap-3">
