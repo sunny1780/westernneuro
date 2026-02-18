@@ -17,15 +17,6 @@ const documents = [
   { title: "Patient instructions for sleep study", file: "/images/patientsleep.pdf" },
 ];
 
-const listItems = [
-  "Patient's insurance card and identification",
-  "Comfortable sleepwear (two-piece pajamas recommended)",
-  "Personal toiletries and any nighttime medications",
-  "A book or relaxing activity for before bedtime",
-  "List of current medications you're taking",
-  "Clean, product-free hair (no gels, sprays, or oils)",
-];
-
 export default function SleepStudyInformation() {
   return (
     <div className="px-4 sm:px-6 md:px-16 py-6 md:py-10 text-left overflow-hidden">
