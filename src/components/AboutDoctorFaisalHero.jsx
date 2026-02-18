@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const springBounce = { type: "spring", stiffness: 300, damping: 20 };
 const springSmooth = { type: "spring", stiffness: 100, damping: 15 };
-
+// data
 const fadeInUp = {
   initial: { opacity: 0, y: 32 },
   animate: { opacity: 1, y: 0 },
