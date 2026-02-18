@@ -39,6 +39,12 @@ const Hero = () => {
     const setupVideo = async (video) => {
       if (!video) return;
       let hlsInstance = null;
+      const safePlay = () => video.play().catch(() => {});
+
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.autoplay = true;
 
       const restartFromStart = () => {
         if (!video) return;
@@ -47,14 +53,14 @@ const Hero = () => {
           hlsInstance.stopLoad();
           hlsInstance.startLoad(0);
           video.currentTime = 0;
-          video.play().catch(() => {});
+          safePlay();
           return;
         }
 
         video.src = HERO_VIDEO_URL;
         video.load();
         video.currentTime = 0;
-        video.play().catch(() => {});
+        safePlay();
       };
 
       const onEnded = () => restartFromStart();
@@ -76,7 +82,7 @@ const Hero = () => {
       if (supportsNativeHls) {
         video.src = HERO_VIDEO_URL;
         video.load();
-        video.play().catch(() => {});
+        safePlay();
         return;
       }
 
@@ -90,7 +96,7 @@ const Hero = () => {
         hls.loadSource(HERO_VIDEO_URL);
         hls.attachMedia(video);
         hls.on(Hls.Events.MANIFEST_PARSED, () => {
-          video.play().catch(() => {});
+          safePlay();
         });
         hls.on(Hls.Events.BUFFER_EOS, restartFromStart);
 
@@ -103,6 +109,14 @@ const Hero = () => {
 
     setupVideo(mobileVideoRef.current);
     setupVideo(desktopVideoRef.current);
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState !== 'visible') return;
+      if (mobileVideoRef.current?.paused) mobileVideoRef.current.play().catch(() => {});
+      if (desktopVideoRef.current?.paused) desktopVideoRef.current.play().catch(() => {});
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    cleanupFns.push(() => document.removeEventListener('visibilitychange', handleVisibilityChange));
 
     return () => {
       isCancelled = true;
