@@ -35,7 +35,7 @@ const services = [
     description:
       'State-of-the-art electroencephalogram testing performed by expert technicians with interpretation by our board-certified clinical neurophysiologist.',
     image: '/images/services/eeg1.png',
-    link: '/services/nerve-conduction-studies',
+    link: '/services/eeg-testing',
   },
 ];
 

@@ -5,32 +5,32 @@ const serviceCards = [
   {
     image: '/images/services/1.jpg',
     serviceName: 'Epilepsy',
-    blogLink: '/blog1',
+    serviceLink: '/services/epilepsy',
   },
   {
     image: '/images/services/2.jpg',
     serviceName: 'Headaches & Migraines',
-    blogLink: '/blog2',
+    serviceLink: '/services/headaches',
   },
   {
     image: '/images/services/3.jpg',
     serviceName: 'Sleep Disorders',
-    blogLink: '/blog3',
+    serviceLink: '/services/sleep-disorders',
   },
   {
     image: '/images/services/disorder1.png',
     serviceName: 'Neuromuscular Disorders',
-    blogLink: '/blog1',
+    serviceLink: '/services/neuromuscular-disorders',
   },
   {
     image: '/images/services/head1.jpg',
     serviceName: 'Headaches & Migraines',
-    blogLink: '/blog2',
+    serviceLink: '/services/headaches',
   },
   {
     image: '/images/services/eeg1.png',
     serviceName: 'EEG Testing',
-    blogLink: '/blog3',
+    serviceLink: '/services/eeg-testing',
   },
 ];
 
@@ -94,7 +94,7 @@ const OurServicesHero = () => {
             {[...serviceCards, ...serviceCards].map((card, i) => (
               <Link
                 key={`${card.image}-${i}`}
-                to={card.blogLink}
+                to={card.serviceLink}
                 className={`group relative block rounded-xl overflow-hidden bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#053759] ${imageSizes[i % serviceCards.length] || 'h-[80px] md:h-[92px]'} w-[140px] md:w-[160px]`}
                 aria-label={`View service: ${card.serviceName}`}
               >
