@@ -6,16 +6,25 @@ const blogs = [
     title: "ADHD Uncovered: A Comprehensive Guide",
     description: "Learn about ADHD symptoms, causes, and effective treatments for children and adults. Discover how proper support can help individuals thrive.",
     image: "/images/Blog1.jpg",
+    link: "/blog1",
   },
   {
-    title: "Unraveling Autism: Understanding ASD",
-    description: "A comprehensive guide to understanding, diagnosing, and treating Autism Spectrum Disorder for children and adults.",
+    title: "Autism Explained: Complete Guide to ASD",
+    description: "Learn what Autism Spectrum Disorder is, its signs, causes, diagnosis, and support options in this complete guide.",
     image: "/images/Blog2.jpg",
+    link: "/blog2",
   },
   {
     title: "Anxiety: Understanding & Treatment",
     description: "Learn about anxiety disorders, their symptoms, causes, and effective treatment options including therapy and lifestyle changes.",
     image: "/images/Blog3.jpg",
+    link: "/blog3",
+  },
+  {
+    title: "Autism Explained: A Complete Guide to Understanding ASD",
+    description: "Learn what Autism Spectrum Disorder is, its signs, causes, diagnosis, and support options in this complete guide.",
+    image: "/images/55.png",
+    link: "/blog4",
   },
   // {
   //   title: "Stay Informed About Your Neurological Health",
@@ -73,7 +82,7 @@ export default function BlogCard() {
                 {blog.description}
               </p>
               <Link
-                to="/blog"
+                to={blog.link}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium text-white bg-[#1893FF] hover:bg-[#0f80dd] transition w-full"
               >
                 Learn More
