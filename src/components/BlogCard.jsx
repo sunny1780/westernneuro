@@ -9,12 +9,6 @@ const blogs = [
     link: "/blog1",
   },
   {
-    title: "Autism Explained: Complete Guide to ASD",
-    description: "Learn what Autism Spectrum Disorder is, its signs, causes, diagnosis, and support options in this complete guide.",
-    image: "/images/Blog2.jpg",
-    link: "/blog2",
-  },
-  {
     title: "Anxiety: Understanding & Treatment",
     description: "Learn about anxiety disorders, their symptoms, causes, and effective treatment options including therapy and lifestyle changes.",
     image: "/images/Blog3.jpg",
@@ -25,6 +19,24 @@ const blogs = [
     description: "Learn what Autism Spectrum Disorder is, its signs, causes, diagnosis, and support options in this complete guide.",
     image: "/images/55.png",
     link: "/blog4",
+  },
+  {
+    title: "Bronchitis Explained: Symptoms, Causes, and Effective Treatments",
+    description: "Learn about bronchitis symptoms, causes, and treatments. Discover when to see a doctor and how to recover faster.",
+    image: "/images/59.png",
+    link: "/blog5",
+  },
+  {
+    title: "The Common Cold: Symptoms, Causes, and Recovery",
+    description: "Discover common cold symptoms, causes, and proven remedies. Learn when to rest at home and when to see a doctor.",
+    image: "/images/61.jpeg",
+    link: "/blog6",
+  },
+  {
+    title: "Understanding Depression: Symptoms, Causes, and Treatments",
+    description: "Understand depression symptoms, causes, and treatments. Learn how to get help and support recovery for a healthier life.",
+    image: "/images/64.jpeg",
+    link: "/blog7",
   },
   // {
   //   title: "Stay Informed About Your Neurological Health",
